@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-05T01:32:01+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Rakugaki</title><subtitle>개발 낙서장 &amp; 일상</subtitle><author><name>양재용</name><email>yjy850146@gmail.com</email></author><entry><title type="html">블로그 첫 포스팅 글</title><link href="http://localhost:4000/life/first/" rel="alternate" type="text/html" title="블로그 첫 포스팅 글" /><published>2023-04-04T00:00:00+09:00</published><updated>2023-04-04T00:00:00+09:00</updated><id>http://localhost:4000/life/first</id><content type="html" xml:base="http://localhost:4000/life/first/"><![CDATA[<p class="notice--danger"><strong>[위험]</strong> 작심삼일이 될 수 있는 블로그입니다.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-05T01:42:56+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Rakugaki</title><subtitle>개발 낙서장 &amp; 일상</subtitle><author><name>양재용</name><email>yjy850146@gmail.com</email></author><entry><title type="html">블로그 첫 포스팅 글</title><link href="http://localhost:4000/life/first/" rel="alternate" type="text/html" title="블로그 첫 포스팅 글" /><published>2023-04-04T00:00:00+09:00</published><updated>2023-04-04T00:00:00+09:00</updated><id>http://localhost:4000/life/first</id><content type="html" xml:base="http://localhost:4000/life/first/"><![CDATA[<p class="notice--danger"><strong>[위험]</strong> 작심삼일이 될 수 있는 블로그입니다.</p>
 <h2 id="안녕하세요">안녕하세요.</h2>
 
 <p>이번에 부트캠프 훈련을 앞두고<br />   <br />
 이것저것 기록용으로 사용하려고 깃 블로그 만들어봤습니다!!<br /><br />
 개발 공부 관련된 내용 올릴 예정이고, 실력이 부족해서   <br />
 제 글이 누군가에게 도움이 될 수 있을거란 생각은 하지 않아요,,,ㅠㅜ<br /><br />
-제가 찾아보고, 공부했던 부분들 다시 리와인드 시킬 목적으로 자주 사용할 것 같아요!!       <br />
+제가 찾아보고, 공부했던 부분들 다시 리와인드 시킬 목적으로 사용 할 것 같아요!!<br />   <br />
 그래도 꾸준히 공부하고, 포스팅하다 보면 실력이 늘지 않을까요,,,??<br /><br />
 일단 부트캠프 시작하기 전에 이것만은 꼭 지키자라는 것을 정해봤어요!!<br /><br /></p>
 
