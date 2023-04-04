@@ -1,5 +1,46 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-05T00:08:40+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Rakugaki</title><subtitle>개발 낙서장 &amp; 일상</subtitle><author><name>양재용</name><email>yjy850146@gmail.com</email></author><entry><title type="html">첫 글 테스트</title><link href="http://localhost:4000/%EC%9D%BC%EC%83%81/first/" rel="alternate" type="text/html" title="첫 글 테스트" /><published>2023-04-03T00:00:00+09:00</published><updated>2023-04-03T00:00:00+09:00</updated><id>http://localhost:4000/%EC%9D%BC%EC%83%81/first</id><content type="html" xml:base="http://localhost:4000/%EC%9D%BC%EC%83%81/first/"><![CDATA[<h1 id="헤더-글-입니다">헤더 글 입니다.</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-05T01:32:01+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Rakugaki</title><subtitle>개발 낙서장 &amp; 일상</subtitle><author><name>양재용</name><email>yjy850146@gmail.com</email></author><entry><title type="html">블로그 첫 포스팅 글</title><link href="http://localhost:4000/life/first/" rel="alternate" type="text/html" title="블로그 첫 포스팅 글" /><published>2023-04-04T00:00:00+09:00</published><updated>2023-04-04T00:00:00+09:00</updated><id>http://localhost:4000/life/first</id><content type="html" xml:base="http://localhost:4000/life/first/"><![CDATA[<p class="notice--danger"><strong>[위험]</strong> 작심삼일이 될 수 있는 블로그입니다.</p>
+<h2 id="안녕하세요">안녕하세요.</h2>
 
-<p>안녕하세요 양재용입니다    <br />
-줄바꿈 테스트입니다   <br />
-<img src="https://user-images.githubusercontent.com/68217405/229445840-17d59a9e-de92-4ade-aabd-eddce6fab2d0.png" alt="rakugaki" width="50%&quot;, height=&quot;50%" /></p>]]></content><author><name>양재용</name><email>yjy850146@gmail.com</email></author><category term="일상" /><category term="test" /><summary type="html"><![CDATA[헤더 글 입니다.]]></summary></entry></feed>
+<p>이번에 부트캠프 훈련을 앞두고<br />   <br />
+이것저것 기록용으로 사용하려고 깃 블로그 만들어봤습니다!!<br /><br />
+개발 공부 관련된 내용 올릴 예정이고, 실력이 부족해서   <br />
+제 글이 누군가에게 도움이 될 수 있을거란 생각은 하지 않아요,,,ㅠㅜ<br /><br />
+제가 찾아보고, 공부했던 부분들 다시 리와인드 시킬 목적으로 자주 사용할 것 같아요!!       <br />
+그래도 꾸준히 공부하고, 포스팅하다 보면 실력이 늘지 않을까요,,,??<br /><br />
+일단 부트캠프 시작하기 전에 이것만은 꼭 지키자라는 것을 정해봤어요!!<br /><br /></p>
+
+<h2 id="8시에는-꼭-기상하기"><font color="#A0D7EF">8시에는 꼭 기상하기</font></h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>9시에 수업이 있기 때문에 잠 깨고, 샤워하고, 넉넉하게 수업을 들어야해요!!
+6개월 동안 진행하기 때문에 첫 시작부터 좋은 생활 리듬을 가지고 가야
+끝까지 집중해서 교육을 수료할 수 있을 것 같다는 생각이 드네요 ㅎㅎ
+</code></pre></div></div>
+
+<h2 id="운동하기"><font color="#A0D7EF">운동하기</font></h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>하루에 9시간 동안 컴퓨터 앞에 앉아있기 때문에 스트레칭과 운동이 필수에요!!
+공부하기 위해서는 체력도 중요하다 라는 말이 있듯이 컴퓨터 앞에 오래 있으면
+목이나 허리에 무리가 많이 가기 때문에 운동으로 신체 균형을
+맞춰야 한다는 생각이 들어요!!
+</code></pre></div></div>
+
+<h2 id="복습하기"><font color="#A0D7EF">복습하기</font></h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>부트캠프를 시작하면 하루에 많은 양을 학습하기 때문에 복습이 필수입니다!!
+그렇기 때문에 블로그도 시작하게 되었고, 수업 끝나고 꼭 그날 배웠던 내용을
+다시 리와인드 시키는 과정이 필요할 것 같아요!!
+</code></pre></div></div>
+
+<h2 id="첫-포스팅을-마치며">첫 포스팅을 마치며</h2>
+
+<p>위에 세가지는 교육을 진행하면서 스스로 지키기로 다짐한 세가지에요!!<br />
+저는 하기로 마음 먹은 것들은 꼭 지키거든요 ㅎㅎ<br />
+대신에 허황된 목표를 잡진 않고 제가 해낼 수 있는 선에서 목표를 잡아요!!<br /><br /></p>
+
+<p>잠시 사적인 얘기를 하자면<br />
+지난 10개월 동안은 코딩에서 손을 떼고 잠시 쉬는 시간을 가졌었어요.<br />
+작년에는 심적으로 많이 힘들었었거든요,,,<br /><br />
+제주도 게하 스텝을 하고, 에버랜드 알바를 하는 등<br />
+정말 많은 사람들을 만나고 배우고, 경험했어요!!<br /><br />
+쉬었던 10개월은 전혀 아깝지 않고 제게 값진 시간이었어요<br />
+마음이 평안해지고 나니 다시 코딩을 하고 싶다는 생각이 들더라구요ㅎ<br /><br />
+쉬었던 만큼 누구보다 열심히 공부해서<br />
+제가 낼 수 있는 최대의 결과를 내볼 생각이에요<br /><br />
+가끔씩 일상 글로 뵈어요 ‘-‘!!</p>]]></content><author><name>양재용</name><email>yjy850146@gmail.com</email></author><category term="Life" /><category term="Blog" /><summary type="html"><![CDATA[[위험] 작심삼일이 될 수 있는 블로그입니다. 안녕하세요.]]></summary></entry></feed>
