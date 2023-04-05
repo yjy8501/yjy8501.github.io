@@ -6,8 +6,8 @@ var store = [{
         "teaser": null
       },{
         "title": "파이썬 백준 10812번 문제 풀이",
-        "excerpt":"1. 문제 분석 이 문제를 처음 읽었을 때는 큐로 문제를 풀어나가야 하나 생각을 했다. 문제를 차분하게 살펴보니 큐를 사용하지 않고 간단하게 리스트 슬라이싱을 이용하면 풀 수 있다는 생각이 들어 리스트 슬라이싱 방법으로 문제에 접근했다. begin, end, middle 이런식으로 i, j, k를 입력 받는다면 1. begin에서 middle - 1까지의 배열을 복사해서...","categories": ["BaeJoon"],
+        "excerpt":"1. 문제 분석 이 문제를 처음 읽었을 때는 큐로 문제를 풀어나가야 하나 생각을 했다. 문제를 차분하게 살펴보니 큐를 사용하지 않고 간단하게 리스트 슬라이싱을 이용하면 풀 수 있다는 생각이 들어 리스트 슬라이싱 방법으로 문제에 접근했다. begin, end, middle 이런식으로 i, j, k를 입력 받는다면 1. begin에서 middle - 1까지의 배열을 복사해서...","categories": ["BaekJoon"],
         "tags": ["Coding","Python"],
-        "url": "/baejoon/second/",
+        "url": "/baekjoon/second/",
         "teaser": null
       }]
