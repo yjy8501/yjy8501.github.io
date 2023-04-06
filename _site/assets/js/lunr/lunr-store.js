@@ -10,4 +10,10 @@ var store = [{
         "tags": ["Coding","Python"],
         "url": "/baekjoon/second/",
         "teaser": null
+      },{
+        "title": "파이썬 백준 2903번 문제 풀이",
+        "excerpt":"1. 문제 분석 한 변의 길이는 1, 2, 4, 8 이런식으로 2의 배수 만큼 길어진다. 한 변에 있는 원의 개수는 한 변의 길이 + 1 이다. 따라서 전체 원의 개수는 한 변에 있는 원의 개수 * 2 2. 코드 import math N = int(input()) # N을 입력받는다 side = int(math.pow(2,...","categories": ["BaekJoon"],
+        "tags": ["Coding","Python"],
+        "url": "/baekjoon/baekJoon_2903/",
+        "teaser": null
       }]
