@@ -1,4 +1,109 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-11T21:41:39+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Rakugaki</title><subtitle>개발 낙서장 &amp; 일상</subtitle><author><name>양재용</name><email>yjy850146@gmail.com</email></author><entry><title type="html">코드스테이츠 백엔드 1일차 회고록</title><link href="http://localhost:4000/memoir/SEB_BE1/" rel="alternate" type="text/html" title="코드스테이츠 백엔드 1일차 회고록" /><published>2023-04-11T00:00:00+09:00</published><updated>2023-04-11T00:00:00+09:00</updated><id>http://localhost:4000/memoir/SEB_BE1</id><content type="html" xml:base="http://localhost:4000/memoir/SEB_BE1/"><![CDATA[<h2 id="1-배운점"><font color="#A0D7EF">1. 배운점</font></h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-12T20:47:28+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Rakugaki</title><subtitle>개발 낙서장 &amp; 일상</subtitle><author><name>양재용</name><email>yjy850146@gmail.com</email></author><entry><title type="html">코드스테이츠 백엔드 2일차 회고록</title><link href="http://localhost:4000/memoir/SEB_BE2/" rel="alternate" type="text/html" title="코드스테이츠 백엔드 2일차 회고록" /><published>2023-04-12T00:00:00+09:00</published><updated>2023-04-12T00:00:00+09:00</updated><id>http://localhost:4000/memoir/SEB_BE2</id><content type="html" xml:base="http://localhost:4000/memoir/SEB_BE2/"><![CDATA[<style> 
+    p { line-height: 1.75em; }
+</style>
+
+<h2 id="1-배운점"><font color="#A0D7EF">1. 배운점</font></h2>
+
+<h3 id="11-컴퓨터와-프로그래밍이란"><font color="#A0D7EF">1.1 컴퓨터와 프로그래밍이란?</font></h3>
+<hr />
+
+<p>우리는 컴퓨터를 흔히 만능 머신이라고 생각한다.<br />
+하지만 우리가 사용하는 많은 기능들은 프로그래머들이<br />
+컴퓨터가 이해할 수 있게 프로그래밍 언어를 사용하여<br />
+컴퓨터가 해야 할 행동들을 설정해놓은 것들이다.<br />
+그렇기 때문에 컴퓨터 입장에서 생각하며 프로그래밍을 하는 연습을 해야한다.<br /><br /></p>
+
+<h3 id="12-웹-서버와-클라이언트"><font color="#A0D7EF">1.2 웹 서버와 클라이언트</font></h3>
+<hr />
+
+<p align="center"><img src="https://user-images.githubusercontent.com/68217405/231431324-d276004c-0896-41cd-8641-0b98435e79e1.png" height="250px" width="450px" /></p>
+<p><br />
+간단하게 말하자면 클라이언트는 리소스를 사용하는 곳, 서버는 리소스를 제공하는 곳이다.<br /></p>
+<ul>
+  <li>클라이언트는 서버에 데이터를 보내며 서비스를 요청하고 <span style="color:#B0ff66"><strong>(request)</strong></span>,<br /></li>
+  <li>서버는 DB영역에서 데이터를 저장 또는 조회 후 클라이언트에 응답한다 <span style="color:#B0ff66"><strong>(response)</strong></span><br /></li>
+</ul>
+
+<h3 id="13-html"><font color="#A0D7EF">1.3 HTML</font></h3>
+<hr />
+
+<p align="center"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/440px-HTML5_logo_and_wordmark.svg.png" height="120px" width="240x" /></p>
+<p><br />
+HTML은 웹 페이지의 내용의 뼈대와 규칙을 기술하는 언어이다.<br />
+웹 페이지의 가장 기초적인 부분이며, 여러가지 태그를 이용하여 구조를 나타낸다.<br /></p>
+<ul>
+  <li>&lt;div&gt;
+    <ul>
+      <li>콘텐츠의 길이와 상관없이 한 줄을 차지함</li>
+      <li>section 사용 권장</li>
+      <li>block 태그임으로 margin, padding 사용 가능</li>
+    </ul>
+  </li>
+  <li>&lt;span&gt;
+    <ul>
+      <li>콘텐츠의 길이만큼 차지함</li>
+      <li>줄바꿈 X</li>
+      <li>inline 태그임으로 margin, padding 사용 불가</li>
+    </ul>
+  </li>
+  <li>&lt;ul&gt;
+    <ul>
+      <li>Unordered Lists의 약자로, 순서가 없는 리스트이다</li>
+    </ul>
+  </li>
+  <li>&lt;ol&gt;
+    <ul>
+      <li>Ordered Lists의 약자로, 순서가 있는 리스트이다</li>
+    </ul>
+  </li>
+  <li>&lt;li&gt;
+    <ul>
+      <li>List의 약자로, ul 과 ol의 내부에 쓰이는 태그이다</li>
+    </ul>
+  </li>
+  <li>&lt;input&gt;
+    <ul>
+      <li>HTML에서 사용자에게 데이터를 입력 받기위해 다양한 입력 방법을 제공해준다</li>
+      <li>check box, radio box, text 등등 있다.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="14-css"><font color="#A0D7EF">1.4 CSS</font></h3>
+<hr />
+
+<p align="center"><img src="https://i.namu.wiki/i/RsrvedqA4qJ3ZI8OJq2pmQosU4DzAtNQ0v1gdYUrioj7y9pO0cZZ8FMR19iZwSRhf8aEq0wUltfTr2oZhSTobbHT6pBPVnzt3E-8d_ngFWIioFubbfrYHzoLVdQ6OVM-3kH1uM6Sla8sbKDfSIDPQg.svg" height="90px" width="180x" /></p>
+<p><br />
+CSS는 웹 페이지에서 디자인을 적용하는데 사용되는 언어아다.<br />
+CSS를 이용하여 더 나은 UI/UX를 제공한다.<br />
+CSS 추가하는 방법은 총 3가지이다.</p>
+<ol>
+  <li>인라인 스타일
+    <div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&lt;</span><span class="nt">span</span> <span class="nt">style</span><span class="o">=</span><span class="s1">"color:#FFFF80"</span><span class="o">&gt;**</span><span class="nt">한</span> <span class="nt">변의</span> <span class="nt">길이</span><span class="o">**&lt;/</span><span class="nt">span</span><span class="o">&gt;</span>
+</code></pre></div>    </div>
+  </li>
+  <li>내부 스타일 시트
+    <div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">\\</span><span class="o">&lt;</span><span class="nt">style</span><span class="o">&gt;</span>
+     <span class="nt">body</span> <span class="p">{</span> <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span> <span class="p">}</span>
+     <span class="nt">p</span> <span class="p">{</span> <span class="nl">background-color</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span> <span class="p">}</span>
+<span class="err">\\</span><span class="o">&lt;/</span><span class="nt">style</span><span class="o">&gt;</span>
+</code></pre></div>    </div>
+  </li>
+  <li>외부 스타일 시트<br />
+따로 .css파일을 생성해서 내부 스타일 시트처럼 작성한다.</li>
+</ol>
+
+<h2 id="2-느낀점"><font color="#A0D7EF">2. 느낀점</font></h2>
+<p>대학교 때 배웠던 HTML, CSS, JS를 보니 반가운 기분이 들기도 했고<br />
+한편으론 나는 24살 이후로 발전이 없는건가 서글픈 생각도 들었다.<br /><br />
+하지만 수업을 들으면서 잊었던 지식들을 다시 배우기도 했고,<br />
+짧은 시간 안에 대학교 때 배웠던 내용을 공부하는 것을 봤을 때<br />
+뒤에 나올 Spring 프레임워크 부분이 기대됐다.<br /><br />
+자만하지 말고 차근차근 기초부터 다시 쌓아가도록 하자!!</p>]]></content><author><name>양재용</name><email>yjy850146@gmail.com</email></author><category term="Memoir" /><category term="Codestates" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">코드스테이츠 백엔드 1일차 회고록</title><link href="http://localhost:4000/memoir/SEB_BE1/" rel="alternate" type="text/html" title="코드스테이츠 백엔드 1일차 회고록" /><published>2023-04-11T00:00:00+09:00</published><updated>2023-04-11T00:00:00+09:00</updated><id>http://localhost:4000/memoir/SEB_BE1</id><content type="html" xml:base="http://localhost:4000/memoir/SEB_BE1/"><![CDATA[<style> 
+    p { line-height: 1.75em; }
+</style>
+
+<h2 id="1-배운점"><font color="#A0D7EF">1. 배운점</font></h2>
 
 <h3 id="11-메타인지란-무엇인가"><font color="#A0D7EF">1.1 메타인지란 무엇인가?</font></h3>
 <hr />
@@ -41,7 +146,7 @@ OT느낌이 강했다.<br /><br />
 앞으로 전공자라고 자만하고, 방심하지 않고<br />
 혼자 공부하느라 지쳤다고, 구글링으로 할 수 없는 단계라고,<br />
 나보다 더 잘하는 사람들에게 배우고 싶다고 투정 부린 만큼<br />
-다른분들 보다 더 질문하고, 공부해서 많은 것을 얻어 가야겠다고 생각했다.<br /></p>]]></content><author><name>양재용</name><email>yjy850146@gmail.com</email></author><category term="Memoir" /><category term="Codestates" /><summary type="html"><![CDATA[1. 배운점]]></summary></entry><entry><title type="html">파이썬 백준 2903번 문제 풀이</title><link href="http://localhost:4000/baekjoon/baekJoon_2903/" rel="alternate" type="text/html" title="파이썬 백준 2903번 문제 풀이" /><published>2023-04-06T00:00:00+09:00</published><updated>2023-04-06T00:00:00+09:00</updated><id>http://localhost:4000/baekjoon/baekJoon_2903</id><content type="html" xml:base="http://localhost:4000/baekjoon/baekJoon_2903/"><![CDATA[<h2 id="1-문제-분석">1. 문제 분석</h2>
+다른분들 보다 더 질문하고, 공부해서 많은 것을 얻어 가야겠다고 생각했다.<br /></p>]]></content><author><name>양재용</name><email>yjy850146@gmail.com</email></author><category term="Memoir" /><category term="Codestates" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">파이썬 백준 2903번 문제 풀이</title><link href="http://localhost:4000/baekjoon/baekJoon_2903/" rel="alternate" type="text/html" title="파이썬 백준 2903번 문제 풀이" /><published>2023-04-06T00:00:00+09:00</published><updated>2023-04-06T00:00:00+09:00</updated><id>http://localhost:4000/baekjoon/baekJoon_2903</id><content type="html" xml:base="http://localhost:4000/baekjoon/baekJoon_2903/"><![CDATA[<h2 id="1-문제-분석">1. 문제 분석</h2>
 <p><span style="color:#FFFF80"><strong>한 변의 길이</strong></span>는 1, 2, 4, 8 이런식으로 2의 배수 만큼 길어진다.<br /><br />
 <span style="color:#B0ff66"><strong>한 변에 있는 원의 개수</strong></span>는 <span style="color:#FFFF80"><strong>한 변의 길이</strong></span> + 1 이다.<br /><br />
 따라서 <span style="color:red"><strong>전체 원의 개수</strong></span>는  <span style="color:#B0ff66"><strong>한 변에 있는 원의 개수</strong></span> * 2<br /><br /></p>
