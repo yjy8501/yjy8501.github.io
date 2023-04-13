@@ -34,4 +34,10 @@ var store = [{
         "tags": ["Codestates"],
         "url": "/memoir/SEB_BE3/",
         "teaser": null
+      },{
+        "title": "파이썬 백준 11478번 문제 풀이",
+        "excerpt":"1. 문제 분석 집합에는 중복값을 넣을 수 없다 부분 문자열의 값을 집합에 넣어준다. 슬라이싱을 이용하여 부분 문자열을 만든다 ababc, abab, aba, ab, a babc, bab, ba, b abc, ab, a bc, b c [0:5] [0:4] [0:3] [0:2] [0:1] [1:5] [1:4] [1:3] [1:2] [2:5] [2:4] [2:3] [3:5] [3:4] [4:5] 2. 코드...","categories": ["BaekJoon"],
+        "tags": ["Coding","Python"],
+        "url": "/baekjoon/baekJoon_11478/",
+        "teaser": null
       }]
