@@ -9,7 +9,7 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>코드스테이츠 백엔드 3일차 회고록 | Rakugaki</title>
+<!-- begin _includes/seo.html --><title>코드스테이츠 백엔드 4일차 회고록 | Rakugaki</title>
 <meta name="description" content="">
 
 
@@ -22,8 +22,8 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ko_KR">
 <meta property="og:site_name" content="Rakugaki">
-<meta property="og:title" content="코드스테이츠 백엔드 3일차 회고록">
-<meta property="og:url" content="http://localhost:4000/memoir/SEB_BE3/">
+<meta property="og:title" content="코드스테이츠 백엔드 4일차 회고록">
+<meta property="og:url" content="http://localhost:4000/memoir/SEB_BE4/">
 
 
   <meta property="og:description" content="">
@@ -34,7 +34,7 @@
 
 
 
-  <meta property="article:published_time" content="2023-04-13T00:00:00+09:00">
+  <meta property="article:published_time" content="2023-04-14T00:00:00+09:00">
 
 
 
@@ -45,7 +45,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/memoir/SEB_BE3/">
+<link rel="canonical" href="http://localhost:4000/memoir/SEB_BE4/">
 
 
 
@@ -172,7 +172,7 @@
     
       
       
-        <li class="current">코드스테이츠 백엔드 3일차 회고록</li>
+        <li class="current">코드스테이츠 백엔드 4일차 회고록</li>
       
     
   </ol>
@@ -384,16 +384,16 @@
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="코드스테이츠 백엔드 3일차 회고록">
+    <meta itemprop="headline" content="코드스테이츠 백엔드 4일차 회고록">
     <meta itemprop="description" content="">
-    <meta itemprop="datePublished" content="2023-04-13T00:00:00+09:00">
+    <meta itemprop="datePublished" content="2023-04-14T00:00:00+09:00">
     
 
     <div class="page__inner-wrap">
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://localhost:4000/memoir/SEB_BE3/" class="u-url" itemprop="url">코드스테이츠 백엔드 3일차 회고록
+            <a href="http://localhost:4000/memoir/SEB_BE4/" class="u-url" itemprop="url">코드스테이츠 백엔드 4일차 회고록
 </a>
           </h1>
           
@@ -404,7 +404,7 @@
       <span class="page__meta-date">
         <i class="far fa-calendar-alt" aria-hidden="true"></i>
         
-        <time datetime="2023-04-13T00:00:00+09:00">April 13, 2023</time>
+        <time datetime="2023-04-14T00:00:00+09:00">April 14, 2023</time>
       </span>
     
 
@@ -432,7 +432,7 @@
           <aside class="sidebar__right sticky">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> 목차</h4></header>
-              <ul class="toc__menu"><li><a href="#-배운점"> 배운점</a><ul><li><a href="#1-cli-command-line-interface">1. CLI (Command Line Interface)</a><ul><li><a href="#-기본-명령어"> 기본 명령어</a></li></ul></li><li><a href="#2-패키지와-패키지-매니저">2. 패키지와 패키지 매니저</a></li><li><a href="#3-사용권한">3. 사용권한</a></li></ul></li><li><a href="#-느낀점"> 느낀점</a></li></ul>
+              <ul class="toc__menu"><li><a href="#-배운점"> 배운점</a><ul><li><a href="#1-git">1. Git</a></li><li><a href="#workflow">Workflow</a><ul><li><a href="#-기본-명령어"> 기본 명령어</a></li></ul></li></ul></li><li><a href="#-느낀점"> 느낀점</a></li></ul>
 
             </nav>
           </aside>
@@ -444,186 +444,134 @@
 
 <h1 id="-배운점"><font color="#A0D7EF"> 배운점</font></h1>
 
-<h2 id="1-cli-command-line-interface"><font color="#A0D7EF">1. CLI (Command Line Interface)</font></h2>
+<h2 id="1-git"><font color="#A0D7EF">1. Git</font></h2>
 
 <ul>
-  <li>CLI (Command Line Interface)
+  <li>Git
     <ul>
-      <li>GUI보다 빠르고, 높은 안정성을 가짐</li>
-      <li>서버 컴퓨터에 접근할 때 사용됨</li>
-      <li>GUI보다 컴퓨터 자원을 덜 차지한다</li>
+      <li>리누스 토르발스가 만든 버전 관리 시스템(VSC)</li>
+      <li>파일의 변경 사항을 추적하며, 각 파일의 <span style="color:#B0ff66"><strong>버전을 관리</strong></span>할 수 있게 도와준다</li>
+      <li><span style="color:#B0ff66"><strong>협업</strong></span>자들과 함께 파일을 공유하고, 취합 할 수 있게 도와준다</li>
     </ul>
   </li>
-  <li>GUI(Graphic User Interface)
+  <li>GitHub
     <ul>
-      <li>PC(Personal Computer)에 사용되기에 유저에 친숙하고 편하다.</li>
-      <li>여러개의 I/O장치를 통해 입출력 받을 수 있다.
-<br /></li>
+      <li>Git을 사용하는 프로젝트를 지원하는 <span style="color:#FFFF80">웹 호스팅 서비스</span></li>
     </ul>
   </li>
 </ul>
 
-<p>백엔드 개발자는 서버를 다루기도 하기 때문에<br /> CLI에서 개발하는 환경에 익숙해질 필요가 있다.<br /><br /></p>
+<h2 id="workflow"><font color="#A0D7EF">Workflow</font></h2>
+
+<p align="center"><img src="https://cosimameyer.com/images/single-blog/git_flow.png" height="250px" width="650px" /></p>
+<p><br /></p>
+
+<ul>
+  <li>Working Directory
+    <ul>
+      <li>현재 작업하고 있는 파일이 저장되어 있는 곳</li>
+    </ul>
+  </li>
+  <li>Staging Area
+    <ul>
+      <li>commit하기 전에 변경된 파일을 저장하는 곳</li>
+    </ul>
+  </li>
+  <li>Local Repository
+    <ul>
+      <li>내 컴퓨터에 있는 레퍼지토리</li>
+    </ul>
+  </li>
+  <li>Remote Repository
+    <ul>
+      <li>서버에 있는 레퍼지토리</li>
+    </ul>
+  </li>
+</ul>
 
 <h3 id="-기본-명령어"><font color="#A0D7EF"> 기본 명령어</font></h3>
 <hr />
 
 <ul>
-  <li>Prompt
+  <li><span style="color:#FFFF80"><code class="language-plaintext highlighter-rouge">git init</code></span>
     <ul>
-      <li>터미널 창 하단에 있는 한줄의 입력 공간</li>
+      <li>현재 경로에 있는 파일을 Git으로 관리하기 시작한다</li>
     </ul>
   </li>
-  <li>pwd
+  <li><span style="color:#FFFF80"><code class="language-plaintext highlighter-rouge">git status</code></span>
     <ul>
-      <li>현재 경로를 확인 할 수 있는 명령어</li>
-      <li><code class="language-plaintext highlighter-rouge">pwd</code></li>
+      <li>파일들의 상태를 확인 할 수 있다.
+        <ul>
+          <li>Untracked - 파일이 추적되지 않는 상태</li>
+          <li>Tracked - 파일이 추적되는 상태
+            <ul>
+              <li>Unmodified - 파일의 수정이 감지되지 않은 상태</li>
+              <li>Modified - 파일이 수정이 감지된 상태</li>
+              <li>Staged - 파일이 Stage Area에 저장 된 상태</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
     </ul>
   </li>
-  <li>mkdir
+  <li><span style="color:#FFFF80"><code class="language-plaintext highlighter-rouge">git add [파일명 || .]</code></span>
     <ul>
-      <li>새로운 폴더를 생성한다</li>
-      <li><code class="language-plaintext highlighter-rouge">mkdir [파일명]</code></li>
+      <li>파일을 Stage Area로 보낸다</li>
     </ul>
   </li>
-  <li>ls
+  <li><span style="color:#FFFF80"><code class="language-plaintext highlighter-rouge">git commit -[a | m || am] [메세지]</code></span>
     <ul>
-      <li>현재 경로 하위에 있는 폴더와 파일을 나타낸다.</li>
-      <li><code class="language-plaintext highlighter-rouge">ls [ -l | -a | -al | .. ]</code></li>
-      <li>-[옵션]을 통해 여러가지 출력 방법을 이용 할 수 있다.</li>
+      <li>Stage Area에 존재하는 파일을 Local Repository로 보낸다</li>
     </ul>
   </li>
-  <li>cd
+  <li><span style="color:#FFFF80"><code class="language-plaintext highlighter-rouge">git log</code></span>
     <ul>
-      <li>명령어를 통해 폴더에 진입 할 수 있다.</li>
-      <li><code class="language-plaintext highlighter-rouge">cd [경로]</code></li>
-      <li>상대경로, 절대경로를 이용해서 폴더에 접근하면 된다.</li>
+      <li>commit history를 확인 할 수 있다</li>
     </ul>
   </li>
-  <li>touch
+  <li><span style="color:#FFFF80"><code class="language-plaintext highlighter-rouge">git push [remote repositroy 별명] [branch 이름]</code></span>
     <ul>
-      <li>새로운 파일을 생성한다</li>
-      <li><code class="language-plaintext highlighter-rouge">touch [파일 이름]</code></li>
+      <li>Local Repository의 branch를 Remote Repository로 보낸다</li>
     </ul>
   </li>
-  <li>cat
+  <li><span style="color:#FFFF80"><code class="language-plaintext highlighter-rouge">git remote add [remote repository 별칭] [remote repository URL]</code></span>
     <ul>
-      <li>파일의 내용을 출력한다</li>
-      <li><code class="language-plaintext highlighter-rouge">cat [파일 이름]</code></li>
+      <li>현재 파일에 remote repository를 연결한다</li>
     </ul>
   </li>
-  <li>rm
+  <li><span style="color:#FFFF80"><code class="language-plaintext highlighter-rouge">git clone [URL]</code></span>
     <ul>
-      <li>폴더나 파일을 삭제한다</li>
-      <li><code class="language-plaintext highlighter-rouge">rm [폴더명 | 파일명]</code></li>
-      <li>-[옵션]을 통해 여러가지 출력 방법을 이용 할 수 있다.</li>
+      <li>현재 파일에 remot repository를 연결하면서, 코드를 복사한다</li>
     </ul>
   </li>
-  <li>mv
+  <li><span style="color:#FFFF80"><code class="language-plaintext highlighter-rouge">git restore [파일명]</code></span>
     <ul>
-      <li>폴더나 파일의 이름 변경, 또는 위치 이동</li>
-      <li><code class="language-plaintext highlighter-rouge">mv [폴더명 | 파일명] [경로]</code> -&gt; 위치 이동</li>
-      <li><code class="language-plaintext highlighter-rouge">mv [원래 폴더, 파일 명] [바뀔 폴더, 파일 명]</code> -&gt; 이름 변경</li>
+      <li>Stage Area에 있는 파일을 되돌린다.</li>
     </ul>
   </li>
-  <li>cp
+  <li><span style="color:#FFFF80"><code class="language-plaintext highlighter-rouge">git reset HEAD[^개수]</code></span>
     <ul>
-      <li>폴더나 파일의 옮기거나 복사한다</li>
-      <li><code class="language-plaintext highlighter-rouge">cp [원래 폴더명 | 파일명] [복사된 폴더명 | 파일명]</code></li>
+      <li>commit한 내용을 취소한다(^=1, ^^=2)</li>
     </ul>
   </li>
 </ul>
-
-<p><br /></p>
-
-<h2 id="2-패키지와-패키지-매니저"><font color="#A0D7EF">2. 패키지와 패키지 매니저</font></h2>
-<p>CLI 환경에서 패키지 매니저를 이용해서 패키지를 간단하게 다운 받을 수 있다<br />
-우분투 환경에서는 apt, Mac Os 환경에서는 brew를 지원한다<br />
-<code class="language-plaintext highlighter-rouge">패키지 -&gt; .zip파일</code><br />
-<code class="language-plaintext highlighter-rouge">패키지 매니저 -&gt; 알집</code></p>
-
-<p><br /></p>
-
-<h2 id="3-사용권한"><font color="#A0D7EF">3. 사용권한</font></h2>
-
-<p>파일이나 폴더는 사용권한을 가지고 있다.<br />
-<code class="language-plaintext highlighter-rouge">chmod [ugo(number)] [폴더명 | 파일명]</code>를 통해 사용권한을 수정할 수 있다.<br />
-u -&gt; user, g -&gt; group, o -&gt; other<br />
-[ugo]는 Access class를 나타내고, 각 자리를 0~7로 설정할 수 있다.<br /></p>
-
-<table>
-  <thead>
-    <tr>
-      <th>number</th>
-      <th>Sum</th>
-      <th>rwx</th>
-      <th>Permission</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>7</td>
-      <td>4(r) + 2(w) + 1(x)</td>
-      <td>rwx</td>
-      <td>read, write, execute</td>
-    </tr>
-    <tr>
-      <td>6</td>
-      <td>4(r) + 2(w) + 0(-)</td>
-      <td>rw-</td>
-      <td>read, write</td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>4(r) + 0(-) + 1(x)</td>
-      <td>r-x</td>
-      <td>read, execute</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>4(r) + 0(-) + 0(-)</td>
-      <td>r–</td>
-      <td>read</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>0(-) + 2(w) + 1(x)</td>
-      <td>-wx</td>
-      <td>write, execute</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>0(-) + 2(w) + 0(-)</td>
-      <td>-w-</td>
-      <td>write</td>
-    </tr>
-    <tr>
-      <td>1</td>
-      <td>0(-) + 0(-) + 1(x)</td>
-      <td>–x</td>
-      <td>execute</td>
-    </tr>
-    <tr>
-      <td>0</td>
-      <td>0(-) + 0(-) + 0(-)</td>
-      <td>—</td>
-      <td>none</td>
-    </tr>
-  </tbody>
-</table>
 
 <p><br /></p>
 
 <h1 id="-느낀점"><font color="#A0D7EF"> 느낀점</font></h1>
 <hr />
 
-<p>오늘은 리눅스 환경에서 기본적으로 알아야 할 지식들을 배웠다.<br />
-AWS 서버를 열 때 CLI환경에서 코딩해본 경험이 있어서<br />
-어렵지는 않았지만, 그래도 이 영역은 배운 내용을 금방 잊어버려서<br />
-할 때 마다 구글링을 열심히 하게 되는 것 같다.<br /><br />
-Mac Os 패키지 매니져 brew에 대해서 알게 되었고,<br /> 
-vi나 vim말고 nano라는 뉴비 친화적인 에디터가 있다는 것도 처음 알게 되었다.<br />
-내일도 화이팅 하도록 하자!!<br /></p>
+<p>오늘은 Git, GitHub 사용법을 알아봤다!<br />
+역시 Git, GitHub는 자주 해주지 않으면 금방 까먹게 된다,,,<br />
+그래도 전에 알던 지식과 오늘 배웠던 지식을 합치니까<br />
+어느정도 Git을 사용하는데 자신감이 붙게 됐다.<br /><br />
+사실 IDE에 있는 GitHub 플러그인이 너무 잘 되어 있어서<br />
+터미널에서 Git을 사용하는 법이,,,, 꼭 필요한가 의문이다.<br /><br />
+오늘 많은 동기분들이 오류로 힘들어하는 모습을 보았는데<br />
+사실 전공자도 Git이 Java보다 사용하기 까다롭다!!<br /><br />
+편한 플러그인도 있으니까 다들 포기하지 말고<br />
+함께 끝까지 달려갈 수 있으면 좋겠다!! <br /></p>
+
 
         
       </section>
@@ -665,7 +613,7 @@ vi나 vim말고 nano라는 뉴비 친화적인 에디터가 있다는 것도 처
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2023-04-13T00:00:00+09:00">April 13, 2023</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2023-04-14T00:00:00+09:00">April 14, 2023</time></p>
 
       </footer>
 
@@ -674,12 +622,11 @@ vi나 vim말고 nano라는 뉴비 친화적인 에디터가 있다는 것도 처
       
   <nav class="pagination">
     
-      <a href="/memoir/SEB_BE2/" class="pagination--pager" title="코드스테이츠 백엔드 2일차 회고록
+      <a href="/baekjoon/baekJoon_11478/" class="pagination--pager" title="파이썬 백준 11478번 문제 풀이
 ">이전</a>
     
     
-      <a href="/baekjoon/baekJoon_11478/" class="pagination--pager" title="파이썬 백준 11478번 문제 풀이
-">다음</a>
+      <a href="#" class="pagination--pager disabled">다음</a>
     
   </nav>
 
@@ -693,54 +640,6 @@ vi나 vim말고 nano라는 뉴비 친화적인 에디터가 있다는 것도 처
     <div class="page__related">
       <h2 class="page__related-title">참고</h2>
       <div class="grid__wrapper">
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/memoir/SEB_BE4/" rel="permalink">코드스테이츠 백엔드 4일차 회고록
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-      
-      <span class="page__meta-date">
-        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
-        
-        <time datetime="2023-04-14T00:00:00+09:00">April 14, 2023</time>
-      </span>
-    
-
-    <span class="page__meta-sep"></span>
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
-        
-          1 분 소요
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">
-
-</p>
-  </article>
-</div>
-
         
           
 
@@ -777,6 +676,54 @@ vi나 vim말고 nano라는 뉴비 친화적인 에디터가 있다는 것도 처
         <i class="far fa-fw fa-clock" aria-hidden="true"></i>
         
           최대 1 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/memoir/SEB_BE3/" rel="permalink">코드스테이츠 백엔드 3일차 회고록
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2023-04-13T00:00:00+09:00">April 13, 2023</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          1 분 소요
         
       </span>
     
@@ -942,8 +889,8 @@ vi나 vim말고 nano라는 뉴비 친화적인 에디터가 있다는 것도 처
     
   <script>
     var disqus_config = function () {
-      this.page.url = "http://localhost:4000/memoir/SEB_BE3/";  /* Replace PAGE_URL with your page's canonical URL variable */
-      this.page.identifier = "/memoir/SEB_BE3"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+      this.page.url = "http://localhost:4000/memoir/SEB_BE4/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/memoir/SEB_BE4"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
     };
     (function() { /* DON'T EDIT BELOW THIS LINE */
       var d = document, s = d.createElement('script');

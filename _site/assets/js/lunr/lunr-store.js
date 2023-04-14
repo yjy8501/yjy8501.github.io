@@ -40,4 +40,10 @@ var store = [{
         "tags": ["Coding","Python"],
         "url": "/baekjoon/baekJoon_11478/",
         "teaser": null
+      },{
+        "title": "코드스테이츠 백엔드 4일차 회고록",
+        "excerpt":"배운점 1. Git Git 리누스 토르발스가 만든 버전 관리 시스템(VSC) 파일의 변경 사항을 추적하며, 각 파일의 버전을 관리할 수 있게 도와준다 협업자들과 함께 파일을 공유하고, 취합 할 수 있게 도와준다 GitHub Git을 사용하는 프로젝트를 지원하는 웹 호스팅 서비스 Workflow Working Directory 현재 작업하고 있는 파일이 저장되어 있는 곳 Staging Area...","categories": ["Memoir"],
+        "tags": ["Codestates"],
+        "url": "/memoir/SEB_BE4/",
+        "teaser": null
       }]
