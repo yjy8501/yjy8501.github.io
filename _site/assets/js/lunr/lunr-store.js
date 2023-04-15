@@ -46,4 +46,10 @@ var store = [{
         "tags": ["Codestates"],
         "url": "/memoir/SEB_BE4/",
         "teaser": null
+      },{
+        "title": "파이썬 백준 18870번 문제 풀이",
+        "excerpt":"1. 문제 분석 중복값 없이 좌표를 정렬한다. Set에 넣은 다음 Sorted 함수를 통해 정렬된 리스트를 받는다 정렬 된 모습 sorted X -10 -9 4 2 X’ 0 1 2 3 sorted X와 X’를 연결 해야한다. sorted X를 Key, X’를 Value로 넣은 딕셔너리를 만든다 2. 코드 import copy import sys compressed_X...","categories": ["BaekJoon"],
+        "tags": ["Coding","Python","Sort"],
+        "url": "/baekjoon/baekJoon_18870/",
+        "teaser": null
       }]

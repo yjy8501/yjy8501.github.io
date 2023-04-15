@@ -9,28 +9,32 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Rakugaki</title>
-<meta name="description" content="개발 낙서장 &amp; 일상">
+<!-- begin _includes/seo.html --><title>파이썬 백준 18870번 문제 풀이 | Rakugaki</title>
+<meta name="description" content="">
 
 
   <meta name="author" content="양재용">
   
+  <meta property="article:author" content="양재용">
+  
 
 
-<meta property="og:type" content="website">
+<meta property="og:type" content="article">
 <meta property="og:locale" content="ko_KR">
 <meta property="og:site_name" content="Rakugaki">
-<meta property="og:title" content="Rakugaki">
-<meta property="og:url" content="http://localhost:4000/">
+<meta property="og:title" content="파이썬 백준 18870번 문제 풀이">
+<meta property="og:url" content="http://localhost:4000/baekjoon/baekJoon_18870/">
 
 
-  <meta property="og:description" content="개발 낙서장 &amp; 일상">
-
-
-
+  <meta property="og:description" content="">
 
 
 
+
+
+
+
+  <meta property="article:published_time" content="2023-04-15T00:00:00+09:00">
 
 
 
@@ -41,11 +45,9 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/">
+<link rel="canonical" href="http://localhost:4000/baekjoon/baekJoon_18870/">
 
 
-
-  <link rel="next" href="http://localhost:4000/page2/">
 
 
 <script type="application/ld+json">
@@ -94,7 +96,7 @@
 
   </head>
 
-  <body class="layout--home">
+  <body class="layout--single">
     <nav class="skip-links">
   <ul>
     <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
@@ -138,6 +140,45 @@
     <div class="initial-content">
       
 
+
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/" itemprop="item"><span itemprop="name">Home</span></a>
+
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/categories/#baekjoon" itemprop="item"><span itemprop="name">Baekjoon</span></a>
+          <meta itemprop="position" content="2" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        <li class="current">파이썬 백준 18870번 문제 풀이</li>
+      
+    
+  </ol>
+</nav>
+
+  
 
 
 <div id="main" role="main">
@@ -342,33 +383,20 @@
 
 
 
-  <div class="archive">
-    
-      <h1 id="page-title" class="page__title"></h1>
-    
-    
-
-<h3 class="archive__subtitle">최근 포스트</h3>
-
-
-
-
-<div class="entries-list">
-  
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="파이썬 백준 18870번 문제 풀이">
+    <meta itemprop="description" content="">
+    <meta itemprop="datePublished" content="2023-04-15T00:00:00+09:00">
     
 
-
-
-<div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
+    <div class="page__inner-wrap">
       
-        <a href="/baekjoon/baekJoon_18870/" rel="permalink">파이썬 백준 18870번 문제 풀이
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://localhost:4000/baekjoon/baekJoon_18870/" class="u-url" itemprop="url">파이썬 백준 18870번 문제 풀이
 </a>
-      
-    </h2>
-    
+          </h1>
+          
 
   <p class="page__meta">
     
@@ -396,18 +424,178 @@
   </p>
 
 
-    <p class="archive__item-excerpt" itemprop="description">
+        </header>
+      
 
-</p>
-  </article>
-</div>
+      <section class="page__content e-content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> 목차</h4></header>
+              <ul class="toc__menu"><li><a href="#1-문제-분석">1. 문제 분석</a></li><li><a href="#2-코드">2. 코드</a></li><li><a href="#3-총평">3. 총평</a></li></ul>
+
+            </nav>
+          </aside>
+        
+        <style> 
+    p { line-height : 1.75em; }
+    table { text-align : center; font-size : 1.5em; border: white;}
+</style>
+
+<h2 id="1-문제-분석"><font color="#A0D7EF">1. 문제 분석</font></h2>
+
+<ol>
+  <li><span style="color:#FFFF80">중복값 없이 좌표를 정렬한다.</span>
+    <blockquote>
+      <p>Set에 넣은 다음 Sorted 함수를 통해 정렬된 리스트를 받는다<br /></p>
+    </blockquote>
+
+    <p>정렬 된 모습</p>
+
+    <table>
+      <tbody>
+        <tr>
+          <td>sorted X</td>
+          <td>-10</td>
+          <td>-9</td>
+          <td>4</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>X’</td>
+          <td>0</td>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li><span style="color:#B0ff66">sorted X와 X’를 연결 해야한다.</span>
+    <blockquote>
+      <p>sorted X를 Key, X’를 Value로 넣은 딕셔너리를 만든다</p>
+    </blockquote>
+  </li>
+</ol>
+
+<h2 id="2-코드"><font color="#A0D7EF">2. 코드</font></h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">copy</span>
+<span class="kn">import</span> <span class="n">sys</span>
+
+<span class="n">compressed_X</span> <span class="o">=</span> <span class="nf">dict</span><span class="p">()</span> <span class="c1"># 압축 좌표를 저장할 딕셔너리
+</span>
+<span class="n">N</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="nf">input</span><span class="p">())</span>
+
+<span class="n">X</span> <span class="o">=</span> <span class="nf">list</span><span class="p">(</span><span class="nf">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="n">sys</span><span class="p">.</span><span class="n">stdin</span><span class="p">.</span><span class="nf">readline</span><span class="p">().</span><span class="nf">split</span><span class="p">()))</span>
+<span class="n">copy_X</span> <span class="o">=</span> <span class="n">copy</span><span class="p">.</span><span class="nf">deepcopy</span><span class="p">(</span><span class="n">X</span><span class="p">)</span> <span class="c1"># 본래 좌표 순서가 저장된 배열
+</span>
+<span class="n">X</span> <span class="o">=</span> <span class="nf">sorted</span><span class="p">(</span><span class="nf">set</span><span class="p">(</span><span class="n">X</span><span class="p">))</span> <span class="c1"># 좌표를 집합에 넣어 중복값을 없애고, 정렬한다
+</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">X</span><span class="p">)):</span>
+    <span class="n">compressed_X</span><span class="p">[</span><span class="n">X</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span> <span class="o">=</span> <span class="n">i</span> <span class="c1"># 본래 좌표(key) 압축 좌표(value)로 딕셔너리에 저장한다
+</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">copy_X</span><span class="p">:</span>
+    <span class="nf">print</span><span class="p">(</span><span class="n">compressed_X</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">end</span><span class="o">=</span><span class="s">' '</span><span class="p">)</span>
+
+</code></pre></div></div>
+<hr />
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">X</span> <span class="o">=</span> <span class="nf">sorted</span><span class="p">(</span><span class="nf">set</span><span class="p">(</span><span class="n">X</span><span class="p">))</span> <span class="c1"># 좌표를 집합에 넣어 중복값을 없애고, 정렬한다
+</span></code></pre></div></div>
+<p><span style="color:#FFFF80">중복값을 없앤 정렬된 X좌표를 구한다</span></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># 중복값을 없앤 좌표(key), 압축 좌표(value)를 한 쌍으로 딕셔너리에 저장한다
+</span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">X</span><span class="p">)):</span>
+    <span class="n">compressed_X</span><span class="p">[</span><span class="n">X</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span> <span class="o">=</span> <span class="n">i</span> 
+</code></pre></div></div>
+<p><span style="color:#B0ff66">sorted X를 Key, X’를 Value로 넣은 딕셔너리를 만든다</span></p>
+
+<h2 id="3-총평"><font color="#A0D7EF">3. 총평</font></h2>
+<p>문제의 해결 방법은 매우 빨리 찾았지만<br />
+코드가 너무 길어지는 것 같아서<br />
+짧게 코딩을 하려다 시간이 좀 걸린 것 같다.<br /><br />
+파이썬은 깊은 복사를 하는게 매우 쉬운 것 같다.<br />
+조만간 자바로 다시 돌아가야하는데<br />
+잘 적응 할 수 있을지 걱정이다,,, ㅠㅜ</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
 
   
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> 태그: </strong>
+    <span itemprop="keywords">
     
+      <a href="/tags/#coding" class="page__taxonomy-item p-category" rel="tag">Coding</a><span class="sep">, </span>
+    
+      <a href="/tags/#python" class="page__taxonomy-item p-category" rel="tag">Python</a><span class="sep">, </span>
+    
+      <a href="/tags/#sort" class="page__taxonomy-item p-category" rel="tag">Sort</a>
+    
+    </span>
+  </p>
 
 
 
-<div class="list__item">
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> 카테고리: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#baekjoon" class="page__taxonomy-item p-category" rel="tag">BaekJoon</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2023-04-15T00:00:00+09:00">April 15, 2023</time></p>
+
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="/memoir/SEB_BE4/" class="pagination--pager" title="코드스테이츠 백엔드 4일차 회고록
+">이전</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">다음</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h2 class="page__related-title">참고</h2>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
@@ -422,7 +610,7 @@
     
       
       <span class="page__meta-date">
-        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
         
         <time datetime="2023-04-14T00:00:00+09:00">April 14, 2023</time>
       </span>
@@ -435,7 +623,7 @@
       
 
       <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
         
           1 분 소요
         
@@ -450,12 +638,12 @@
   </article>
 </div>
 
-  
-    
+        
+          
 
 
 
-<div class="list__item">
+<div class="grid__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
@@ -470,7 +658,7 @@
     
       
       <span class="page__meta-date">
-        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
         
         <time datetime="2023-04-13T00:00:00+09:00">April 13, 2023</time>
       </span>
@@ -483,7 +671,7 @@
       
 
       <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
         
           최대 1 분 소요
         
@@ -498,12 +686,12 @@
   </article>
 </div>
 
-  
-    
+        
+          
 
 
 
-<div class="list__item">
+<div class="grid__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
@@ -518,7 +706,7 @@
     
       
       <span class="page__meta-date">
-        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
         
         <time datetime="2023-04-13T00:00:00+09:00">April 13, 2023</time>
       </span>
@@ -531,7 +719,7 @@
       
 
       <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
         
           1 분 소요
         
@@ -546,12 +734,12 @@
   </article>
 </div>
 
-  
-    
+        
+          
 
 
 
-<div class="list__item">
+<div class="grid__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
@@ -566,7 +754,7 @@
     
       
       <span class="page__meta-date">
-        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
         
         <time datetime="2023-04-12T00:00:00+09:00">April 12, 2023</time>
       </span>
@@ -579,7 +767,7 @@
       
 
       <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
         
           1 분 소요
         
@@ -594,50 +782,13 @@
   </article>
 </div>
 
+        
+      </div>
+    </div>
+  
   
 </div>
 
-
-<nav class="pagination">
-  
-  <ul>
-    
-    
-    <li><a href="#" class="disabled"><span aria-hidden="true">이전</span></a></li>
-    
-
-    
-    
-      <li><a href="#" class="disabled current">1</a></li>
-    
-
-    
-    
-
-    
-    
-    
-
-    
-
-    
-    
-
-    
-      <li><a href="/page2/">2</a></li>
-    
-
-    
-    
-      <li><a href="/page2/">다음</a></li>
-    
-  </ul>
-</nav>
-
-
-
-  </div>
-</div>
     </div>
 
     
@@ -683,6 +834,25 @@
 
 
 
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "http://localhost:4000/baekjoon/baekJoon_18870/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/baekjoon/baekJoon_18870"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+    };
+    (function() { /* DON'T EDIT BELOW THIS LINE */
+      var d = document, s = d.createElement('script');
+      s.src = 'https://rakugaki-1.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  
 
 
 

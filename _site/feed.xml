@@ -1,4 +1,84 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-14T22:23:32+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Rakugaki</title><subtitle>개발 낙서장 &amp; 일상</subtitle><author><name>양재용</name><email>yjy850146@gmail.com</email></author><entry><title type="html">코드스테이츠 백엔드 4일차 회고록</title><link href="http://localhost:4000/memoir/SEB_BE4/" rel="alternate" type="text/html" title="코드스테이츠 백엔드 4일차 회고록" /><published>2023-04-14T00:00:00+09:00</published><updated>2023-04-14T00:00:00+09:00</updated><id>http://localhost:4000/memoir/SEB_BE4</id><content type="html" xml:base="http://localhost:4000/memoir/SEB_BE4/"><![CDATA[<style> 
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-15T16:54:48+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Rakugaki</title><subtitle>개발 낙서장 &amp; 일상</subtitle><author><name>양재용</name><email>yjy850146@gmail.com</email></author><entry><title type="html">파이썬 백준 18870번 문제 풀이</title><link href="http://localhost:4000/baekjoon/baekJoon_18870/" rel="alternate" type="text/html" title="파이썬 백준 18870번 문제 풀이" /><published>2023-04-15T00:00:00+09:00</published><updated>2023-04-15T00:00:00+09:00</updated><id>http://localhost:4000/baekjoon/baekJoon_18870</id><content type="html" xml:base="http://localhost:4000/baekjoon/baekJoon_18870/"><![CDATA[<style> 
+    p { line-height : 1.75em; }
+    table { text-align : center; font-size : 1.5em; border: white;}
+</style>
+
+<h2 id="1-문제-분석"><font color="#A0D7EF">1. 문제 분석</font></h2>
+
+<ol>
+  <li><span style="color:#FFFF80">중복값 없이 좌표를 정렬한다.</span>
+    <blockquote>
+      <p>Set에 넣은 다음 Sorted 함수를 통해 정렬된 리스트를 받는다<br /></p>
+    </blockquote>
+
+    <p>정렬 된 모습</p>
+
+    <table>
+      <tbody>
+        <tr>
+          <td>sorted X</td>
+          <td>-10</td>
+          <td>-9</td>
+          <td>4</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>X’</td>
+          <td>0</td>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li><span style="color:#B0ff66">sorted X와 X’를 연결 해야한다.</span>
+    <blockquote>
+      <p>sorted X를 Key, X’를 Value로 넣은 딕셔너리를 만든다</p>
+    </blockquote>
+  </li>
+</ol>
+
+<h2 id="2-코드"><font color="#A0D7EF">2. 코드</font></h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">copy</span>
+<span class="kn">import</span> <span class="n">sys</span>
+
+<span class="n">compressed_X</span> <span class="o">=</span> <span class="nf">dict</span><span class="p">()</span> <span class="c1"># 압축 좌표를 저장할 딕셔너리
+</span>
+<span class="n">N</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="nf">input</span><span class="p">())</span>
+
+<span class="n">X</span> <span class="o">=</span> <span class="nf">list</span><span class="p">(</span><span class="nf">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="n">sys</span><span class="p">.</span><span class="n">stdin</span><span class="p">.</span><span class="nf">readline</span><span class="p">().</span><span class="nf">split</span><span class="p">()))</span>
+<span class="n">copy_X</span> <span class="o">=</span> <span class="n">copy</span><span class="p">.</span><span class="nf">deepcopy</span><span class="p">(</span><span class="n">X</span><span class="p">)</span> <span class="c1"># 본래 좌표 순서가 저장된 배열
+</span>
+<span class="n">X</span> <span class="o">=</span> <span class="nf">sorted</span><span class="p">(</span><span class="nf">set</span><span class="p">(</span><span class="n">X</span><span class="p">))</span> <span class="c1"># 좌표를 집합에 넣어 중복값을 없애고, 정렬한다
+</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">X</span><span class="p">)):</span>
+    <span class="n">compressed_X</span><span class="p">[</span><span class="n">X</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span> <span class="o">=</span> <span class="n">i</span> <span class="c1"># 본래 좌표(key) 압축 좌표(value)로 딕셔너리에 저장한다
+</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">copy_X</span><span class="p">:</span>
+    <span class="nf">print</span><span class="p">(</span><span class="n">compressed_X</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">end</span><span class="o">=</span><span class="s">' '</span><span class="p">)</span>
+
+</code></pre></div></div>
+<hr />
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">X</span> <span class="o">=</span> <span class="nf">sorted</span><span class="p">(</span><span class="nf">set</span><span class="p">(</span><span class="n">X</span><span class="p">))</span> <span class="c1"># 좌표를 집합에 넣어 중복값을 없애고, 정렬한다
+</span></code></pre></div></div>
+<p><span style="color:#FFFF80">중복값을 없앤 정렬된 X좌표를 구한다</span></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># 중복값을 없앤 좌표(key), 압축 좌표(value)를 한 쌍으로 딕셔너리에 저장한다
+</span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">X</span><span class="p">)):</span>
+    <span class="n">compressed_X</span><span class="p">[</span><span class="n">X</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span> <span class="o">=</span> <span class="n">i</span> 
+</code></pre></div></div>
+<p><span style="color:#B0ff66">sorted X를 Key, X’를 Value로 넣은 딕셔너리를 만든다</span></p>
+
+<h2 id="3-총평"><font color="#A0D7EF">3. 총평</font></h2>
+<p>문제의 해결 방법은 매우 빨리 찾았지만<br />
+코드가 너무 길어지는 것 같아서<br />
+짧게 코딩을 하려다 시간이 좀 걸린 것 같다.<br /><br />
+파이썬은 깊은 복사를 하는게 매우 쉬운 것 같다.<br />
+조만간 자바로 다시 돌아가야하는데<br />
+잘 적응 할 수 있을지 걱정이다,,, ㅠㅜ</p>]]></content><author><name>양재용</name><email>yjy850146@gmail.com</email></author><category term="BaekJoon" /><category term="Coding" /><category term="Python" /><category term="Sort" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">코드스테이츠 백엔드 4일차 회고록</title><link href="http://localhost:4000/memoir/SEB_BE4/" rel="alternate" type="text/html" title="코드스테이츠 백엔드 4일차 회고록" /><published>2023-04-14T00:00:00+09:00</published><updated>2023-04-14T00:00:00+09:00</updated><id>http://localhost:4000/memoir/SEB_BE4</id><content type="html" xml:base="http://localhost:4000/memoir/SEB_BE4/"><![CDATA[<style> 
     p { line-height : 1.75em; }
     table { text-align : center; }
 </style>
