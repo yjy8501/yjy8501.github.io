@@ -9,7 +9,7 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>파이썬 백준 11478번 문제 풀이 | Rakugaki</title>
+<!-- begin _includes/seo.html --><title>코드스테이츠 백엔드 5일차 회고록 | Rakugaki</title>
 <meta name="description" content="">
 
 
@@ -22,8 +22,8 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ko_KR">
 <meta property="og:site_name" content="Rakugaki">
-<meta property="og:title" content="파이썬 백준 11478번 문제 풀이">
-<meta property="og:url" content="http://localhost:4000/baekjoon/baekJoon_11478/">
+<meta property="og:title" content="코드스테이츠 백엔드 5일차 회고록">
+<meta property="og:url" content="http://localhost:4000/memoir/SEB_BE5/">
 
 
   <meta property="og:description" content="">
@@ -34,7 +34,7 @@
 
 
 
-  <meta property="article:published_time" content="2023-04-13T00:00:00+09:00">
+  <meta property="article:published_time" content="2023-04-17T00:00:00+09:00">
 
 
 
@@ -45,7 +45,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/baekjoon/baekJoon_11478/">
+<link rel="canonical" href="http://localhost:4000/memoir/SEB_BE5/">
 
 
 
@@ -164,7 +164,7 @@
       
         
         <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-          <a href="/categories/#baekjoon" itemprop="item"><span itemprop="name">Baekjoon</span></a>
+          <a href="/categories/#memoir" itemprop="item"><span itemprop="name">Memoir</span></a>
           <meta itemprop="position" content="2" />
         </li>
         <span class="sep">/</span>
@@ -172,7 +172,7 @@
     
       
       
-        <li class="current">파이썬 백준 11478번 문제 풀이</li>
+        <li class="current">코드스테이츠 백엔드 5일차 회고록</li>
       
     
   </ol>
@@ -392,16 +392,16 @@
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="파이썬 백준 11478번 문제 풀이">
+    <meta itemprop="headline" content="코드스테이츠 백엔드 5일차 회고록">
     <meta itemprop="description" content="">
-    <meta itemprop="datePublished" content="2023-04-13T00:00:00+09:00">
+    <meta itemprop="datePublished" content="2023-04-17T00:00:00+09:00">
     
 
     <div class="page__inner-wrap">
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://localhost:4000/baekjoon/baekJoon_11478/" class="u-url" itemprop="url">파이썬 백준 11478번 문제 풀이
+            <a href="http://localhost:4000/memoir/SEB_BE5/" class="u-url" itemprop="url">코드스테이츠 백엔드 5일차 회고록
 </a>
           </h1>
           
@@ -412,7 +412,7 @@
       <span class="page__meta-date">
         <i class="far fa-calendar-alt" aria-hidden="true"></i>
         
-        <time datetime="2023-04-13T00:00:00+09:00">April 13, 2023</time>
+        <time datetime="2023-04-17T00:00:00+09:00">April 17, 2023</time>
       </span>
     
 
@@ -425,7 +425,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          최대 1 분 소요
+          1 분 소요
         
       </span>
     
@@ -440,7 +440,7 @@
           <aside class="sidebar__right sticky">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> 목차</h4></header>
-              <ul class="toc__menu"><li><a href="#1-문제-분석">1. 문제 분석</a></li><li><a href="#2-코드">2. 코드</a></li><li><a href="#3-총평">3. 총평</a></li></ul>
+              <ul class="toc__menu"><li><a href="#-배운점"> 배운점</a><ul><li><a href="#1-java">1. Java</a></li><li><a href="#2-jvmjava-virtual-machine">2. JVM(Java Virtual Machine)</a></li><li><a href="#3-변수와variable-타입type">3. 변수와(Variable) 타입(Type)</a></li></ul></li><li><a href="#-느낀점"> 느낀점</a></li></ul>
 
             </nav>
           </aside>
@@ -449,67 +449,106 @@
     p { line-height : 1.75em; }
 </style>
 
-<h2 id="1-문제-분석"><font color="#A0D7EF">1. 문제 분석</font></h2>
+<h1 id="-배운점"><font color="#A0D7EF"> 배운점</font></h1>
 
-<ol>
-  <li><span style="color:#FFFF80">집합에는 중복값을 넣을 수 없다</span>
-    <blockquote>
-      <p>부분 문자열의 값을 집합에 넣어준다.<br /></p>
-    </blockquote>
+<h2 id="1-java"><font color="#A0D7EF">1. Java</font></h2>
+
+<ul>
+  <li>Java
+    <ul>
+      <li>JVM(Java Virtual Machine)을 이용하여 운영체제에 <span style="color:#B0ff66"><strong>독립적</strong></span>이다.</li>
+      <li><span style="color:#B0ff66"><strong>객체지향언어</strong></span>(Object Oriented Programming, OOP), 유지보수가 쉽고 확장성이 높다.</li>
+      <li><span style="color:#B0ff66"><strong>함수형</strong></span>프로그래밍 지원, 람다식 스트림을 지원한다.</li>
+      <li><span style="color:#B0ff66"><strong>자동 메모리 관리</strong></span>(Garbage Collection)을 통해 사용되지 않는 메모리를 수거한다.</li>
+    </ul>
   </li>
-  <li><span style="color:#B0ff66">슬라이싱을 이용하여 부분 문자열을 만든다</span>
-    <blockquote>
-      <p><code class="language-plaintext highlighter-rouge">ababc, abab, aba, ab, a</code><br />
- <code class="language-plaintext highlighter-rouge">babc, bab, ba, b</code><br />
- <code class="language-plaintext highlighter-rouge">abc, ab, a</code><br />
- <code class="language-plaintext highlighter-rouge">bc, b</code><br />
- <code class="language-plaintext highlighter-rouge">c</code><br /><br />
- <code class="language-plaintext highlighter-rouge">[0:5] [0:4] [0:3] [0:2] [0:1]</code><br />
- <code class="language-plaintext highlighter-rouge">[1:5] [1:4] [1:3] [1:2]</code><br />
- <code class="language-plaintext highlighter-rouge">[2:5] [2:4] [2:3]</code><br />
- <code class="language-plaintext highlighter-rouge">[3:5] [3:4]</code><br />
- <code class="language-plaintext highlighter-rouge">[4:5]</code><br /><br /></p>
-    </blockquote>
+</ul>
+
+<h2 id="2-jvmjava-virtual-machine"><font color="#A0D7EF">2. JVM(Java Virtual Machine)</font></h2>
+
+<p align="center"><img src="https://arquivo.devmedia.com.br/artigos/Allan_Romanato/JavaVirtualMachine/JavaVirtualMachine2.jpg" height="250px" width="650px" /></p>
+
+<ul>
+  <li>JVM
+    <ul>
+      <li>자바 프로그램의 실행환경을 만들어주는 소프트웨어.</li>
+      <li>컴파일러는 자바 언어를 JVM이 이해할 수 있는 바이트 코드로 변환한다.</li>
+      <li>JVM은 바이트 코드를 가 운영체제에 맞는 기계어로 변환해준다.</li>
+    </ul>
   </li>
-</ol>
+</ul>
 
-<h2 id="2-코드"><font color="#A0D7EF">2. 코드</font></h2>
+<h2 id="3-변수와variable-타입type"><font color="#A0D7EF">3. 변수와(Variable) 타입(Type)</font></h2>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">sys</span>
+<ul>
+  <li>변수(Variable)
+    <ul>
+      <li>값이 변할 수 있는 데이터를 임시로 저장하기 위한  수단</li>
+      <li>값을 저장할 수 있는 공간을 확보하고, 사람이 식별할 수 있는 이름을 붙인 것</li>
+    </ul>
+  </li>
+  <li>상수(Constant)
+    <ul>
+      <li>변하지 말아야 할 데이터를 임시로 저장하기 위한 수단</li>
+      <li>한번 할당하면 값을 변경할 수 없다</li>
+    </ul>
+  </li>
+  <li>타입(Type)
+    <ul>
+      <li>타입을 통해 메모리 공간의 크기와, 값이 저장되는 방식이 결정된다</li>
+      <li>값이 저장되는 방식에는 기본 타입, 참조 타입이 있다</li>
+    </ul>
+  </li>
+  <li>리터럴(Literal)
+    <ul>
+      <li>문자가 가리키는 값 그 자체, 즉 값 = 리터럴</li>
+      <li>float 타입의 변수의 리터럴에는 f의 접미사를 붙혀준다</li>
+      <li>long 타입의 변수의 리터럴에는 L의 접미사를 붙혀준다</li>
+    </ul>
+  </li>
+  <li>정수 타입
+    <ul>
+      <li>메모리 작은 순서대로 byte, short, int, long 4가지가 있다</li>
+      <li>일반적으로 int를 많이 사용한다</li>
+    </ul>
+  </li>
+  <li>실수 타입
+    <ul>
+      <li>메모리 작은 순서대로 float, double 2가지가 있다</li>
+      <li>일반적으로 double를 많이 사용한다</li>
+    </ul>
+  </li>
+  <li>논리 타입
+    <ul>
+      <li>참(True) 또는 거짓(False)을 저장할 수 있는 타입</li>
+    </ul>
+  </li>
+  <li>문자 타입
+    <ul>
+      <li>문자 타입은 char 오직 하나이다</li>
+      <li>문자형 리터럴을 작성할 때는 작은 따옴표(‘‘)를 사용해야한다</li>
+      <li>변수에는 문자의 유니코드 숫자값이 저장된다.</li>
+    </ul>
+  </li>
+  <li>문자열 타입
+    <ul>
+      <li>문자열은 앞선 기본 타입과 다르게 참조 타입(주소 저장 방법)이다</li>
+      <li>직접 할당 방법을 이용하여 같은 문자열을 다른 변수에 저장해도 변수에 저장되는 주소값은 동일하다</li>
+      <li>클래스의 인스턴스를 이용해 생성하는 방법은 같은 문자열이라도 주소가 다르다</li>
+    </ul>
+  </li>
+</ul>
 
-<span class="n">result</span> <span class="o">=</span> <span class="nf">set</span><span class="p">()</span> <span class="c1"># 부분 문자열이 들어갈 집합
-</span>
-<span class="n">S</span> <span class="o">=</span> <span class="n">sys</span><span class="p">.</span><span class="n">stdin</span><span class="p">.</span><span class="nf">readline</span><span class="p">().</span><span class="nf">strip</span><span class="p">()</span> <span class="c1"># 문자열을 입력받는다
-</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">S</span><span class="p">)):</span> <span class="c1"># 부분 문자열을 구한다
-</span>    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">S</span><span class="p">),</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>
-        <span class="k">if</span> <span class="n">i</span> <span class="o">&gt;=</span> <span class="n">j</span><span class="p">:</span>
-            <span class="k">break</span>
-        <span class="n">result</span><span class="p">.</span><span class="nf">add</span><span class="p">(</span><span class="n">S</span><span class="p">[</span><span class="n">i</span><span class="p">:</span><span class="n">j</span><span class="p">])</span>
-
-<span class="nf">print</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">result</span><span class="p">))</span>
-</code></pre></div></div>
 <p><br /></p>
+<h1 id="-느낀점"><font color="#A0D7EF"> 느낀점</font></h1>
 <hr />
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">result</span> <span class="o">=</span> <span class="nf">set</span><span class="p">()</span> <span class="c1"># 부분 문자열이 들어갈 집합
-</span></code></pre></div></div>
-<p><span style="color:#FFFF80">서로 다른 부분 문자열은 중복값이 없기 때문에 집합에 값을 넣어준다</span></p>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">S</span><span class="p">)):</span> <span class="c1"># 부분 문자열을 구한다
-</span>    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">S</span><span class="p">),</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>
-        <span class="k">if</span> <span class="n">i</span> <span class="o">&gt;=</span> <span class="n">j</span><span class="p">:</span>
-            <span class="k">break</span>
-        <span class="n">result</span><span class="p">.</span><span class="nf">add</span><span class="p">(</span><span class="n">S</span><span class="p">[</span><span class="n">i</span><span class="p">:</span><span class="n">j</span><span class="p">])</span>
-</code></pre></div></div>
-
-<p><span style="color:#B0ff66">슬라이싱을 이용해 부분 문자열을 집합에 넣는다</span></p>
-
-<h2 id="3-총평"><font color="#A0D7EF">3. 총평</font></h2>
-<p>문제의 키워드는 매우 쉽게 구할 수 있었지만<br />
-부분 문자열을 어떻게 구하느냐에서 시간을 제일 많이 쓴 것 같다.<br /><br />
-이중 for문을 이용해 배열을 탐색하는 부분이 약하다는 것을 알게되었고<br />
-이 부분을 보완할 수 있도록 많은 문제들을 풀어봐야겠다고 생각했다.</p>
+<p>오늘은 Java 기본 문법을 공부하기 시작했다.<br />
+Java에서 손을 뗀지 조금 돼서 다시 배운다는 생각으로 공부했다!!<br /><br />
+파이썬으로 코딩테스트 준비를 하다보니까 자바가 불편하다는 생각이,,,,<br />
+하지만 이제 개발 할 때는 자바로 코드를 짜야하니까<br />
+앞으로 자바로 코딩테스트를 준비해면서 문법 실력을 늘려야겠다 생각했다.<br />
+이번주도 화이팅하도록 하자!!<br /></p>
 
         
       </section>
@@ -526,9 +565,7 @@
     <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> 태그: </strong>
     <span itemprop="keywords">
     
-      <a href="/tags/#coding" class="page__taxonomy-item p-category" rel="tag">Coding</a><span class="sep">, </span>
-    
-      <a href="/tags/#python" class="page__taxonomy-item p-category" rel="tag">Python</a>
+      <a href="/tags/#codestates" class="page__taxonomy-item p-category" rel="tag">Codestates</a>
     
     </span>
   </p>
@@ -545,7 +582,7 @@
     <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> 카테고리: </strong>
     <span itemprop="keywords">
     
-      <a href="/categories/#baekjoon" class="page__taxonomy-item p-category" rel="tag">BaekJoon</a>
+      <a href="/categories/#memoir" class="page__taxonomy-item p-category" rel="tag">Memoir</a>
     
     </span>
   </p>
@@ -553,7 +590,7 @@
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2023-04-13T00:00:00+09:00">April 13, 2023</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2023-04-17T00:00:00+09:00">April 17, 2023</time></p>
 
       </footer>
 
@@ -562,12 +599,11 @@
       
   <nav class="pagination">
     
-      <a href="/memoir/SEB_BE3/" class="pagination--pager" title="코드스테이츠 백엔드 3일차 회고록
+      <a href="/baekjoon/baekJoon_18870/" class="pagination--pager" title="파이썬 백준 18870번 문제 풀이
 ">이전</a>
     
     
-      <a href="/memoir/SEB_BE4/" class="pagination--pager" title="코드스테이츠 백엔드 4일차 회고록
-">다음</a>
+      <a href="#" class="pagination--pager disabled">다음</a>
     
   </nav>
 
@@ -581,54 +617,6 @@
     <div class="page__related">
       <h2 class="page__related-title">참고</h2>
       <div class="grid__wrapper">
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/memoir/SEB_BE5/" rel="permalink">코드스테이츠 백엔드 5일차 회고록
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-      
-      <span class="page__meta-date">
-        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
-        
-        <time datetime="2023-04-17T00:00:00+09:00">April 17, 2023</time>
-      </span>
-    
-
-    <span class="page__meta-sep"></span>
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
-        
-          1 분 소요
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">
-
-</p>
-  </article>
-</div>
-
         
           
 
@@ -664,7 +652,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-fw fa-clock" aria-hidden="true"></i>
         
-          1 분 소요
+          최대 1 분 소요
         
       </span>
     
@@ -713,6 +701,54 @@
         <i class="far fa-fw fa-clock" aria-hidden="true"></i>
         
           1 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/baekjoon/baekJoon_11478/" rel="permalink">파이썬 백준 11478번 문제 풀이
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2023-04-13T00:00:00+09:00">April 13, 2023</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          최대 1 분 소요
         
       </span>
     
@@ -830,8 +866,8 @@
     
   <script>
     var disqus_config = function () {
-      this.page.url = "http://localhost:4000/baekjoon/baekJoon_11478/";  /* Replace PAGE_URL with your page's canonical URL variable */
-      this.page.identifier = "/baekjoon/baekJoon_11478"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+      this.page.url = "http://localhost:4000/memoir/SEB_BE5/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/memoir/SEB_BE5"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
     };
     (function() { /* DON'T EDIT BELOW THIS LINE */
       var d = document, s = d.createElement('script');

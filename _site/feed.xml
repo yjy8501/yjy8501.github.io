@@ -1,4 +1,107 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-15T16:54:48+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Rakugaki</title><subtitle>개발 낙서장 &amp; 일상</subtitle><author><name>양재용</name><email>yjy850146@gmail.com</email></author><entry><title type="html">파이썬 백준 18870번 문제 풀이</title><link href="http://localhost:4000/baekjoon/baekJoon_18870/" rel="alternate" type="text/html" title="파이썬 백준 18870번 문제 풀이" /><published>2023-04-15T00:00:00+09:00</published><updated>2023-04-15T00:00:00+09:00</updated><id>http://localhost:4000/baekjoon/baekJoon_18870</id><content type="html" xml:base="http://localhost:4000/baekjoon/baekJoon_18870/"><![CDATA[<style> 
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-17T19:12:27+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Rakugaki</title><subtitle>개발 낙서장 &amp; 일상</subtitle><author><name>양재용</name><email>yjy850146@gmail.com</email></author><entry><title type="html">코드스테이츠 백엔드 5일차 회고록</title><link href="http://localhost:4000/memoir/SEB_BE5/" rel="alternate" type="text/html" title="코드스테이츠 백엔드 5일차 회고록" /><published>2023-04-17T00:00:00+09:00</published><updated>2023-04-17T00:00:00+09:00</updated><id>http://localhost:4000/memoir/SEB_BE5</id><content type="html" xml:base="http://localhost:4000/memoir/SEB_BE5/"><![CDATA[<style> 
+    p { line-height : 1.75em; }
+</style>
+
+<h1 id="-배운점"><font color="#A0D7EF"> 배운점</font></h1>
+
+<h2 id="1-java"><font color="#A0D7EF">1. Java</font></h2>
+
+<ul>
+  <li>Java
+    <ul>
+      <li>JVM(Java Virtual Machine)을 이용하여 운영체제에 <span style="color:#B0ff66"><strong>독립적</strong></span>이다.</li>
+      <li><span style="color:#B0ff66"><strong>객체지향언어</strong></span>(Object Oriented Programming, OOP), 유지보수가 쉽고 확장성이 높다.</li>
+      <li><span style="color:#B0ff66"><strong>함수형</strong></span>프로그래밍 지원, 람다식 스트림을 지원한다.</li>
+      <li><span style="color:#B0ff66"><strong>자동 메모리 관리</strong></span>(Garbage Collection)을 통해 사용되지 않는 메모리를 수거한다.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="2-jvmjava-virtual-machine"><font color="#A0D7EF">2. JVM(Java Virtual Machine)</font></h2>
+
+<p align="center"><img src="https://arquivo.devmedia.com.br/artigos/Allan_Romanato/JavaVirtualMachine/JavaVirtualMachine2.jpg" height="250px" width="650px" /></p>
+
+<ul>
+  <li>JVM
+    <ul>
+      <li>자바 프로그램의 실행환경을 만들어주는 소프트웨어.</li>
+      <li>컴파일러는 자바 언어를 JVM이 이해할 수 있는 바이트 코드로 변환한다.</li>
+      <li>JVM은 바이트 코드를 가 운영체제에 맞는 기계어로 변환해준다.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="3-변수와variable-타입type"><font color="#A0D7EF">3. 변수와(Variable) 타입(Type)</font></h2>
+
+<ul>
+  <li>변수(Variable)
+    <ul>
+      <li>값이 변할 수 있는 데이터를 임시로 저장하기 위한  수단</li>
+      <li>값을 저장할 수 있는 공간을 확보하고, 사람이 식별할 수 있는 이름을 붙인 것</li>
+    </ul>
+  </li>
+  <li>상수(Constant)
+    <ul>
+      <li>변하지 말아야 할 데이터를 임시로 저장하기 위한 수단</li>
+      <li>한번 할당하면 값을 변경할 수 없다</li>
+    </ul>
+  </li>
+  <li>타입(Type)
+    <ul>
+      <li>타입을 통해 메모리 공간의 크기와, 값이 저장되는 방식이 결정된다</li>
+      <li>값이 저장되는 방식에는 기본 타입, 참조 타입이 있다</li>
+    </ul>
+  </li>
+  <li>리터럴(Literal)
+    <ul>
+      <li>문자가 가리키는 값 그 자체, 즉 값 = 리터럴</li>
+      <li>float 타입의 변수의 리터럴에는 f의 접미사를 붙혀준다</li>
+      <li>long 타입의 변수의 리터럴에는 L의 접미사를 붙혀준다</li>
+    </ul>
+  </li>
+  <li>정수 타입
+    <ul>
+      <li>메모리 작은 순서대로 byte, short, int, long 4가지가 있다</li>
+      <li>일반적으로 int를 많이 사용한다</li>
+    </ul>
+  </li>
+  <li>실수 타입
+    <ul>
+      <li>메모리 작은 순서대로 float, double 2가지가 있다</li>
+      <li>일반적으로 double를 많이 사용한다</li>
+    </ul>
+  </li>
+  <li>논리 타입
+    <ul>
+      <li>참(True) 또는 거짓(False)을 저장할 수 있는 타입</li>
+    </ul>
+  </li>
+  <li>문자 타입
+    <ul>
+      <li>문자 타입은 char 오직 하나이다</li>
+      <li>문자형 리터럴을 작성할 때는 작은 따옴표(‘‘)를 사용해야한다</li>
+      <li>변수에는 문자의 유니코드 숫자값이 저장된다.</li>
+    </ul>
+  </li>
+  <li>문자열 타입
+    <ul>
+      <li>문자열은 앞선 기본 타입과 다르게 참조 타입(주소 저장 방법)이다</li>
+      <li>직접 할당 방법을 이용하여 같은 문자열을 다른 변수에 저장해도 변수에 저장되는 주소값은 동일하다</li>
+      <li>클래스의 인스턴스를 이용해 생성하는 방법은 같은 문자열이라도 주소가 다르다</li>
+    </ul>
+  </li>
+</ul>
+
+<p><br /></p>
+<h1 id="-느낀점"><font color="#A0D7EF"> 느낀점</font></h1>
+<hr />
+
+<p>오늘은 Java 기본 문법을 공부하기 시작했다.<br />
+Java에서 손을 뗀지 조금 돼서 다시 배운다는 생각으로 공부했다!!<br /><br />
+파이썬으로 코딩테스트 준비를 하다보니까 자바가 불편하다는 생각이,,,,<br />
+하지만 이제 개발 할 때는 자바로 코드를 짜야하니까<br />
+앞으로 자바로 코딩테스트를 준비해면서 문법 실력을 늘려야겠다 생각했다.<br />
+이번주도 화이팅하도록 하자!!<br /></p>]]></content><author><name>양재용</name><email>yjy850146@gmail.com</email></author><category term="Memoir" /><category term="Codestates" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">파이썬 백준 18870번 문제 풀이</title><link href="http://localhost:4000/baekjoon/baekJoon_18870/" rel="alternate" type="text/html" title="파이썬 백준 18870번 문제 풀이" /><published>2023-04-15T00:00:00+09:00</published><updated>2023-04-15T00:00:00+09:00</updated><id>http://localhost:4000/baekjoon/baekJoon_18870</id><content type="html" xml:base="http://localhost:4000/baekjoon/baekJoon_18870/"><![CDATA[<style> 
     p { line-height : 1.75em; }
     table { text-align : center; font-size : 1.5em; border: white;}
 </style>

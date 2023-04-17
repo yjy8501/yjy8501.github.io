@@ -52,4 +52,10 @@ var store = [{
         "tags": ["Coding","Python","Sort"],
         "url": "/baekjoon/baekJoon_18870/",
         "teaser": null
+      },{
+        "title": "코드스테이츠 백엔드 5일차 회고록",
+        "excerpt":"배운점 1. Java Java JVM(Java Virtual Machine)을 이용하여 운영체제에 독립적이다. 객체지향언어(Object Oriented Programming, OOP), 유지보수가 쉽고 확장성이 높다. 함수형프로그래밍 지원, 람다식 스트림을 지원한다. 자동 메모리 관리(Garbage Collection)을 통해 사용되지 않는 메모리를 수거한다. 2. JVM(Java Virtual Machine) JVM 자바 프로그램의 실행환경을 만들어주는 소프트웨어. 컴파일러는 자바 언어를 JVM이 이해할 수 있는 바이트...","categories": ["Memoir"],
+        "tags": ["Codestates"],
+        "url": "/memoir/SEB_BE5/",
+        "teaser": null
       }]
