@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-18T19:54:30+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Rakugaki</title><subtitle>개발 낙서장 &amp; 일상</subtitle><author><name>양재용</name><email>yjy850146@gmail.com</email></author><entry><title type="html">코드스테이츠 백엔드 6일차 회고록</title><link href="http://localhost:4000/memoir/SEB_BE6/" rel="alternate" type="text/html" title="코드스테이츠 백엔드 6일차 회고록" /><published>2023-04-18T00:00:00+09:00</published><updated>2023-04-18T00:00:00+09:00</updated><id>http://localhost:4000/memoir/SEB_BE6</id><content type="html" xml:base="http://localhost:4000/memoir/SEB_BE6/"><![CDATA[<style> 
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-18T19:57:21+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Rakugaki</title><subtitle>개발 낙서장 &amp; 일상</subtitle><author><name>양재용</name><email>yjy850146@gmail.com</email></author><entry><title type="html">코드스테이츠 백엔드 6일차 회고록</title><link href="http://localhost:4000/memoir/SEB_BE6/" rel="alternate" type="text/html" title="코드스테이츠 백엔드 6일차 회고록" /><published>2023-04-18T00:00:00+09:00</published><updated>2023-04-18T00:00:00+09:00</updated><id>http://localhost:4000/memoir/SEB_BE6</id><content type="html" xml:base="http://localhost:4000/memoir/SEB_BE6/"><![CDATA[<style> 
     p { line-height : 1.75em; }
 </style>
 
@@ -124,7 +124,7 @@
 
 <p>오늘은 코딩의 기본 조건문을 배웠다.<br />
 Switch문은 자주 써보지 않아서 오늘 익숙해지는 시간을 배운 것 같다.<br /><br />
-강화된 Switch문도 자바 14버전부터 지원한다는데 딱히 쓰일 일이 있나 생각이들었다.<br />
+강화된 Switch문을 자바 14버전부터 지원한다는데 딱히 쓰일 일이 있나 생각이들었다.<br />
 개념 자체는 이미 다 아는거라서 공부하는데 많은 시간이 걸리지 않았지만<br />
 코플릿을 푸는 재미가 쏠쏠해서 좋은 것 같다.<br /></p>]]></content><author><name>양재용</name><email>yjy850146@gmail.com</email></author><category term="Memoir" /><category term="Codestates" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">코드스테이츠 백엔드 5일차 회고록</title><link href="http://localhost:4000/memoir/SEB_BE5/" rel="alternate" type="text/html" title="코드스테이츠 백엔드 5일차 회고록" /><published>2023-04-17T00:00:00+09:00</published><updated>2023-04-17T00:00:00+09:00</updated><id>http://localhost:4000/memoir/SEB_BE5</id><content type="html" xml:base="http://localhost:4000/memoir/SEB_BE5/"><![CDATA[<style> 
     p { line-height : 1.75em; }
