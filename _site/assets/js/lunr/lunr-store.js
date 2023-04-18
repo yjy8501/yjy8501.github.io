@@ -58,4 +58,10 @@ var store = [{
         "tags": ["Codestates"],
         "url": "/memoir/SEB_BE5/",
         "teaser": null
+      },{
+        "title": "코드스테이츠 백엔드 6일차 회고록",
+        "excerpt":"배운점 1. 연산자(Operator) 하나의 값 또는 여려 개의 값을 피연산자로 하여 새로운 값을 만들어내는 기호 산술 연산자 덧셈 연산자(+) 두 항의 값을 더한 값을 반환한다 뺄셈 연산자(-) 좌항의 값에서 우항의 값을 뺀 값을 반환한다 곱셈 연산자(*) 두 항의 값을 곱한 값을 반환한다 나눗셈 연산자(/) 좌항을 우항으로 나눈 값을 반환한다 나머지...","categories": ["Memoir"],
+        "tags": ["Codestates"],
+        "url": "/memoir/SEB_BE6/",
+        "teaser": null
       }]

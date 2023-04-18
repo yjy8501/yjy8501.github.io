@@ -1,4 +1,132 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-17T19:12:27+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Rakugaki</title><subtitle>개발 낙서장 &amp; 일상</subtitle><author><name>양재용</name><email>yjy850146@gmail.com</email></author><entry><title type="html">코드스테이츠 백엔드 5일차 회고록</title><link href="http://localhost:4000/memoir/SEB_BE5/" rel="alternate" type="text/html" title="코드스테이츠 백엔드 5일차 회고록" /><published>2023-04-17T00:00:00+09:00</published><updated>2023-04-17T00:00:00+09:00</updated><id>http://localhost:4000/memoir/SEB_BE5</id><content type="html" xml:base="http://localhost:4000/memoir/SEB_BE5/"><![CDATA[<style> 
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-18T19:54:30+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Rakugaki</title><subtitle>개발 낙서장 &amp; 일상</subtitle><author><name>양재용</name><email>yjy850146@gmail.com</email></author><entry><title type="html">코드스테이츠 백엔드 6일차 회고록</title><link href="http://localhost:4000/memoir/SEB_BE6/" rel="alternate" type="text/html" title="코드스테이츠 백엔드 6일차 회고록" /><published>2023-04-18T00:00:00+09:00</published><updated>2023-04-18T00:00:00+09:00</updated><id>http://localhost:4000/memoir/SEB_BE6</id><content type="html" xml:base="http://localhost:4000/memoir/SEB_BE6/"><![CDATA[<style> 
+    p { line-height : 1.75em; }
+</style>
+
+<h1 id="-배운점"><font color="#A0D7EF"> 배운점</font></h1>
+
+<h2 id="1-연산자operator"><font color="#A0D7EF">1. 연산자(Operator)</font></h2>
+<blockquote>
+  <p>하나의 값 또는 여려 개의 값을 피연산자로 하여 새로운 값을 만들어내는 기호</p>
+</blockquote>
+
+<h3 id="산술-연산자"><font color="#A0D7EF">산술 연산자</font></h3>
+<hr />
+
+<ul>
+  <li>덧셈 연산자(+)
+    <ul>
+      <li>두 항의 값을 더한 값을 반환한다</li>
+    </ul>
+  </li>
+  <li>뺄셈 연산자(-)
+    <ul>
+      <li>좌항의 값에서 우항의 값을 뺀 값을 반환한다</li>
+    </ul>
+  </li>
+  <li>곱셈 연산자(*)
+    <ul>
+      <li>두 항의 값을 곱한 값을 반환한다</li>
+    </ul>
+  </li>
+  <li>나눗셈 연산자(/)
+    <ul>
+      <li>좌항을 우항으로 나눈 값을 반환한다</li>
+    </ul>
+  </li>
+  <li>나머지 연산자(%)
+    <ul>
+      <li>좌항의 값을 우항의 값으로 나눈 나머지를 반환한다</li>
+    </ul>
+  </li>
+  <li>증감 연산자(++, –)
+    <ul>
+      <li>변수를 1만큼의 값을 증감한다.</li>
+    </ul>
+  </li>
+  <li>복합 대입 연산자(+=, -=, *=, /=, %=)
+    <ul>
+      <li>변수에 우항의 값만큼 연산한다</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="비교-연산자"><font color="#A0D7EF">비교 연산자</font></h3>
+<hr />
+
+<ul>
+  <li>대소 비교 연산자(&gt;, &lt;, &gt;=, &lt;&gt;=)
+    <ul>
+      <li>좌항과 우항을 비교하여 true 또는 false값을 반환한다</li>
+    </ul>
+  </li>
+  <li>등가 비교 연산자(==, !=)
+    <ul>
+      <li>좌항과 우항이 동등 또는 다름에 따라 true 또는 false값을 반환한다</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="논리-연산자"><font color="#A0D7EF">논리 연산자</font></h3>
+<hr />
+
+<ul>
+  <li>논리 연산자(&amp;&amp;, ||, !)
+    <ul>
+      <li>And 연산자(&amp;&amp;)는 두 피연산자중에 하나라도 true가 아니면 false를 반환한다</li>
+      <li>OR 연산자(||)는 두 피연산자중 하나라도 true면 true를 반환한다</li>
+      <li>NOT 연산자(!)는 ture와 false를 반대로 바꿔준다</li>
+    </ul>
+  </li>
+</ul>
+
+<p class="notice--danger">각 연산자는 우선순위가 있기 때문에 순서에 맞게 작성해야한다.</p>
+
+<h2 id="2-조건문"><font color="#A0D7EF">2. 조건문</font></h2>
+<blockquote>
+  <p>조건에 따라 실행이 달라지게 할 때 사용되는 문장이다</p>
+</blockquote>
+
+<h3 id="if문"><font color="#A0D7EF">If문</font></h3>
+<hr />
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span><span class="o">(</span><span class="n">조건문</span><span class="o">)</span> <span class="o">{</span>
+  <span class="c1">// 조건이 참일 경우 실행 될 코드;</span>
+<span class="o">}</span>
+<span class="k">else</span> <span class="nf">if</span><span class="o">(</span><span class="n">조건문</span><span class="o">)</span> <span class="o">{</span>
+  <span class="c1">// 조건이 참일 경우 실행 될 코드;</span>
+<span class="o">}</span>
+<span class="k">else</span> <span class="o">{</span>
+  <span class="c1">// 앞선 조건을 제외한 나머지 경우가 실행 될 코드;</span>
+<span class="o">}</span>
+</code></pre></div></div>
+<p>흐름은 위에서 아래로 순차적으로 일어난다</p>
+
+<h3 id="switch문"><font color="#A0D7EF">Switch문</font></h3>
+<hr />
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">switch</span><span class="o">(</span><span class="n">변수</span><span class="o">)</span> <span class="o">{</span>
+  <span class="k">case</span> <span class="n">조건1</span> <span class="o">:</span> <span class="c1">// 조건이 참일 때 실행 될 코드</span>
+  <span class="k">case</span> <span class="n">조건2</span> <span class="o">:</span> <span class="c1">// 조건이 참일 때 실행 될 코드</span>
+  <span class="k">case</span> <span class="n">조건3</span> <span class="o">:</span> <span class="c1">// 조건이 참일 때 실행 될 코드</span>
+  <span class="k">case</span> <span class="n">조건4</span> <span class="o">:</span> <span class="c1">// 조건이 참일 때 실행 될 코드</span>
+  <span class="k">case</span> <span class="n">조건5</span> <span class="o">:</span> <span class="c1">// 조건이 참일 때 실행 될 코드</span>
+  <span class="k">default</span> <span class="o">:</span> <span class="c1">// 앞선 조건에 부합되지 않는 경우</span>
+
+<span class="o">}</span>
+</code></pre></div></div>
+<p>Switch문 또한 위에서 아래로 순차적으로 일어난다</p>
+
+<p class="notice--danger">break문을 작성하지 않는다면 순차적으로 밑에 있는 조건들을 실행한다</p>
+
+<p><br /></p>
+<h1 id="-느낀점"><font color="#A0D7EF"> 느낀점</font></h1>
+<hr />
+
+<p>오늘은 코딩의 기본 조건문을 배웠다.<br />
+Switch문은 자주 써보지 않아서 오늘 익숙해지는 시간을 배운 것 같다.<br /><br />
+강화된 Switch문도 자바 14버전부터 지원한다는데 딱히 쓰일 일이 있나 생각이들었다.<br />
+개념 자체는 이미 다 아는거라서 공부하는데 많은 시간이 걸리지 않았지만<br />
+코플릿을 푸는 재미가 쏠쏠해서 좋은 것 같다.<br /></p>]]></content><author><name>양재용</name><email>yjy850146@gmail.com</email></author><category term="Memoir" /><category term="Codestates" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">코드스테이츠 백엔드 5일차 회고록</title><link href="http://localhost:4000/memoir/SEB_BE5/" rel="alternate" type="text/html" title="코드스테이츠 백엔드 5일차 회고록" /><published>2023-04-17T00:00:00+09:00</published><updated>2023-04-17T00:00:00+09:00</updated><id>http://localhost:4000/memoir/SEB_BE5</id><content type="html" xml:base="http://localhost:4000/memoir/SEB_BE5/"><![CDATA[<style> 
     p { line-height : 1.75em; }
 </style>
 
@@ -26,7 +154,7 @@
     <ul>
       <li>자바 프로그램의 실행환경을 만들어주는 소프트웨어.</li>
       <li>컴파일러는 자바 언어를 JVM이 이해할 수 있는 바이트 코드로 변환한다.</li>
-      <li>JVM은 바이트 코드를 가 운영체제에 맞는 기계어로 변환해준다.</li>
+      <li>JVM은 바이트 코드를 운영체제에 맞는 기계어로 변환해준다.</li>
     </ul>
   </li>
 </ul>
@@ -799,52 +927,4 @@ for문을 이용해 하나씩 넣기 때문에 넣는 위치에 +1씩 해주어�
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">bag</span><span class="p">.</span><span class="nf">insert</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">shuffle</span><span class="p">)</span>
 </code></pre></div></div>
 <p>이런식으로 접근 하였으나, 리스트 안에 리스트가 들어가게 됨으로<br />
-이중 for문을 사용하여 문제를 해결하게 되었다.</p>]]></content><author><name>양재용</name><email>yjy850146@gmail.com</email></author><category term="BaekJoon" /><category term="Coding" /><category term="Python" /><summary type="html"><![CDATA[1. 문제 분석 이 문제를 처음 읽었을 때는 큐로 문제를 풀어나가야 하나 생각을 했다. 문제를 차분하게 살펴보니 큐를 사용하지 않고 간단하게 리스트 슬라이싱을 이용하면 풀 수 있다는 생각이 들어 리스트 슬라이싱 방법으로 문제에 접근했다.]]></summary></entry><entry><title type="html">블로그 첫 포스팅 글</title><link href="http://localhost:4000/life/first/" rel="alternate" type="text/html" title="블로그 첫 포스팅 글" /><published>2023-04-04T00:00:00+09:00</published><updated>2023-04-04T00:00:00+09:00</updated><id>http://localhost:4000/life/first</id><content type="html" xml:base="http://localhost:4000/life/first/"><![CDATA[<p class="notice--danger"><span style="color:red;">
-<strong>[위험]</strong>
-</span> 
-작심삼일이 될 수 있는 블로그입니다.</p>
-<h2 id="안녕하세요">안녕하세요.</h2>
-
-<p>이번에 부트캠프 훈련을 앞두고<br />
-이것저것 기록용으로 사용하려고 깃 블로그 만들어봤습니다!!<br /><br />
-개발 공부 관련된 내용 올릴 예정이고, 실력이 부족해서<br /> 
-제 글이 누군가에게 도움이 될 수 있을거란 생각은 하지 않아요,,,ㅠㅜ<br /><br />
-제가 공부했던 부분들 다시 리와인드 할 목적으로 사용 할 것 같아요!!<br />
-그래도 꾸준히 공부하고, 포스팅하다 보면 실력이 늘지 않을까요,,,??<br /><br />
-일단 부트캠프 시작하기 전에 이것만은 꼭 지키자라는 것을 정해봤어요!!<br /></p>
-
-<h2 id="8시에는-꼭-기상하기"><font color="#A0D7EF">8시에는 꼭 기상하기</font></h2>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>9시에 수업이 있기 때문에 잠 깨고, 샤워하고, 넉넉하게 수업을 들어야해요!!
-6개월 동안 진행하기 때문에 첫 시작부터 좋은 생활 리듬을 가지고 가야
-끝까지 집중해서 교육을 수료할 수 있을 것 같다는 생각이 드네요 ㅎㅎ
-</code></pre></div></div>
-
-<h2 id="운동하기"><font color="#A0D7EF">운동하기</font></h2>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>하루에 9시간 동안 컴퓨터 앞에 앉아있기 때문에 스트레칭과 운동이 필수에요!!
-공부하기 위해서는 체력도 중요하다 라는 말이 있듯이 컴퓨터 앞에 오래 있으면
-목이나 허리에 무리가 많이 가기 때문에 운동으로 신체 균형을
-맞춰야 한다는 생각이 들어요!!
-</code></pre></div></div>
-
-<h2 id="복습하기"><font color="#A0D7EF">복습하기</font></h2>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>부트캠프를 시작하면 하루에 많은 양을 학습하기 때문에 복습이 필수입니다!!
-그렇기 때문에 블로그도 시작하게 되었고, 수업 끝나고 꼭 그날 배웠던 내용을
-다시 리와인드 시키는 과정이 필요할 것 같아요!!
-</code></pre></div></div>
-
-<h2 id="첫-포스팅을-마치며">첫 포스팅을 마치며</h2>
-
-<p>위에 세가지는 교육을 진행하면서 스스로 지키기로 다짐한 세가지에요!!<br />
-저는 하기로 마음 먹은 것들은 꼭 지키거든요 ㅎㅎ<br />
-대신에 허황된 목표를 잡진 않고 제가 해낼 수 있는 선에서 목표를 잡아요!!<br /><br /></p>
-
-<p>잠시 사적인 얘기를 하자면<br />
-지난 10개월 동안은 코딩에서 손을 떼고 잠시 쉬는 시간을 가졌었어요.<br />
-작년에는 심적으로 많이 힘들었었거든요,,,<br /><br />
-제주도 게하 스텝을 하고, 에버랜드 알바를 하는 등<br />
-정말 많은 사람들을 만나고 배우고, 경험했어요!!<br /><br />
-쉬었던 10개월은 전혀 아깝지 않고 제게 값진 시간이었어요<br />
-마음이 평안해지고 나니 다시 코딩을 하고 싶다는 생각이 들더라구요ㅎ<br /><br />
-쉬었던 만큼 누구보다 열심히 공부해서<br />
-제가 낼 수 있는 최대의 결과를 내볼 생각이에요<br /><br />
-가끔씩 일상 글로 뵈어요 ‘-‘!!</p>]]></content><author><name>양재용</name><email>yjy850146@gmail.com</email></author><category term="Life" /><category term="Blog" /><summary type="html"><![CDATA[[위험] 작심삼일이 될 수 있는 블로그입니다. 안녕하세요.]]></summary></entry></feed>
+이중 for문을 사용하여 문제를 해결하게 되었다.</p>]]></content><author><name>양재용</name><email>yjy850146@gmail.com</email></author><category term="BaekJoon" /><category term="Coding" /><category term="Python" /><summary type="html"><![CDATA[1. 문제 분석 이 문제를 처음 읽었을 때는 큐로 문제를 풀어나가야 하나 생각을 했다. 문제를 차분하게 살펴보니 큐를 사용하지 않고 간단하게 리스트 슬라이싱을 이용하면 풀 수 있다는 생각이 들어 리스트 슬라이싱 방법으로 문제에 접근했다.]]></summary></entry></feed>

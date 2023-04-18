@@ -9,7 +9,7 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>파이썬 백준 18870번 문제 풀이 | Rakugaki</title>
+<!-- begin _includes/seo.html --><title>코드스테이츠 백엔드 6일차 회고록 | Rakugaki</title>
 <meta name="description" content="">
 
 
@@ -22,8 +22,8 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ko_KR">
 <meta property="og:site_name" content="Rakugaki">
-<meta property="og:title" content="파이썬 백준 18870번 문제 풀이">
-<meta property="og:url" content="http://localhost:4000/baekjoon/baekJoon_18870/">
+<meta property="og:title" content="코드스테이츠 백엔드 6일차 회고록">
+<meta property="og:url" content="http://localhost:4000/memoir/SEB_BE6/">
 
 
   <meta property="og:description" content="">
@@ -34,7 +34,7 @@
 
 
 
-  <meta property="article:published_time" content="2023-04-15T00:00:00+09:00">
+  <meta property="article:published_time" content="2023-04-18T00:00:00+09:00">
 
 
 
@@ -45,7 +45,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/baekjoon/baekJoon_18870/">
+<link rel="canonical" href="http://localhost:4000/memoir/SEB_BE6/">
 
 
 
@@ -164,7 +164,7 @@
       
         
         <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-          <a href="/categories/#baekjoon" itemprop="item"><span itemprop="name">Baekjoon</span></a>
+          <a href="/categories/#memoir" itemprop="item"><span itemprop="name">Memoir</span></a>
           <meta itemprop="position" content="2" />
         </li>
         <span class="sep">/</span>
@@ -172,7 +172,7 @@
     
       
       
-        <li class="current">파이썬 백준 18870번 문제 풀이</li>
+        <li class="current">코드스테이츠 백엔드 6일차 회고록</li>
       
     
   </ol>
@@ -400,16 +400,16 @@
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="파이썬 백준 18870번 문제 풀이">
+    <meta itemprop="headline" content="코드스테이츠 백엔드 6일차 회고록">
     <meta itemprop="description" content="">
-    <meta itemprop="datePublished" content="2023-04-15T00:00:00+09:00">
+    <meta itemprop="datePublished" content="2023-04-18T00:00:00+09:00">
     
 
     <div class="page__inner-wrap">
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://localhost:4000/baekjoon/baekJoon_18870/" class="u-url" itemprop="url">파이썬 백준 18870번 문제 풀이
+            <a href="http://localhost:4000/memoir/SEB_BE6/" class="u-url" itemprop="url">코드스테이츠 백엔드 6일차 회고록
 </a>
           </h1>
           
@@ -420,7 +420,7 @@
       <span class="page__meta-date">
         <i class="far fa-calendar-alt" aria-hidden="true"></i>
         
-        <time datetime="2023-04-15T00:00:00+09:00">April 15, 2023</time>
+        <time datetime="2023-04-18T00:00:00+09:00">April 18, 2023</time>
       </span>
     
 
@@ -433,7 +433,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          최대 1 분 소요
+          1 분 소요
         
       </span>
     
@@ -448,92 +448,141 @@
           <aside class="sidebar__right sticky">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> 목차</h4></header>
-              <ul class="toc__menu"><li><a href="#1-문제-분석">1. 문제 분석</a></li><li><a href="#2-코드">2. 코드</a></li><li><a href="#3-총평">3. 총평</a></li></ul>
+              <ul class="toc__menu"><li><a href="#-배운점"> 배운점</a><ul><li><a href="#1-연산자operator">1. 연산자(Operator)</a><ul><li><a href="#산술-연산자">산술 연산자</a></li><li><a href="#비교-연산자">비교 연산자</a></li><li><a href="#논리-연산자">논리 연산자</a></li></ul></li><li><a href="#2-조건문">2. 조건문</a><ul><li><a href="#if문">If문</a></li><li><a href="#switch문">Switch문</a></li></ul></li></ul></li><li><a href="#-느낀점"> 느낀점</a></li></ul>
 
             </nav>
           </aside>
         
         <style> 
     p { line-height : 1.75em; }
-    table { text-align : center; font-size : 1.5em; border: white;}
 </style>
 
-<h2 id="1-문제-분석"><font color="#A0D7EF">1. 문제 분석</font></h2>
+<h1 id="-배운점"><font color="#A0D7EF"> 배운점</font></h1>
 
-<ol>
-  <li><span style="color:#FFFF80">중복값 없이 좌표를 정렬한다.</span>
-    <blockquote>
-      <p>Set에 넣은 다음 Sorted 함수를 통해 정렬된 리스트를 받는다<br /></p>
-    </blockquote>
+<h2 id="1-연산자operator"><font color="#A0D7EF">1. 연산자(Operator)</font></h2>
+<blockquote>
+  <p>하나의 값 또는 여려 개의 값을 피연산자로 하여 새로운 값을 만들어내는 기호</p>
+</blockquote>
 
-    <p>정렬 된 모습</p>
-
-    <table>
-      <tbody>
-        <tr>
-          <td>sorted X</td>
-          <td>-10</td>
-          <td>-9</td>
-          <td>4</td>
-          <td>2</td>
-        </tr>
-        <tr>
-          <td>X’</td>
-          <td>0</td>
-          <td>1</td>
-          <td>2</td>
-          <td>3</td>
-        </tr>
-      </tbody>
-    </table>
-  </li>
-  <li><span style="color:#B0ff66">sorted X와 X’를 연결 해야한다.</span>
-    <blockquote>
-      <p>sorted X를 Key, X’를 Value로 넣은 딕셔너리를 만든다</p>
-    </blockquote>
-  </li>
-</ol>
-
-<h2 id="2-코드"><font color="#A0D7EF">2. 코드</font></h2>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">copy</span>
-<span class="kn">import</span> <span class="n">sys</span>
-
-<span class="n">compressed_X</span> <span class="o">=</span> <span class="nf">dict</span><span class="p">()</span> <span class="c1"># 압축 좌표를 저장할 딕셔너리
-</span>
-<span class="n">N</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="nf">input</span><span class="p">())</span>
-
-<span class="n">X</span> <span class="o">=</span> <span class="nf">list</span><span class="p">(</span><span class="nf">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="n">sys</span><span class="p">.</span><span class="n">stdin</span><span class="p">.</span><span class="nf">readline</span><span class="p">().</span><span class="nf">split</span><span class="p">()))</span>
-<span class="n">copy_X</span> <span class="o">=</span> <span class="n">copy</span><span class="p">.</span><span class="nf">deepcopy</span><span class="p">(</span><span class="n">X</span><span class="p">)</span> <span class="c1"># 본래 좌표 순서가 저장된 배열
-</span>
-<span class="n">X</span> <span class="o">=</span> <span class="nf">sorted</span><span class="p">(</span><span class="nf">set</span><span class="p">(</span><span class="n">X</span><span class="p">))</span> <span class="c1"># 좌표를 집합에 넣어 중복값을 없애고, 정렬한다
-</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">X</span><span class="p">)):</span>
-    <span class="n">compressed_X</span><span class="p">[</span><span class="n">X</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span> <span class="o">=</span> <span class="n">i</span> <span class="c1"># 본래 좌표(key) 압축 좌표(value)로 딕셔너리에 저장한다
-</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">copy_X</span><span class="p">:</span>
-    <span class="nf">print</span><span class="p">(</span><span class="n">compressed_X</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">end</span><span class="o">=</span><span class="s">' '</span><span class="p">)</span>
-
-</code></pre></div></div>
+<h3 id="산술-연산자"><font color="#A0D7EF">산술 연산자</font></h3>
 <hr />
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">X</span> <span class="o">=</span> <span class="nf">sorted</span><span class="p">(</span><span class="nf">set</span><span class="p">(</span><span class="n">X</span><span class="p">))</span> <span class="c1"># 좌표를 집합에 넣어 중복값을 없애고, 정렬한다
-</span></code></pre></div></div>
-<p><span style="color:#FFFF80">중복값을 없앤 정렬된 X좌표를 구한다</span></p>
+<ul>
+  <li>덧셈 연산자(+)
+    <ul>
+      <li>두 항의 값을 더한 값을 반환한다</li>
+    </ul>
+  </li>
+  <li>뺄셈 연산자(-)
+    <ul>
+      <li>좌항의 값에서 우항의 값을 뺀 값을 반환한다</li>
+    </ul>
+  </li>
+  <li>곱셈 연산자(*)
+    <ul>
+      <li>두 항의 값을 곱한 값을 반환한다</li>
+    </ul>
+  </li>
+  <li>나눗셈 연산자(/)
+    <ul>
+      <li>좌항을 우항으로 나눈 값을 반환한다</li>
+    </ul>
+  </li>
+  <li>나머지 연산자(%)
+    <ul>
+      <li>좌항의 값을 우항의 값으로 나눈 나머지를 반환한다</li>
+    </ul>
+  </li>
+  <li>증감 연산자(++, –)
+    <ul>
+      <li>변수를 1만큼의 값을 증감한다.</li>
+    </ul>
+  </li>
+  <li>복합 대입 연산자(+=, -=, *=, /=, %=)
+    <ul>
+      <li>변수에 우항의 값만큼 연산한다</li>
+    </ul>
+  </li>
+</ul>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># 중복값을 없앤 좌표(key), 압축 좌표(value)를 한 쌍으로 딕셔너리에 저장한다
-</span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">X</span><span class="p">)):</span>
-    <span class="n">compressed_X</span><span class="p">[</span><span class="n">X</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span> <span class="o">=</span> <span class="n">i</span> 
+<h3 id="비교-연산자"><font color="#A0D7EF">비교 연산자</font></h3>
+<hr />
+
+<ul>
+  <li>대소 비교 연산자(&gt;, &lt;, &gt;=, &lt;&gt;=)
+    <ul>
+      <li>좌항과 우항을 비교하여 true 또는 false값을 반환한다</li>
+    </ul>
+  </li>
+  <li>등가 비교 연산자(==, !=)
+    <ul>
+      <li>좌항과 우항이 동등 또는 다름에 따라 true 또는 false값을 반환한다</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="논리-연산자"><font color="#A0D7EF">논리 연산자</font></h3>
+<hr />
+
+<ul>
+  <li>논리 연산자(&amp;&amp;, ||, !)
+    <ul>
+      <li>And 연산자(&amp;&amp;)는 두 피연산자중에 하나라도 true가 아니면 false를 반환한다</li>
+      <li>OR 연산자(||)는 두 피연산자중 하나라도 true면 true를 반환한다</li>
+      <li>NOT 연산자(!)는 ture와 false를 반대로 바꿔준다</li>
+    </ul>
+  </li>
+</ul>
+
+<p class="notice--danger">각 연산자는 우선순위가 있기 때문에 순서에 맞게 작성해야한다.</p>
+
+<h2 id="2-조건문"><font color="#A0D7EF">2. 조건문</font></h2>
+<blockquote>
+  <p>조건에 따라 실행이 달라지게 할 때 사용되는 문장이다</p>
+</blockquote>
+
+<h3 id="if문"><font color="#A0D7EF">If문</font></h3>
+<hr />
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span><span class="o">(</span><span class="n">조건문</span><span class="o">)</span> <span class="o">{</span>
+  <span class="c1">// 조건이 참일 경우 실행 될 코드;</span>
+<span class="o">}</span>
+<span class="k">else</span> <span class="nf">if</span><span class="o">(</span><span class="n">조건문</span><span class="o">)</span> <span class="o">{</span>
+  <span class="c1">// 조건이 참일 경우 실행 될 코드;</span>
+<span class="o">}</span>
+<span class="k">else</span> <span class="o">{</span>
+  <span class="c1">// 앞선 조건을 제외한 나머지 경우가 실행 될 코드;</span>
+<span class="o">}</span>
 </code></pre></div></div>
-<p><span style="color:#B0ff66">sorted X를 Key, X’를 Value로 넣은 딕셔너리를 만든다</span></p>
+<p>흐름은 위에서 아래로 순차적으로 일어난다</p>
 
-<h2 id="3-총평"><font color="#A0D7EF">3. 총평</font></h2>
-<p>문제의 해결 방법은 매우 빨리 찾았지만<br />
-코드가 너무 길어지는 것 같아서<br />
-짧게 코딩을 하려다 시간이 좀 걸린 것 같다.<br /><br />
-파이썬은 깊은 복사를 하는게 매우 쉬운 것 같다.<br />
-조만간 자바로 다시 돌아가야하는데<br />
-잘 적응 할 수 있을지 걱정이다,,, ㅠㅜ</p>
+<h3 id="switch문"><font color="#A0D7EF">Switch문</font></h3>
+<hr />
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">switch</span><span class="o">(</span><span class="n">변수</span><span class="o">)</span> <span class="o">{</span>
+  <span class="k">case</span> <span class="n">조건1</span> <span class="o">:</span> <span class="c1">// 조건이 참일 때 실행 될 코드</span>
+  <span class="k">case</span> <span class="n">조건2</span> <span class="o">:</span> <span class="c1">// 조건이 참일 때 실행 될 코드</span>
+  <span class="k">case</span> <span class="n">조건3</span> <span class="o">:</span> <span class="c1">// 조건이 참일 때 실행 될 코드</span>
+  <span class="k">case</span> <span class="n">조건4</span> <span class="o">:</span> <span class="c1">// 조건이 참일 때 실행 될 코드</span>
+  <span class="k">case</span> <span class="n">조건5</span> <span class="o">:</span> <span class="c1">// 조건이 참일 때 실행 될 코드</span>
+  <span class="k">default</span> <span class="o">:</span> <span class="c1">// 앞선 조건에 부합되지 않는 경우</span>
+
+<span class="o">}</span>
+</code></pre></div></div>
+<p>Switch문 또한 위에서 아래로 순차적으로 일어난다</p>
+
+<p class="notice--danger">break문을 작성하지 않는다면 순차적으로 밑에 있는 조건들을 실행한다</p>
+
+<p><br /></p>
+<h1 id="-느낀점"><font color="#A0D7EF"> 느낀점</font></h1>
+<hr />
+
+<p>오늘은 코딩의 기본 조건문을 배웠다.<br />
+Switch문은 자주 써보지 않아서 오늘 익숙해지는 시간을 배운 것 같다.<br /><br />
+강화된 Switch문도 자바 14버전부터 지원한다는데 딱히 쓰일 일이 있나 생각이들었다.<br />
+개념 자체는 이미 다 아는거라서 공부하는데 많은 시간이 걸리지 않았지만<br />
+코플릿을 푸는 재미가 쏠쏠해서 좋은 것 같다.<br /></p>
+
 
         
       </section>
@@ -550,11 +599,7 @@
     <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> 태그: </strong>
     <span itemprop="keywords">
     
-      <a href="/tags/#coding" class="page__taxonomy-item p-category" rel="tag">Coding</a><span class="sep">, </span>
-    
-      <a href="/tags/#python" class="page__taxonomy-item p-category" rel="tag">Python</a><span class="sep">, </span>
-    
-      <a href="/tags/#sort" class="page__taxonomy-item p-category" rel="tag">Sort</a>
+      <a href="/tags/#codestates" class="page__taxonomy-item p-category" rel="tag">Codestates</a>
     
     </span>
   </p>
@@ -571,7 +616,7 @@
     <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> 카테고리: </strong>
     <span itemprop="keywords">
     
-      <a href="/categories/#baekjoon" class="page__taxonomy-item p-category" rel="tag">BaekJoon</a>
+      <a href="/categories/#memoir" class="page__taxonomy-item p-category" rel="tag">Memoir</a>
     
     </span>
   </p>
@@ -579,7 +624,7 @@
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2023-04-15T00:00:00+09:00">April 15, 2023</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2023-04-18T00:00:00+09:00">April 18, 2023</time></p>
 
       </footer>
 
@@ -588,12 +633,11 @@
       
   <nav class="pagination">
     
-      <a href="/memoir/SEB_BE4/" class="pagination--pager" title="코드스테이츠 백엔드 4일차 회고록
+      <a href="/memoir/SEB_BE5/" class="pagination--pager" title="코드스테이츠 백엔드 5일차 회고록
 ">이전</a>
     
     
-      <a href="/memoir/SEB_BE5/" class="pagination--pager" title="코드스테이츠 백엔드 5일차 회고록
-">다음</a>
+      <a href="#" class="pagination--pager disabled">다음</a>
     
   </nav>
 
@@ -607,54 +651,6 @@
     <div class="page__related">
       <h2 class="page__related-title">참고</h2>
       <div class="grid__wrapper">
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/memoir/SEB_BE6/" rel="permalink">코드스테이츠 백엔드 6일차 회고록
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-      
-      <span class="page__meta-date">
-        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
-        
-        <time datetime="2023-04-18T00:00:00+09:00">April 18, 2023</time>
-      </span>
-    
-
-    <span class="page__meta-sep"></span>
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
-        
-          1 분 소요
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">
-
-</p>
-  </article>
-</div>
-
         
           
 
@@ -691,6 +687,54 @@
         <i class="far fa-fw fa-clock" aria-hidden="true"></i>
         
           1 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/baekjoon/baekJoon_18870/" rel="permalink">파이썬 백준 18870번 문제 풀이
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2023-04-15T00:00:00+09:00">April 15, 2023</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          최대 1 분 소요
         
       </span>
     
@@ -856,8 +900,8 @@
     
   <script>
     var disqus_config = function () {
-      this.page.url = "http://localhost:4000/baekjoon/baekJoon_18870/";  /* Replace PAGE_URL with your page's canonical URL variable */
-      this.page.identifier = "/baekjoon/baekJoon_18870"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+      this.page.url = "http://localhost:4000/memoir/SEB_BE6/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/memoir/SEB_BE6"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
     };
     (function() { /* DON'T EDIT BELOW THIS LINE */
       var d = document, s = d.createElement('script');
