@@ -64,4 +64,10 @@ var store = [{
         "tags": ["Codestates"],
         "url": "/memoir/SEB_BE6/",
         "teaser": null
+      },{
+        "title": "코드스테이츠 백엔드 7일차 회고록",
+        "excerpt":"배운점 1. 반복문 코드들이 반복적으로 실행되도록 할 때 사용된다 for문 public class Main { public static void main(String[] args) { for(/*초기화; 조건식; 증감식*/) { // 반복 실행될 구문 } } } for문은 조건식이 참인 동안 주어진 횟수만큼 실행문을 수행한다(수행횟수를 알 때) 초기화는 for문이 시작 할 때 최초 한번만 수행된다 조건식...","categories": ["Memoir"],
+        "tags": ["Codestates"],
+        "url": "/memoir/SEB_BE7/",
+        "teaser": null
       }]
