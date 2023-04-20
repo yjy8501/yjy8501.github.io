@@ -9,7 +9,7 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>코드스테이츠 백엔드 1일차 회고록 | Rakugaki</title>
+<!-- begin _includes/seo.html --><title>코드스테이츠 백엔드 8일차 회고록 | Rakugaki</title>
 <meta name="description" content="">
 
 
@@ -22,8 +22,8 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ko_KR">
 <meta property="og:site_name" content="Rakugaki">
-<meta property="og:title" content="코드스테이츠 백엔드 1일차 회고록">
-<meta property="og:url" content="http://localhost:4000/memoir/SEB_BE1/">
+<meta property="og:title" content="코드스테이츠 백엔드 8일차 회고록">
+<meta property="og:url" content="http://localhost:4000/memoir/SEB_BE8/">
 
 
   <meta property="og:description" content="">
@@ -34,7 +34,7 @@
 
 
 
-  <meta property="article:published_time" content="2023-04-11T00:00:00+09:00">
+  <meta property="article:published_time" content="2023-04-20T00:00:00+09:00">
 
 
 
@@ -45,7 +45,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/memoir/SEB_BE1/">
+<link rel="canonical" href="http://localhost:4000/memoir/SEB_BE8/">
 
 
 
@@ -172,7 +172,7 @@
     
       
       
-        <li class="current">코드스테이츠 백엔드 1일차 회고록</li>
+        <li class="current">코드스테이츠 백엔드 8일차 회고록</li>
       
     
   </ol>
@@ -416,16 +416,16 @@
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="코드스테이츠 백엔드 1일차 회고록">
+    <meta itemprop="headline" content="코드스테이츠 백엔드 8일차 회고록">
     <meta itemprop="description" content="">
-    <meta itemprop="datePublished" content="2023-04-11T00:00:00+09:00">
+    <meta itemprop="datePublished" content="2023-04-20T00:00:00+09:00">
     
 
     <div class="page__inner-wrap">
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://localhost:4000/memoir/SEB_BE1/" class="u-url" itemprop="url">코드스테이츠 백엔드 1일차 회고록
+            <a href="http://localhost:4000/memoir/SEB_BE8/" class="u-url" itemprop="url">코드스테이츠 백엔드 8일차 회고록
 </a>
           </h1>
           
@@ -436,7 +436,7 @@
       <span class="page__meta-date">
         <i class="far fa-calendar-alt" aria-hidden="true"></i>
         
-        <time datetime="2023-04-11T00:00:00+09:00">April 11, 2023</time>
+        <time datetime="2023-04-20T00:00:00+09:00">April 20, 2023</time>
       </span>
     
 
@@ -464,56 +464,132 @@
           <aside class="sidebar__right sticky">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> 목차</h4></header>
-              <ul class="toc__menu"><li><a href="#-배운점"> 배운점</a><ul><li><a href="#1-메타인지란-무엇인가">1. 메타인지란 무엇인가?</a></li><li><a href="#2-페어-프로그래밍이-무엇인가">2. 페어 프로그래밍이 무엇인가?</a></li><li><a href="#3-나만의-학습-전략을-세우자">3. 나만의 학습 전략을 세우자!</a></li></ul></li><li><a href="#-느낀점"> 느낀점</a></li></ul>
+              <ul class="toc__menu"><li><a href="#-배운점"> 배운점</a><ul><li><a href="#1-배열">1. 배열</a><ul><li><a href="#1차원-배열">1차원 배열</a></li><li><a href="#2차원-배열">2차원 배열</a></li><li><a href="#-배열-탐색-방법"> 배열 탐색 방법</a></li></ul></li></ul></li><li><a href="#-응용-문제"> 응용 문제</a></li><li><a href="#-느낀점"> 느낀점</a></li></ul>
 
             </nav>
           </aside>
         
         <style> 
-    p { line-height: 1.75em; }
+    p { line-height : 1.75em; }
 </style>
 
 <h1 id="-배운점"><font color="#A0D7EF"> 배운점</font></h1>
 
-<h2 id="1-메타인지란-무엇인가"><font color="#A0D7EF">1. 메타인지란 무엇인가?</font></h2>
+<h2 id="1-배열"><font color="#A0D7EF">1. 배열</font></h2>
+<ul>
+  <li>같은 타입의 변수들로 이루어진 유한 집합</li>
+  <li>배열은 배열의 요소(element)와 위치를 가리키는 숫자(index)로 이루어져 있다</li>
+  <li>배열에 값을 저장하면 메모리 공간 상 물리적 값들이 모여있다</li>
+</ul>
 
-<p>메타인지란 현재 나의 인지 상태를 모니터링하는 능력이다.<br /><br />
-내 방식대로 이해하자면 내가 무엇을 알고, 무엇을 모르는지<br />
-정확히 판단 할 수 있는 것이 메타인지 능력인 것 같다.<br /><br />
-어중간하게 아는 것이 제일 무서운 것이다. 라고 스스로 생각하기도 하고,<br />
-전공생인 입장으로써 이미 배운 영역이 많이 나올테지만<br />
-자만하지 않고 처음부터 다시 쌓는다는 마인드로 공부를 해야겠다고 생각했다.<br /><br /></p>
+<h3 id="1차원-배열"><font color="#A0D7EF">1차원 배열</font></h3>
+<hr />
 
-<h2 id="2-페어-프로그래밍이-무엇인가"><font color="#A0D7EF">2. 페어 프로그래밍이 무엇인가?</font></h2>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span><span class="o">[]</span> <span class="n">arr</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="mi">10</span><span class="o">];</span> <span class="c1">// 배열의 크기가 10인 1차원 배열 arr   </span>
+</code></pre></div></div>
+<ul>
+  <li>배열의 타입과 길이는 변경 가능하다</li>
+  <li>arr은 배열의 맨 첫번째 요소의 주소값을 가리킨다</li>
+  <li><span style="color:#FFFF80"><code class="language-plaintext highlighter-rouge">arr[0], arr[2] ..</code></span>으로 값에 접근한다</li>
+  <li><span style="color:#FFFF80"><code class="language-plaintext highlighter-rouge">arr.length</code></span> 매소드로 배열의 길이를 받을 수 있다</li>
+</ul>
 
-<p>페어 프로그래밍이란 말 그대로 동기와 함께 코딩을 하는 것으로,<br />
-실무는 모두 협업으로 이루어지기 때문에<br />
-페어 프로그래밍을 통해 미리 협업을 경험하는 것 같다.<br /><br />
-대학교에서 프로젝트를 진행 해본 나는 코딩에서 협업 능력,<br />
-커뮤니케이션 능력이 얼마나 중요한지 잘 알고 있다.<br /><br />
-본인의 실력이 아무리 뛰어나도, 혼자서 할 수 있는 양에는<br />
-한계가 있기 때문에 실무에서는 무조건 다른 사람과 함께 일을 하게 된다.<br /><br />
-그렇기 때문에 페어 프로그래밍을 통해 나보다 실력이 낮은 사람,<br />
-나보다 실력이 높은 사람들을 겪어보면서<br /> 
-개발자의 역량을 발전시킬 수 있도록 노력해야겠다.<br /><br /></p>
+<h3 id="2차원-배열"><font color="#A0D7EF">2차원 배열</font></h3>
+<hr />
 
-<h2 id="3-나만의-학습-전략을-세우자"><font color="#A0D7EF">3. 나만의 학습 전략을 세우자!</font></h2>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span><span class="o">[][]</span> <span class="n">arr</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[][]</span>
+</code></pre></div></div>
+<ul>
+  <li>2차원 배열은 1차원 배열 두개가 중첩 된 것이다.</li>
+  <li>가변배열로 사용가능하다(마지막 차수 길이 선언 생략 가능)</li>
+  <li>그래프 알고리즘을 풀 때 많이 사용된다</li>
+</ul>
 
-<p>캘린더에 있는 일정 표를 보고, 오늘 확실히 알아가야 할 것들의 키워드를 작성하고,<br />
-학습 목표를 참고하면서, 챕터별로 얼마나 이해했는지 확인하면서 공부 해야겠다고<br />
-생각했다. 앞서 말했던 메타인지와 같은 맥락이다.<br /><br /></p>
+<h3 id="-배열-탐색-방법"><font color="#A0D7EF"> 배열 탐색 방법</font></h3>
+<hr />
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">arr</span><span class="o">.</span><span class="na">length</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+  <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">arr</span><span class="o">[</span><span class="n">i</span><span class="o">]);</span>
+<span class="o">}</span>
+</code></pre></div></div>
+<ul>
+  <li>for문을 이용한 배열 탐색</li>
+</ul>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+<span class="k">while</span><span class="o">(</span><span class="n">arr</span><span class="o">.</span><span class="na">length</span> <span class="o">&gt;</span> <span class="n">i</span><span class="o">)</span> <span class="o">{</span>
+  <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">arr</span><span class="o">[</span><span class="n">i</span><span class="o">++])</span>
+<span class="o">}</span>
+</code></pre></div></div>
+<ul>
+  <li>while문을 이용한 배열 탐색</li>
+</ul>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">element</span> <span class="o">:</span> <span class="n">arr</span><span class="o">)</span> <span class="o">{</span>
+  <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">element</span><span class="o">);</span>
+<span class="o">}</span>
+</code></pre></div></div>
+<ul>
+  <li>for-Each문을 이용한 배열 탐색</li>
+  <li>
+    <p>값을 불러오기만 할 뿐 수정할 수 없다</p>
+  </li>
+  <li>while문은 조건식이 true일 경우 무한히 반복한다</li>
+  <li>정해진 횟수가 없을 때 사용하기 좋다</li>
+  <li>while문을 탈출하기 위한 코드를 꼭 작성해야한다</li>
+</ul>
+
+<h1 id="-응용-문제"><font color="#A0D7EF"> 응용 문제</font></h1>
+<hr />
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">java.io.BufferedReader</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.io.IOException</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.io.InputStreamReader</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">fibonacci_Function</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">IOException</span> <span class="o">{</span>
+
+        <span class="nc">BufferedReader</span> <span class="n">bf</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">BufferedReader</span><span class="o">(</span><span class="k">new</span> <span class="nc">InputStreamReader</span><span class="o">(</span><span class="nc">System</span><span class="o">.</span><span class="na">in</span><span class="o">));</span>
+
+        <span class="kt">int</span> <span class="no">T</span> <span class="o">=</span> <span class="nc">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">bf</span><span class="o">.</span><span class="na">readLine</span><span class="o">());</span>
+
+        <span class="kt">int</span><span class="o">[]</span> <span class="n">dp</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="mi">41</span><span class="o">];</span>
+
+        <span class="n">dp</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+        <span class="n">dp</span><span class="o">[</span><span class="mi">1</span><span class="o">]</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span>
+
+        <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">2</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">41</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+            <span class="n">dp</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">dp</span><span class="o">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="o">]</span> <span class="o">+</span> <span class="n">dp</span><span class="o">[</span><span class="n">i</span><span class="o">-</span><span class="mi">2</span><span class="o">];</span>
+        <span class="o">}</span>
+
+        <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="no">T</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+            <span class="kt">int</span> <span class="no">N</span> <span class="o">=</span> <span class="nc">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">bf</span><span class="o">.</span><span class="na">readLine</span><span class="o">());</span>
+            <span class="k">if</span><span class="o">(</span><span class="no">N</span> <span class="o">==</span> <span class="mi">0</span><span class="o">)</span> <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">dp</span><span class="o">[</span><span class="mi">1</span><span class="o">]+</span><span class="s">" "</span><span class="o">+</span><span class="n">dp</span><span class="o">[</span><span class="mi">0</span><span class="o">]);</span>
+            <span class="k">else</span> <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">dp</span><span class="o">[</span><span class="no">N</span><span class="o">-</span><span class="mi">1</span><span class="o">]+</span><span class="s">" "</span><span class="o">+</span><span class="n">dp</span><span class="o">[</span><span class="no">N</span><span class="o">]);</span>
+
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+<p>다이나믹 프로그래밍 알고리즘 <a href="https://www.acmicpc.net/problem/1003">백준_피보나치 함수</a><br />
+오늘 풀었던 피보나치 함수 문제의 연장선상이다
+<br /><br /></p>
 
 <h1 id="-느낀점"><font color="#A0D7EF"> 느낀점</font></h1>
-<p>오늘은 학습 관련 툴을 설치하거나, 앞으로의 교육 일정, 교육 방법에 관한<br />
-OT느낌이 강했다.<br /><br />
-전공자인 입장에서 오늘 크게 배운 점은 많이 없었다.<br />
-그래도 혼자 공부하고, 고심하면서 배웠던 경험들이<br />
-오늘 수업에서 강사님들이 주시는 팁과 유사하다는 것을 느끼고<br />
-내가 그동안 해온 공부가 헛되지 않았다는 것을 느꼈다.<br /><br />
-앞으로 전공자라고 자만하고, 방심하지 않고<br />
-혼자 공부하느라 지쳤다고, 구글링으로 할 수 없는 단계라고,<br />
-나보다 더 잘하는 사람들에게 배우고 싶다고 투정 부린 만큼<br />
-다른분들 보다 더 질문하고, 공부해서 많은 것을 얻어 가야겠다고 생각했다.<br /></p>
+<hr />
+
+<p>오늘은 배열에 대해 배워보았다!!<br /><br />
+자료구조 알고리즘을 공부 할 때는 배열보다 다른 자료구조를<br />
+많이 사용했어서 오늘 여러 함수 없이 문제를 진행하는데 조금 어려움이 있었다<br /><br />
+여러 개발자들이 미리 만들어 놓은 함수에 압도적인 감사를,,,,!!!<br /><br />
+오늘을 마지막으로 자바의 기초문법은 끝나게 되었다<br />
+내일부터 객체지향 프로그래밍을 배우는데 자바에서 손 뗀지 오래돼서<br />
+사실 잘 기억이 안난다,,,,,ㅋㅌㅋㅋㅋㅋㅋ<br /><br />
+새내기 시절 때 머리 엄청 싸메여가며 고통받았던 것 같은데<br />
+통달했을 때는 이것저것 만드는 재미가 있었던 것으로 기억한다!!<br /><br />
+다시 배우는 입장이니까 빠르게 이해 할 수 있지 않을까 생각한다!!<br />
+블로깅 챌린지가 얼마 남지 않았다!! 좀만 더 고생하자!</p>
+
 
         
       </section>
@@ -555,7 +631,7 @@ OT느낌이 강했다.<br /><br />
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2023-04-11T00:00:00+09:00">April 11, 2023</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2023-04-20T00:00:00+09:00">April 20, 2023</time></p>
 
       </footer>
 
@@ -564,12 +640,11 @@ OT느낌이 강했다.<br /><br />
       
   <nav class="pagination">
     
-      <a href="/baekjoon/baekJoon_2903/" class="pagination--pager" title="파이썬 백준 2903번 문제 풀이
+      <a href="/memoir/SEB_BE7/" class="pagination--pager" title="코드스테이츠 백엔드 7일차 회고록
 ">이전</a>
     
     
-      <a href="/memoir/SEB_BE2/" class="pagination--pager" title="코드스테이츠 백엔드 2일차 회고록
-">다음</a>
+      <a href="#" class="pagination--pager disabled">다음</a>
     
   </nav>
 
@@ -583,54 +658,6 @@ OT느낌이 강했다.<br /><br />
     <div class="page__related">
       <h2 class="page__related-title">참고</h2>
       <div class="grid__wrapper">
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/memoir/SEB_BE8/" rel="permalink">코드스테이츠 백엔드 8일차 회고록
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-      
-      <span class="page__meta-date">
-        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
-        
-        <time datetime="2023-04-20T00:00:00+09:00">April 20, 2023</time>
-      </span>
-    
-
-    <span class="page__meta-sep"></span>
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
-        
-          1 분 소요
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">
-
-</p>
-  </article>
-</div>
-
         
           
 
@@ -776,6 +803,54 @@ OT느낌이 강했다.<br /><br />
 </div>
 
         
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/baekjoon/baekJoon_18870/" rel="permalink">파이썬 백준 18870번 문제 풀이
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2023-04-15T00:00:00+09:00">April 15, 2023</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          최대 1 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+
+</p>
+  </article>
+</div>
+
+        
       </div>
     </div>
   
@@ -832,8 +907,8 @@ OT느낌이 강했다.<br /><br />
     
   <script>
     var disqus_config = function () {
-      this.page.url = "http://localhost:4000/memoir/SEB_BE1/";  /* Replace PAGE_URL with your page's canonical URL variable */
-      this.page.identifier = "/memoir/SEB_BE1"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+      this.page.url = "http://localhost:4000/memoir/SEB_BE8/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/memoir/SEB_BE8"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
     };
     (function() { /* DON'T EDIT BELOW THIS LINE */
       var d = document, s = d.createElement('script');

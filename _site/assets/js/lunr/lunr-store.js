@@ -70,4 +70,10 @@ var store = [{
         "tags": ["Codestates"],
         "url": "/memoir/SEB_BE7/",
         "teaser": null
+      },{
+        "title": "코드스테이츠 백엔드 8일차 회고록",
+        "excerpt":"배운점 1. 배열 같은 타입의 변수들로 이루어진 유한 집합 배열은 배열의 요소(element)와 위치를 가리키는 숫자(index)로 이루어져 있다 배열에 값을 저장하면 메모리 공간 상 물리적 값들이 모여있다 1차원 배열 int[] arr = new int[10]; // 배열의 크기가 10인 1차원 배열 arr 배열의 타입과 길이는 변경 가능하다 arr은 배열의 맨 첫번째 요소의...","categories": ["Memoir"],
+        "tags": ["Codestates"],
+        "url": "/memoir/SEB_BE8/",
+        "teaser": null
       }]
