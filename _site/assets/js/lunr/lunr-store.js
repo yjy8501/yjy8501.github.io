@@ -76,4 +76,10 @@ var store = [{
         "tags": ["Codestates"],
         "url": "/memoir/SEB_BE8/",
         "teaser": null
+      },{
+        "title": "코드스테이츠 백엔드 9일차 회고록",
+        "excerpt":"배운점 1. 클래스 객체를 정의한 설계도 또는 틀 객체를 생성하는데 사용된다 객체의 변수와 메소드의 집합이다 클래스의 구성 요소 Public class Car { // 클래스 명 Car(){..} // 생성자 int name = “승용차” // 필드 int getPrice(){..} // 매서드 class innerClass {..} // 이너 클래스 } 필드 - 클래스의 속성(state)을 나타내는...","categories": ["Memoir"],
+        "tags": ["Codestates"],
+        "url": "/memoir/SEB_BE9/",
+        "teaser": null
       }]

@@ -1,4 +1,120 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-20T21:03:53+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Rakugaki</title><subtitle>개발 낙서장 &amp; 일상</subtitle><author><name>양재용</name><email>yjy850146@gmail.com</email></author><entry><title type="html">코드스테이츠 백엔드 8일차 회고록</title><link href="http://localhost:4000/memoir/SEB_BE8/" rel="alternate" type="text/html" title="코드스테이츠 백엔드 8일차 회고록" /><published>2023-04-20T00:00:00+09:00</published><updated>2023-04-20T00:00:00+09:00</updated><id>http://localhost:4000/memoir/SEB_BE8</id><content type="html" xml:base="http://localhost:4000/memoir/SEB_BE8/"><![CDATA[<style> 
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-21T11:06:56+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Rakugaki</title><subtitle>개발 낙서장 &amp; 일상</subtitle><author><name>양재용</name><email>yjy850146@gmail.com</email></author><entry><title type="html">코드스테이츠 백엔드 9일차 회고록</title><link href="http://localhost:4000/memoir/SEB_BE9/" rel="alternate" type="text/html" title="코드스테이츠 백엔드 9일차 회고록" /><published>2023-04-21T00:00:00+09:00</published><updated>2023-04-21T00:00:00+09:00</updated><id>http://localhost:4000/memoir/SEB_BE9</id><content type="html" xml:base="http://localhost:4000/memoir/SEB_BE9/"><![CDATA[<style> 
+    p { line-height : 1.75em; }
+</style>
+
+<h1 id="-배운점"><font color="#A0D7EF"> 배운점</font></h1>
+
+<h2 id="1-클래스"><font color="#A0D7EF">1. 클래스</font></h2>
+<ul>
+  <li>객체를 정의한 설계도 또는 틀</li>
+  <li>객체를 생성하는데 사용된다</li>
+  <li>객체의 변수와 메소드의 집합이다</li>
+</ul>
+
+<h3 id="클래스의-구성-요소"><font color="#A0D7EF">클래스의 구성 요소</font></h3>
+<hr />
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">Public</span> <span class="kd">class</span> <span class="nc">Car</span> <span class="o">{</span> <span class="c1">// 클래스 명</span>
+	<span class="nc">Car</span><span class="o">(){..}</span> <span class="c1">// 생성자 </span>
+	<span class="kt">int</span> <span class="n">name</span> <span class="o">=</span> <span class="err">“</span><span class="n">승용차</span><span class="err">”</span> <span class="c1">// 필드</span>
+	<span class="kt">int</span> <span class="nf">getPrice</span><span class="o">(){..}</span> <span class="c1">// 매서드</span>
+	<span class="kd">class</span> <span class="nc">innerClass</span> <span class="o">{..}</span> <span class="c1">// 이너 클래스</span>
+<span class="o">}</span>
+
+</code></pre></div></div>
+<ul>
+  <li>필드 - 클래스의 속성(state)을 나타내는 변수</li>
+  <li>메서드 - 클래스의 기능(behavior)0을 나타내는 함수</li>
+  <li>생성자 - 객체를 생성하는 역할을 하는 부분</li>
+  <li>이너 클래스 - 클래스 내부의 클래스</li>
+</ul>
+
+<h2 id="-2-객체"><font color="#A0D7EF"> 2. 객체</font></h2>
+<ul>
+  <li>실세계에 존재하거나 생각할 수 있는 것을을 객체(Object)라고한다</li>
+  <li>객체와 인스턴스는 비슷한 개념으로 쓰이나 객체가 더 큰 범위를 가진다</li>
+</ul>
+
+<h3 id="-객체의-생성"><font color="#A0D7EF"> 객체의 생성</font></h3>
+<hr />
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">Car</span> <span class="n">bmw</span> <span class="o">=</span> <span class="k">new</span> <span class="n">bmw</span><span class="o">()</span> <span class="c1">//Car 클래스를 통해 인스턴스를 생성 후, 참조변수에 저장</span>
+</code></pre></div></div>
+<ul>
+  <li>new 생성자()를 통해 인스턴스를 참조변수에 넣어준다</li>
+  <li>참조 변수는 인스턴스가 저장되어있는 힙 메모리의 주소값을 가리킨다</li>
+  <li>인스턴스의 매서드는 클래스 영억의 매서드를 가리킨다</li>
+</ul>
+
+<h3 id="-객체의-활용"><font color="#A0D7EF"> 객체의 활용</font></h3>
+<hr />
+
+<ul>
+  <li>객체는 포인트 연산자(.)를 통해 접근 가능하다</li>
+  <li><code class="language-plaintext highlighter-rouge">bmw.name, bmw.getPrice()</code></li>
+</ul>
+
+<h2 id="-2-필드멤버-변수"><font color="#A0D7EF"> 2. 필드(멤버 변수)</font></h2>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">Class</span> <span class="nc">Example</span> <span class="o">{</span>
+	<span class="kt">int</span> <span class="n">instanceVariable</span><span class="o">;</span> <span class="c1">// 인스턴스 변수, 객체마다 고유 값을 가진다</span>
+	<span class="kd">static</span> <span class="kt">int</span> <span class="n">classVariable</span><span class="o">;</span> <span class="c1">// 클래스 변수, 같은 객체면 값을 공유한다</span>
+	
+	<span class="kt">void</span> <span class="nf">method</span><span class="o">()</span> <span class="o">{</span>
+		<span class="kt">int</span> <span class="n">localVariable</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="c1">// 지역 변수, 블록 안에서만 존재한다		</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<ul>
+  <li>클래스 변수는 객체가 생성 될 때 생성된다</li>
+  <li>지역 변수는 객체의 생성 없이 사용할 수 있다</li>
+  <li>지역 메모리는 반드시 초기값을 가져야한다</li>
+</ul>
+
+<h2 id="-4-매소드method"><font color="#A0D7EF"> 4. 매소드(Method)</font></h2>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">제어자</span> <span class="o">|</span> <span class="n">반환</span> <span class="n">타입</span> <span class="o">|</span> <span class="n">메소드</span> <span class="n">명</span> <span class="o">|</span> <span class="n">매개</span> <span class="n">변수</span> <span class="n">타입</span><span class="o">,</span> <span class="n">이름</span> 
+<span class="kd">public</span> <span class="kt">int</span> <span class="nf">method</span><span class="o">(</span><span class="kt">int</span> <span class="n">exe</span><span class="o">)</span> <span class="o">{</span> <span class="c1">// -&gt; 메소드 시그니처</span>
+    <span class="c1">// 메소드 바디</span>
+  <span class="o">}</span>
+
+</code></pre></div></div>
+
+<ul>
+  <li>특정 작업을 수행하는 일련의 명령문들의 집합, 기능을 담담한다</li>
+  <li>매소드 시그니처, 메소드 바디로 구분 할 수 있다.</li>
+  <li>메소드 시그니처는 접근 지정자, 반환타입, 매소드명, 매개변수로 이루어져있다</li>
+  <li>관례적으로 매소드명은 소문자로 선언된다</li>
+  <li>메소드 바디는 메소드가 호출 됐을 때 수행되는 작업을 명시한다</li>
+</ul>
+
+<h3 id="-메소드-오버로딩method-overloding"><font color="#A0D7EF"> 메소드 오버로딩(Method Overloding)</font></h3>
+<hr />
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kt">int</span> <span class="nf">method</span><span class="o">(</span><span class="kt">int</span> <span class="n">exe</span><span class="o">)</span> <span class="o">{}</span>
+<span class="kd">public</span> <span class="kt">int</span> <span class="nf">method</span><span class="o">(</span><span class="kt">int</span> <span class="n">exe</span><span class="o">,</span> <span class="kt">int</span> <span class="n">num</span><span class="o">)</span> <span class="o">{}</span>
+<span class="kd">public</span> <span class="kt">int</span> <span class="nf">method</span><span class="o">(</span><span class="kt">int</span> <span class="n">exe</span><span class="o">,</span> <span class="nc">String</span> <span class="n">name</span><span class="o">)</span> <span class="o">{}</span>
+
+</code></pre></div></div>
+
+<ul>
+  <li>클래스 안에 같은 이름의 메소드를 여러개 정의하는 것</li>
+  <li>같은 이름, 매개변수 개수와 타입은 다르게 정의되어야 한다</li>
+  <li>반환타입은 오버로딩 조건에 영향을 주지 못한다</li>
+</ul>
+
+<p><br /></p>
+<h1 id="-느낀점"><font color="#A0D7EF"> 느낀점</font></h1>
+<hr />
+
+<p>오늘은 본격적인 자바 공부를 시작했다.<br /><br />
+오랜만에 공부하니까 너무 반갑기도 했고, 주말에 따로<br />
+책을 보면서 다시 공부해봐야겠다 생각이 들었다.<br /><br />
+다시 공부하는거니까 이번에는 심도있게 공부해야겠다 생각했다.<br /><br />
+진짜 처음 공부할 때는 무슨 소리인지 하나도 이해 안가서<br />
+실습만 4시간씩 하고 그랬었는데,,,, 추억이 생각난다.<br /><br />
+열심히 공부해서 기초 탄탄히 잡고 가자!!</p>]]></content><author><name>양재용</name><email>yjy850146@gmail.com</email></author><category term="Memoir" /><category term="Codestates" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">코드스테이츠 백엔드 8일차 회고록</title><link href="http://localhost:4000/memoir/SEB_BE8/" rel="alternate" type="text/html" title="코드스테이츠 백엔드 8일차 회고록" /><published>2023-04-20T00:00:00+09:00</published><updated>2023-04-20T00:00:00+09:00</updated><id>http://localhost:4000/memoir/SEB_BE8</id><content type="html" xml:base="http://localhost:4000/memoir/SEB_BE8/"><![CDATA[<style> 
     p { line-height : 1.75em; }
 </style>
 
@@ -60,9 +176,7 @@
 </code></pre></div></div>
 <ul>
   <li>for-Each문을 이용한 배열 탐색</li>
-  <li>
-    <p>값을 불러오기만 할 뿐 수정할 수 없다</p>
-  </li>
+  <li>값을 불러오기만 할 뿐 수정할 수 없다</li>
   <li>while문은 조건식이 true일 경우 무한히 반복한다</li>
   <li>정해진 횟수가 없을 때 사용하기 좋다</li>
   <li>while문을 탈출하기 위한 코드를 꼭 작성해야한다</li>
@@ -1081,48 +1195,4 @@ CSS 추가하는 방법은 총 3가지이다.</p>
 하지만 수업을 들으면서 잊었던 지식들을 다시 배우기도 했고,<br />
 짧은 시간 안에 대학교 때 배웠던 내용을 공부하는 것을 봤을 때<br />
 뒤에 나올 Spring 프레임워크 부분이 기대됐다.<br /><br />
-자만하지 말고 차근차근 기초부터 다시 쌓아가도록 하자!!</p>]]></content><author><name>양재용</name><email>yjy850146@gmail.com</email></author><category term="Memoir" /><category term="Codestates" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">코드스테이츠 백엔드 1일차 회고록</title><link href="http://localhost:4000/memoir/SEB_BE1/" rel="alternate" type="text/html" title="코드스테이츠 백엔드 1일차 회고록" /><published>2023-04-11T00:00:00+09:00</published><updated>2023-04-11T00:00:00+09:00</updated><id>http://localhost:4000/memoir/SEB_BE1</id><content type="html" xml:base="http://localhost:4000/memoir/SEB_BE1/"><![CDATA[<style> 
-    p { line-height: 1.75em; }
-</style>
-
-<h1 id="-배운점"><font color="#A0D7EF"> 배운점</font></h1>
-
-<h2 id="1-메타인지란-무엇인가"><font color="#A0D7EF">1. 메타인지란 무엇인가?</font></h2>
-
-<p>메타인지란 현재 나의 인지 상태를 모니터링하는 능력이다.<br /><br />
-내 방식대로 이해하자면 내가 무엇을 알고, 무엇을 모르는지<br />
-정확히 판단 할 수 있는 것이 메타인지 능력인 것 같다.<br /><br />
-어중간하게 아는 것이 제일 무서운 것이다. 라고 스스로 생각하기도 하고,<br />
-전공생인 입장으로써 이미 배운 영역이 많이 나올테지만<br />
-자만하지 않고 처음부터 다시 쌓는다는 마인드로 공부를 해야겠다고 생각했다.<br /><br /></p>
-
-<h2 id="2-페어-프로그래밍이-무엇인가"><font color="#A0D7EF">2. 페어 프로그래밍이 무엇인가?</font></h2>
-
-<p>페어 프로그래밍이란 말 그대로 동기와 함께 코딩을 하는 것으로,<br />
-실무는 모두 협업으로 이루어지기 때문에<br />
-페어 프로그래밍을 통해 미리 협업을 경험하는 것 같다.<br /><br />
-대학교에서 프로젝트를 진행 해본 나는 코딩에서 협업 능력,<br />
-커뮤니케이션 능력이 얼마나 중요한지 잘 알고 있다.<br /><br />
-본인의 실력이 아무리 뛰어나도, 혼자서 할 수 있는 양에는<br />
-한계가 있기 때문에 실무에서는 무조건 다른 사람과 함께 일을 하게 된다.<br /><br />
-그렇기 때문에 페어 프로그래밍을 통해 나보다 실력이 낮은 사람,<br />
-나보다 실력이 높은 사람들을 겪어보면서<br /> 
-개발자의 역량을 발전시킬 수 있도록 노력해야겠다.<br /><br /></p>
-
-<h2 id="3-나만의-학습-전략을-세우자"><font color="#A0D7EF">3. 나만의 학습 전략을 세우자!</font></h2>
-
-<p>캘린더에 있는 일정 표를 보고, 오늘 확실히 알아가야 할 것들의 키워드를 작성하고,<br />
-학습 목표를 참고하면서, 챕터별로 얼마나 이해했는지 확인하면서 공부 해야겠다고<br />
-생각했다. 앞서 말했던 메타인지와 같은 맥락이다.<br /><br /></p>
-
-<h1 id="-느낀점"><font color="#A0D7EF"> 느낀점</font></h1>
-<p>오늘은 학습 관련 툴을 설치하거나, 앞으로의 교육 일정, 교육 방법에 관한<br />
-OT느낌이 강했다.<br /><br />
-전공자인 입장에서 오늘 크게 배운 점은 많이 없었다.<br />
-그래도 혼자 공부하고, 고심하면서 배웠던 경험들이<br />
-오늘 수업에서 강사님들이 주시는 팁과 유사하다는 것을 느끼고<br />
-내가 그동안 해온 공부가 헛되지 않았다는 것을 느꼈다.<br /><br />
-앞으로 전공자라고 자만하고, 방심하지 않고<br />
-혼자 공부하느라 지쳤다고, 구글링으로 할 수 없는 단계라고,<br />
-나보다 더 잘하는 사람들에게 배우고 싶다고 투정 부린 만큼<br />
-다른분들 보다 더 질문하고, 공부해서 많은 것을 얻어 가야겠다고 생각했다.<br /></p>]]></content><author><name>양재용</name><email>yjy850146@gmail.com</email></author><category term="Memoir" /><category term="Codestates" /><summary type="html"><![CDATA[]]></summary></entry></feed>
+자만하지 말고 차근차근 기초부터 다시 쌓아가도록 하자!!</p>]]></content><author><name>양재용</name><email>yjy850146@gmail.com</email></author><category term="Memoir" /><category term="Codestates" /><summary type="html"><![CDATA[]]></summary></entry></feed>

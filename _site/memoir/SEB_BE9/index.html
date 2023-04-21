@@ -9,7 +9,7 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>코드스테이츠 백엔드 6일차 회고록 | Rakugaki</title>
+<!-- begin _includes/seo.html --><title>코드스테이츠 백엔드 9일차 회고록 | Rakugaki</title>
 <meta name="description" content="">
 
 
@@ -22,8 +22,8 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ko_KR">
 <meta property="og:site_name" content="Rakugaki">
-<meta property="og:title" content="코드스테이츠 백엔드 6일차 회고록">
-<meta property="og:url" content="http://localhost:4000/memoir/SEB_BE6/">
+<meta property="og:title" content="코드스테이츠 백엔드 9일차 회고록">
+<meta property="og:url" content="http://localhost:4000/memoir/SEB_BE9/">
 
 
   <meta property="og:description" content="">
@@ -34,7 +34,7 @@
 
 
 
-  <meta property="article:published_time" content="2023-04-18T00:00:00+09:00">
+  <meta property="article:published_time" content="2023-04-21T00:00:00+09:00">
 
 
 
@@ -45,7 +45,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/memoir/SEB_BE6/">
+<link rel="canonical" href="http://localhost:4000/memoir/SEB_BE9/">
 
 
 
@@ -172,7 +172,7 @@
     
       
       
-        <li class="current">코드스테이츠 백엔드 6일차 회고록</li>
+        <li class="current">코드스테이츠 백엔드 9일차 회고록</li>
       
     
   </ol>
@@ -424,16 +424,16 @@
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="코드스테이츠 백엔드 6일차 회고록">
+    <meta itemprop="headline" content="코드스테이츠 백엔드 9일차 회고록">
     <meta itemprop="description" content="">
-    <meta itemprop="datePublished" content="2023-04-18T00:00:00+09:00">
+    <meta itemprop="datePublished" content="2023-04-21T00:00:00+09:00">
     
 
     <div class="page__inner-wrap">
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://localhost:4000/memoir/SEB_BE6/" class="u-url" itemprop="url">코드스테이츠 백엔드 6일차 회고록
+            <a href="http://localhost:4000/memoir/SEB_BE9/" class="u-url" itemprop="url">코드스테이츠 백엔드 9일차 회고록
 </a>
           </h1>
           
@@ -444,7 +444,7 @@
       <span class="page__meta-date">
         <i class="far fa-calendar-alt" aria-hidden="true"></i>
         
-        <time datetime="2023-04-18T00:00:00+09:00">April 18, 2023</time>
+        <time datetime="2023-04-21T00:00:00+09:00">April 21, 2023</time>
       </span>
     
 
@@ -472,7 +472,7 @@
           <aside class="sidebar__right sticky">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> 목차</h4></header>
-              <ul class="toc__menu"><li><a href="#-배운점"> 배운점</a><ul><li><a href="#1-연산자operator">1. 연산자(Operator)</a><ul><li><a href="#산술-연산자">산술 연산자</a></li><li><a href="#비교-연산자">비교 연산자</a></li><li><a href="#논리-연산자">논리 연산자</a></li></ul></li><li><a href="#2-조건문">2. 조건문</a><ul><li><a href="#if문">If문</a></li><li><a href="#switch문">Switch문</a></li></ul></li></ul></li><li><a href="#-느낀점"> 느낀점</a></li></ul>
+              <ul class="toc__menu"><li><a href="#-배운점"> 배운점</a><ul><li><a href="#1-클래스">1. 클래스</a><ul><li><a href="#클래스의-구성-요소">클래스의 구성 요소</a></li></ul></li><li><a href="#-2-객체"> 2. 객체</a><ul><li><a href="#-객체의-생성"> 객체의 생성</a></li><li><a href="#-객체의-활용"> 객체의 활용</a></li></ul></li><li><a href="#-2-필드멤버-변수"> 2. 필드(멤버 변수)</a></li><li><a href="#-4-매소드method"> 4. 매소드(Method)</a><ul><li><a href="#-메소드-오버로딩method-overloding"> 메소드 오버로딩(Method Overloding)</a></li></ul></li></ul></li><li><a href="#-느낀점"> 느낀점</a></li></ul>
 
             </nav>
           </aside>
@@ -483,129 +483,117 @@
 
 <h1 id="-배운점"><font color="#A0D7EF"> 배운점</font></h1>
 
-<h2 id="1-연산자operator"><font color="#A0D7EF">1. 연산자(Operator)</font></h2>
-<blockquote>
-  <p>하나의 값 또는 여려 개의 값을 피연산자로 하여 새로운 값을 만들어내는 기호</p>
-</blockquote>
-
-<h3 id="산술-연산자"><font color="#A0D7EF">산술 연산자</font></h3>
-<hr />
-
+<h2 id="1-클래스"><font color="#A0D7EF">1. 클래스</font></h2>
 <ul>
-  <li>덧셈 연산자(+)
-    <ul>
-      <li>두 항의 값을 더한 값을 반환한다</li>
-    </ul>
-  </li>
-  <li>뺄셈 연산자(-)
-    <ul>
-      <li>좌항의 값에서 우항의 값을 뺀 값을 반환한다</li>
-    </ul>
-  </li>
-  <li>곱셈 연산자(*)
-    <ul>
-      <li>두 항의 값을 곱한 값을 반환한다</li>
-    </ul>
-  </li>
-  <li>나눗셈 연산자(/)
-    <ul>
-      <li>좌항을 우항으로 나눈 값을 반환한다</li>
-    </ul>
-  </li>
-  <li>나머지 연산자(%)
-    <ul>
-      <li>좌항의 값을 우항의 값으로 나눈 나머지를 반환한다</li>
-    </ul>
-  </li>
-  <li>증감 연산자(++, –)
-    <ul>
-      <li>변수를 1만큼의 값을 증감한다.</li>
-    </ul>
-  </li>
-  <li>복합 대입 연산자(+=, -=, *=, /=, %=)
-    <ul>
-      <li>변수에 우항의 값만큼 연산한다</li>
-    </ul>
-  </li>
+  <li>객체를 정의한 설계도 또는 틀</li>
+  <li>객체를 생성하는데 사용된다</li>
+  <li>객체의 변수와 메소드의 집합이다</li>
 </ul>
 
-<h3 id="비교-연산자"><font color="#A0D7EF">비교 연산자</font></h3>
+<h3 id="클래스의-구성-요소"><font color="#A0D7EF">클래스의 구성 요소</font></h3>
 <hr />
 
-<ul>
-  <li>대소 비교 연산자(&gt;, &lt;, &gt;=, &lt;&gt;=)
-    <ul>
-      <li>좌항과 우항을 비교하여 true 또는 false값을 반환한다</li>
-    </ul>
-  </li>
-  <li>등가 비교 연산자(==, !=)
-    <ul>
-      <li>좌항과 우항이 동등 또는 다름에 따라 true 또는 false값을 반환한다</li>
-    </ul>
-  </li>
-</ul>
-
-<h3 id="논리-연산자"><font color="#A0D7EF">논리 연산자</font></h3>
-<hr />
-
-<ul>
-  <li>논리 연산자(&amp;&amp;, ||, !)
-    <ul>
-      <li>And 연산자(&amp;&amp;)는 두 피연산자중에 하나라도 true가 아니면 false를 반환한다</li>
-      <li>OR 연산자(||)는 두 피연산자중 하나라도 true면 true를 반환한다</li>
-      <li>NOT 연산자(!)는 ture와 false를 반대로 바꿔준다</li>
-    </ul>
-  </li>
-</ul>
-
-<p class="notice--danger">각 연산자는 우선순위가 있기 때문에 순서에 맞게 작성해야한다.</p>
-
-<h2 id="2-조건문"><font color="#A0D7EF">2. 조건문</font></h2>
-<blockquote>
-  <p>조건에 따라 실행이 달라지게 할 때 사용되는 문장이다</p>
-</blockquote>
-
-<h3 id="if문"><font color="#A0D7EF">If문</font></h3>
-<hr />
-
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span><span class="o">(</span><span class="n">조건문</span><span class="o">)</span> <span class="o">{</span>
-  <span class="c1">// 조건이 참일 경우 실행 될 코드;</span>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">Public</span> <span class="kd">class</span> <span class="nc">Car</span> <span class="o">{</span> <span class="c1">// 클래스 명</span>
+	<span class="nc">Car</span><span class="o">(){..}</span> <span class="c1">// 생성자 </span>
+	<span class="kt">int</span> <span class="n">name</span> <span class="o">=</span> <span class="err">“</span><span class="n">승용차</span><span class="err">”</span> <span class="c1">// 필드</span>
+	<span class="kt">int</span> <span class="nf">getPrice</span><span class="o">(){..}</span> <span class="c1">// 매서드</span>
+	<span class="kd">class</span> <span class="nc">innerClass</span> <span class="o">{..}</span> <span class="c1">// 이너 클래스</span>
 <span class="o">}</span>
-<span class="k">else</span> <span class="nf">if</span><span class="o">(</span><span class="n">조건문</span><span class="o">)</span> <span class="o">{</span>
-  <span class="c1">// 조건이 참일 경우 실행 될 코드;</span>
-<span class="o">}</span>
-<span class="k">else</span> <span class="o">{</span>
-  <span class="c1">// 앞선 조건을 제외한 나머지 경우가 실행 될 코드;</span>
+
+</code></pre></div></div>
+<ul>
+  <li>필드 - 클래스의 속성(state)을 나타내는 변수</li>
+  <li>메서드 - 클래스의 기능(behavior)0을 나타내는 함수</li>
+  <li>생성자 - 객체를 생성하는 역할을 하는 부분</li>
+  <li>이너 클래스 - 클래스 내부의 클래스</li>
+</ul>
+
+<h2 id="-2-객체"><font color="#A0D7EF"> 2. 객체</font></h2>
+<ul>
+  <li>실세계에 존재하거나 생각할 수 있는 것을을 객체(Object)라고한다</li>
+  <li>객체와 인스턴스는 비슷한 개념으로 쓰이나 객체가 더 큰 범위를 가진다</li>
+</ul>
+
+<h3 id="-객체의-생성"><font color="#A0D7EF"> 객체의 생성</font></h3>
+<hr />
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">Car</span> <span class="n">bmw</span> <span class="o">=</span> <span class="k">new</span> <span class="n">bmw</span><span class="o">()</span> <span class="c1">//Car 클래스를 통해 인스턴스를 생성 후, 참조변수에 저장</span>
+</code></pre></div></div>
+<ul>
+  <li>new 생성자()를 통해 인스턴스를 참조변수에 넣어준다</li>
+  <li>참조 변수는 인스턴스가 저장되어있는 힙 메모리의 주소값을 가리킨다</li>
+  <li>인스턴스의 매서드는 클래스 영억의 매서드를 가리킨다</li>
+</ul>
+
+<h3 id="-객체의-활용"><font color="#A0D7EF"> 객체의 활용</font></h3>
+<hr />
+
+<ul>
+  <li>객체는 포인트 연산자(.)를 통해 접근 가능하다</li>
+  <li><code class="language-plaintext highlighter-rouge">bmw.name, bmw.getPrice()</code></li>
+</ul>
+
+<h2 id="-2-필드멤버-변수"><font color="#A0D7EF"> 2. 필드(멤버 변수)</font></h2>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">Class</span> <span class="nc">Example</span> <span class="o">{</span>
+	<span class="kt">int</span> <span class="n">instanceVariable</span><span class="o">;</span> <span class="c1">// 인스턴스 변수, 객체마다 고유 값을 가진다</span>
+	<span class="kd">static</span> <span class="kt">int</span> <span class="n">classVariable</span><span class="o">;</span> <span class="c1">// 클래스 변수, 같은 객체면 값을 공유한다</span>
+	
+	<span class="kt">void</span> <span class="nf">method</span><span class="o">()</span> <span class="o">{</span>
+		<span class="kt">int</span> <span class="n">localVariable</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="c1">// 지역 변수, 블록 안에서만 존재한다		</span>
+	<span class="o">}</span>
 <span class="o">}</span>
 </code></pre></div></div>
-<p>흐름은 위에서 아래로 순차적으로 일어난다</p>
 
-<h3 id="switch문"><font color="#A0D7EF">Switch문</font></h3>
+<ul>
+  <li>클래스 변수는 객체가 생성 될 때 생성된다</li>
+  <li>지역 변수는 객체의 생성 없이 사용할 수 있다</li>
+  <li>지역 메모리는 반드시 초기값을 가져야한다</li>
+</ul>
+
+<h2 id="-4-매소드method"><font color="#A0D7EF"> 4. 매소드(Method)</font></h2>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">제어자</span> <span class="o">|</span> <span class="n">반환</span> <span class="n">타입</span> <span class="o">|</span> <span class="n">메소드</span> <span class="n">명</span> <span class="o">|</span> <span class="n">매개</span> <span class="n">변수</span> <span class="n">타입</span><span class="o">,</span> <span class="n">이름</span> 
+<span class="kd">public</span> <span class="kt">int</span> <span class="nf">method</span><span class="o">(</span><span class="kt">int</span> <span class="n">exe</span><span class="o">)</span> <span class="o">{</span> <span class="c1">// -&gt; 메소드 시그니처</span>
+    <span class="c1">// 메소드 바디</span>
+  <span class="o">}</span>
+
+</code></pre></div></div>
+
+<ul>
+  <li>특정 작업을 수행하는 일련의 명령문들의 집합, 기능을 담담한다</li>
+  <li>매소드 시그니처, 메소드 바디로 구분 할 수 있다.</li>
+  <li>메소드 시그니처는 접근 지정자, 반환타입, 매소드명, 매개변수로 이루어져있다</li>
+  <li>관례적으로 매소드명은 소문자로 선언된다</li>
+  <li>메소드 바디는 메소드가 호출 됐을 때 수행되는 작업을 명시한다</li>
+</ul>
+
+<h3 id="-메소드-오버로딩method-overloding"><font color="#A0D7EF"> 메소드 오버로딩(Method Overloding)</font></h3>
 <hr />
 
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">switch</span><span class="o">(</span><span class="n">변수</span><span class="o">)</span> <span class="o">{</span>
-  <span class="k">case</span> <span class="n">조건1</span> <span class="o">:</span> <span class="c1">// 조건이 참일 때 실행 될 코드</span>
-  <span class="k">case</span> <span class="n">조건2</span> <span class="o">:</span> <span class="c1">// 조건이 참일 때 실행 될 코드</span>
-  <span class="k">case</span> <span class="n">조건3</span> <span class="o">:</span> <span class="c1">// 조건이 참일 때 실행 될 코드</span>
-  <span class="k">case</span> <span class="n">조건4</span> <span class="o">:</span> <span class="c1">// 조건이 참일 때 실행 될 코드</span>
-  <span class="k">case</span> <span class="n">조건5</span> <span class="o">:</span> <span class="c1">// 조건이 참일 때 실행 될 코드</span>
-  <span class="k">default</span> <span class="o">:</span> <span class="c1">// 앞선 조건에 부합되지 않는 경우</span>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kt">int</span> <span class="nf">method</span><span class="o">(</span><span class="kt">int</span> <span class="n">exe</span><span class="o">)</span> <span class="o">{}</span>
+<span class="kd">public</span> <span class="kt">int</span> <span class="nf">method</span><span class="o">(</span><span class="kt">int</span> <span class="n">exe</span><span class="o">,</span> <span class="kt">int</span> <span class="n">num</span><span class="o">)</span> <span class="o">{}</span>
+<span class="kd">public</span> <span class="kt">int</span> <span class="nf">method</span><span class="o">(</span><span class="kt">int</span> <span class="n">exe</span><span class="o">,</span> <span class="nc">String</span> <span class="n">name</span><span class="o">)</span> <span class="o">{}</span>
 
-<span class="o">}</span>
 </code></pre></div></div>
-<p>Switch문 또한 위에서 아래로 순차적으로 일어난다</p>
 
-<p class="notice--danger">break문을 작성하지 않는다면 순차적으로 밑에 있는 조건들을 실행한다</p>
+<ul>
+  <li>클래스 안에 같은 이름의 메소드를 여러개 정의하는 것</li>
+  <li>같은 이름, 매개변수 개수와 타입은 다르게 정의되어야 한다</li>
+  <li>반환타입은 오버로딩 조건에 영향을 주지 못한다</li>
+</ul>
 
 <p><br /></p>
 <h1 id="-느낀점"><font color="#A0D7EF"> 느낀점</font></h1>
 <hr />
 
-<p>오늘은 코딩의 기본 조건문을 배웠다.<br />
-Switch문은 자주 써보지 않아서 오늘 익숙해지는 시간을 배운 것 같다.<br /><br />
-강화된 Switch문을 자바 14버전부터 지원한다는데 딱히 쓰일 일이 있나 생각이들었다.<br />
-개념 자체는 이미 다 아는거라서 공부하는데 많은 시간이 걸리지 않았지만<br />
-코플릿을 푸는 재미가 쏠쏠해서 좋은 것 같다.<br /></p>
+<p>오늘은 본격적인 자바 공부를 시작했다.<br /><br />
+오랜만에 공부하니까 너무 반갑기도 했고, 주말에 따로<br />
+책을 보면서 다시 공부해봐야겠다 생각이 들었다.<br /><br />
+다시 공부하는거니까 이번에는 심도있게 공부해야겠다 생각했다.<br /><br />
+진짜 처음 공부할 때는 무슨 소리인지 하나도 이해 안가서<br />
+실습만 4시간씩 하고 그랬었는데,,,, 추억이 생각난다.<br /><br />
+열심히 공부해서 기초 탄탄히 잡고 가자!!</p>
 
 
         
@@ -648,7 +636,7 @@ Switch문은 자주 써보지 않아서 오늘 익숙해지는 시간을 배운 
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2023-04-18T00:00:00+09:00">April 18, 2023</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2023-04-21T00:00:00+09:00">April 21, 2023</time></p>
 
       </footer>
 
@@ -657,12 +645,11 @@ Switch문은 자주 써보지 않아서 오늘 익숙해지는 시간을 배운 
       
   <nav class="pagination">
     
-      <a href="/memoir/SEB_BE5/" class="pagination--pager" title="코드스테이츠 백엔드 5일차 회고록
+      <a href="/memoir/SEB_BE8/" class="pagination--pager" title="코드스테이츠 백엔드 8일차 회고록
 ">이전</a>
     
     
-      <a href="/memoir/SEB_BE7/" class="pagination--pager" title="코드스테이츠 백엔드 7일차 회고록
-">다음</a>
+      <a href="#" class="pagination--pager disabled">다음</a>
     
   </nav>
 
@@ -676,54 +663,6 @@ Switch문은 자주 써보지 않아서 오늘 익숙해지는 시간을 배운 
     <div class="page__related">
       <h2 class="page__related-title">참고</h2>
       <div class="grid__wrapper">
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/memoir/SEB_BE9/" rel="permalink">코드스테이츠 백엔드 9일차 회고록
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-      
-      <span class="page__meta-date">
-        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
-        
-        <time datetime="2023-04-21T00:00:00+09:00">April 21, 2023</time>
-      </span>
-    
-
-    <span class="page__meta-sep"></span>
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
-        
-          1 분 소요
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">
-
-</p>
-  </article>
-</div>
-
         
           
 
@@ -808,6 +747,54 @@ Switch문은 자주 써보지 않아서 오늘 익숙해지는 시간을 배운 
         <i class="far fa-fw fa-clock" aria-hidden="true"></i>
         
           2 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/memoir/SEB_BE6/" rel="permalink">코드스테이츠 백엔드 6일차 회고록
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2023-04-18T00:00:00+09:00">April 18, 2023</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          1 분 소요
         
       </span>
     
@@ -925,8 +912,8 @@ Switch문은 자주 써보지 않아서 오늘 익숙해지는 시간을 배운 
     
   <script>
     var disqus_config = function () {
-      this.page.url = "http://localhost:4000/memoir/SEB_BE6/";  /* Replace PAGE_URL with your page's canonical URL variable */
-      this.page.identifier = "/memoir/SEB_BE6"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+      this.page.url = "http://localhost:4000/memoir/SEB_BE9/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/memoir/SEB_BE9"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
     };
     (function() { /* DON'T EDIT BELOW THIS LINE */
       var d = document, s = d.createElement('script');
