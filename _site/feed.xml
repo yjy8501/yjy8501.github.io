@@ -1,4 +1,189 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-21T11:06:56+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Rakugaki</title><subtitle>개발 낙서장 &amp; 일상</subtitle><author><name>양재용</name><email>yjy850146@gmail.com</email></author><entry><title type="html">코드스테이츠 백엔드 9일차 회고록</title><link href="http://localhost:4000/memoir/SEB_BE9/" rel="alternate" type="text/html" title="코드스테이츠 백엔드 9일차 회고록" /><published>2023-04-21T00:00:00+09:00</published><updated>2023-04-21T00:00:00+09:00</updated><id>http://localhost:4000/memoir/SEB_BE9</id><content type="html" xml:base="http://localhost:4000/memoir/SEB_BE9/"><![CDATA[<style> 
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-24T14:51:34+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Rakugaki</title><subtitle>개발 낙서장 &amp; 일상</subtitle><author><name>양재용</name><email>yjy850146@gmail.com</email></author><entry><title type="html">코드스테이츠 백엔드 10일차 회고록</title><link href="http://localhost:4000/memoir/SEB_BE10/" rel="alternate" type="text/html" title="코드스테이츠 백엔드 10일차 회고록" /><published>2023-04-24T00:00:00+09:00</published><updated>2023-04-24T00:00:00+09:00</updated><id>http://localhost:4000/memoir/SEB_BE10</id><content type="html" xml:base="http://localhost:4000/memoir/SEB_BE10/"><![CDATA[<style> 
+    p { line-height : 1.75em; }
+</style>
+
+<h1 id="-배운점"><font color="#A0D7EF"> 배운점</font></h1>
+
+<h2 id="1-생성자constructor"><font color="#A0D7EF">1. 생성자(Constructor)</font></h2>
+
+<ul>
+  <li>인스턴스가 생성될 때 호출되는 인스턴스 초기화 메소드</li>
+  <li><code class="language-plaintext highlighter-rouge">new</code> 키워드를 통해 객체를 생성할 때 호출되는 메소드</li>
+  <li>생성자 이름은 반드시 클래스의 이름과 같아야한다</li>
+  <li>생성자는 리턴 타입이 없다</li>
+  <li>메소드 오버로딩이 가능하다</li>
+  <li>생성자를 작성하지 않으면 컴파일러에서 기본 생성자를 생성해준다</li>
+  <li>this() 메소드를 통해 다른 오버로딩된 생성자를 불러올 수 있다
+<br /></li>
+</ul>
+
+<h2 id="-2-내부-클래스inner-class"><font color="#A0D7EF"> 2. 내부 클래스(Inner Class)</font></h2>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">Outer</span> <span class="o">{</span> <span class="c1">// 외부 클래스</span>
+	<span class="kd">class</span> <span class="nc">Inner</span> <span class="o">{</span> <span class="c1">// 인스턴스 내부 클래스</span>
+
+	<span class="o">}</span>
+
+	<span class="kd">static</span> <span class="kd">class</span> <span class="nc">StaticInner</span> <span class="o">{</span>  <span class="c1">// 정적 내부 클래스</span>
+
+	<span class="o">}</span>
+
+	<span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span>
+		<span class="kd">class</span> <span class="nc">LocalInner</span> <span class="o">{</span> <span class="c1">// 지역 내부 클래스</span>
+
+		<span class="o">}</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+<ul>
+  <li>클래스 내에 선언된 클래스</li>
+  <li>클래스를 논리적으로 그룹화 할 수 있다</li>
+  <li>캡슐화, 코드의 가독성에 도움이 된다</li>
+</ul>
+
+<p><br /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>종류</th>
+      <th>선언위치</th>
+      <th>사용 가능한 변수</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>인스턴스 내부 클래스(instance inner class)</td>
+      <td>외부 클래스의 멤버변수 선언위치에 선언(멤버 내부 클래스)</td>
+      <td>외부 인스턴스 변수, 외부 전역 변수</td>
+    </tr>
+    <tr>
+      <td>정적 내부 클래스(static inner class)</td>
+      <td>외부 클래스의 멤버변수 선언위치에 선언(멤버 내부 클래스)</td>
+      <td>외부 전역 변수</td>
+    </tr>
+    <tr>
+      <td>지역 내부 클래스(local inner class)</td>
+      <td>외부 클래스의 메소드나 초기화 블록 안에 선언</td>
+      <td>외부 인스턴스 변수, 외부 전역 변수</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+
+<h1 id="-실습-문제"><font color="#A0D7EF"> 실습 문제</font></h1>
+<blockquote>
+  <p>LoL_Program.java</p>
+</blockquote>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">LoL_Program</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="nc">Charactor</span> <span class="n">a</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Charactor</span><span class="o">();</span>
+        <span class="nc">Charactor</span> <span class="n">b</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Charactor</span><span class="o">();</span>
+
+        <span class="n">a</span><span class="o">.</span><span class="na">user_create</span><span class="o">();</span>
+        <span class="n">b</span><span class="o">.</span><span class="na">user_create</span><span class="o">();</span>
+
+        <span class="nc">Charactor</span><span class="o">.</span><span class="na">attack</span><span class="o">(</span><span class="n">a</span><span class="o">,</span> <span class="n">b</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+</code></pre></div></div>
+
+<blockquote>
+  <p>LoL_char.java</p>
+</blockquote>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">java.util.Scanner</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Charactor</span> <span class="o">{</span>
+
+    <span class="nc">String</span> <span class="n">name</span><span class="o">;</span>
+    <span class="kt">int</span> <span class="n">ad</span><span class="o">;</span>
+    <span class="kt">int</span> <span class="n">def</span><span class="o">;</span>
+    <span class="kt">int</span> <span class="n">hp</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">create_info</span><span class="o">()</span> <span class="o">{</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">();</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"[안내] 생성된 유닛 정보는 다음과 같습니다."</span><span class="o">);</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"[안내] "</span><span class="o">+</span><span class="k">this</span><span class="o">.</span><span class="na">name</span><span class="o">+</span><span class="s">" 유닛이 게임에 참여하였습니다."</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">user_info</span><span class="o">()</span> <span class="o">{</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"[공격력] : "</span> <span class="o">+</span> <span class="k">this</span><span class="o">.</span><span class="na">ad</span><span class="o">);</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"[방어력] : "</span> <span class="o">+</span> <span class="k">this</span><span class="o">.</span><span class="na">def</span><span class="o">);</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"[체력] : "</span> <span class="o">+</span> <span class="k">this</span><span class="o">.</span><span class="na">hp</span><span class="o">);</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">();</span>
+    <span class="o">}</span>
+
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">user_create</span><span class="o">()</span> <span class="o">{</span>
+        <span class="nc">Scanner</span> <span class="n">sc</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Scanner</span><span class="o">(</span><span class="nc">System</span><span class="o">.</span><span class="na">in</span><span class="o">);</span>
+
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">"[시스템] 유닛 [이름] 을 입력해 주세요 : "</span><span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="na">next</span><span class="o">();</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">"[시스템] 유닛 [공격력] 을 입력해 주세요 : "</span><span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">ad</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="na">nextInt</span><span class="o">();</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">"[시스템] 유닛 [방어력] 을 입력해 주세요 : "</span><span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">def</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="na">nextInt</span><span class="o">();</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">"[시스템] 유닛 [체력] 을 입력해 주세요 : "</span><span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">hp</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="na">nextInt</span><span class="o">();</span>
+
+        <span class="n">create_info</span><span class="o">();</span>
+        <span class="n">user_info</span><span class="o">();</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">attack</span><span class="o">(</span><span class="nc">Charactor</span> <span class="n">a</span><span class="o">,</span> <span class="nc">Charactor</span> <span class="n">b</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">while</span><span class="o">(</span><span class="kc">true</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">b</span><span class="o">.</span><span class="na">hp</span> <span class="o">=</span> <span class="o">(</span><span class="n">b</span><span class="o">.</span><span class="na">hp</span> <span class="o">+</span> <span class="n">b</span><span class="o">.</span><span class="na">def</span><span class="o">)</span> <span class="o">-</span> <span class="n">a</span><span class="o">.</span><span class="na">ad</span><span class="o">;</span>
+            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"[안내] "</span><span class="o">+</span><span class="n">a</span><span class="o">.</span><span class="na">name</span><span class="o">+</span><span class="s">"유닛이 공격 하였습니다"</span><span class="o">);</span>
+            <span class="k">if</span><span class="o">(</span><span class="n">b</span><span class="o">.</span><span class="na">hp</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
+                <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"[안내] 상대 유닛("</span><span class="o">+</span><span class="n">b</span><span class="o">.</span><span class="na">name</span><span class="o">+</span><span class="s">")이 제거되었습니다."</span><span class="o">);</span>
+                <span class="k">break</span><span class="o">;</span>
+            <span class="o">}</span>
+            <span class="k">else</span> <span class="o">{</span>
+                <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"[안내] 상대 유닛의 남은 [체력은] "</span><span class="o">+</span><span class="n">b</span><span class="o">.</span><span class="na">hp</span><span class="o">+</span><span class="s">" 입니다."</span><span class="o">);</span>
+            <span class="o">}</span>
+
+            <span class="n">a</span><span class="o">.</span><span class="na">hp</span> <span class="o">=</span> <span class="o">(</span><span class="n">a</span><span class="o">.</span><span class="na">hp</span> <span class="o">+</span> <span class="n">a</span><span class="o">.</span><span class="na">def</span><span class="o">)</span> <span class="o">-</span> <span class="n">b</span><span class="o">.</span><span class="na">ad</span><span class="o">;</span>
+            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"[안내] "</span><span class="o">+</span><span class="n">b</span><span class="o">.</span><span class="na">name</span><span class="o">+</span><span class="s">"유닛이 공격 하였습니다"</span><span class="o">);</span>
+
+            <span class="k">if</span><span class="o">(</span><span class="n">a</span><span class="o">.</span><span class="na">hp</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
+                <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"[안내]"</span> <span class="o">+</span><span class="n">a</span><span class="o">.</span><span class="na">name</span><span class="o">+</span><span class="s">"이(가) 파괴되었습니다."</span><span class="o">);</span>
+                <span class="k">break</span><span class="o">;</span>
+            <span class="o">}</span>
+            <span class="k">else</span> <span class="o">{</span>
+                <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"[안내] 내 유닛의 남은 [체력은] "</span><span class="o">+</span><span class="n">a</span><span class="o">.</span><span class="na">hp</span><span class="o">+</span><span class="s">" 입니다."</span><span class="o">);</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"[안내] 게임을 종료합니다."</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<h1 id="-느낀점"><font color="#A0D7EF"> 느낀점</font></h1>
+<hr />
+
+<p>오늘은 생성자와 내부 클래스에 대해 배웠다.<br /></p>
+
+<p>예전에 공부 할 때 내부 클래스 부분을 소홀히 공부했는지<br />
+처음 보는 것 같기도 했고, 잘 이해가 안갔었다.<br /></p>
+
+<p>가장 이해가 안됐던건 내부 클래스를 왜 사용하는가 였다.<br /></p>
+
+<p>인터넷에 검색해보니까 내부 클래스를 사용하면<br />
+클래스 파일을 하나 더 적게 생성 할 수 있고<br />
+클래스의 연결 관계가 간결해져서 가독성이 좋아지고<br />
+캡슐화를 더 단단하게 해줄 수 있다. 라고 나와있었다.<br /></p>
+
+<p>정확한 실습을 하지 않아서 완전히 이해하진 않았지만<br />
+어느 맥락에서 사용되는지 이해는 갔다.<br /></p>
+
+<p>앞으로 코딩을 할 때 내부 클래스를 사용하는 방법을<br />
+익혀야겠다고 생각했다. <br /></p>]]></content><author><name>양재용</name><email>yjy850146@gmail.com</email></author><category term="Memoir" /><category term="Codestates" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">코드스테이츠 백엔드 9일차 회고록</title><link href="http://localhost:4000/memoir/SEB_BE9/" rel="alternate" type="text/html" title="코드스테이츠 백엔드 9일차 회고록" /><published>2023-04-21T00:00:00+09:00</published><updated>2023-04-21T00:00:00+09:00</updated><id>http://localhost:4000/memoir/SEB_BE9</id><content type="html" xml:base="http://localhost:4000/memoir/SEB_BE9/"><![CDATA[<style> 
     p { line-height : 1.75em; }
 </style>
 
@@ -1096,103 +1281,4 @@ vi나 vim말고 nano라는 뉴비 친화적인 에디터가 있다는 것도 처
 <p>문제의 키워드는 매우 쉽게 구할 수 있었지만<br />
 부분 문자열을 어떻게 구하느냐에서 시간을 제일 많이 쓴 것 같다.<br /><br />
 이중 for문을 이용해 배열을 탐색하는 부분이 약하다는 것을 알게되었고<br />
-이 부분을 보완할 수 있도록 많은 문제들을 풀어봐야겠다고 생각했다.</p>]]></content><author><name>양재용</name><email>yjy850146@gmail.com</email></author><category term="BaekJoon" /><category term="Coding" /><category term="Python" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">코드스테이츠 백엔드 2일차 회고록</title><link href="http://localhost:4000/memoir/SEB_BE2/" rel="alternate" type="text/html" title="코드스테이츠 백엔드 2일차 회고록" /><published>2023-04-12T00:00:00+09:00</published><updated>2023-04-12T00:00:00+09:00</updated><id>http://localhost:4000/memoir/SEB_BE2</id><content type="html" xml:base="http://localhost:4000/memoir/SEB_BE2/"><![CDATA[<style> 
-    p { line-height: 1.75em; }
-</style>
-
-<h1 id="-배운점"><font color="#A0D7EF"> 배운점</font></h1>
-
-<h2 id="1-컴퓨터와-프로그래밍이란"><font color="#A0D7EF">1. 컴퓨터와 프로그래밍이란?</font></h2>
-
-<p>우리는 컴퓨터를 흔히 만능 머신이라고 생각한다.<br />
-하지만 우리가 사용하는 많은 기능들은 프로그래머들이<br />
-컴퓨터가 이해할 수 있게 프로그래밍 언어를 사용하여<br />
-컴퓨터가 해야 할 행동들을 설정해놓은 것들이다.<br />
-그렇기 때문에 컴퓨터 입장에서 생각하며 프로그래밍을 하는 연습을 해야한다.<br /><br /></p>
-
-<h2 id="2-웹-서버와-클라이언트"><font color="#A0D7EF">2. 웹 서버와 클라이언트</font></h2>
-
-<p align="center"><img src="https://user-images.githubusercontent.com/68217405/231431324-d276004c-0896-41cd-8641-0b98435e79e1.png" height="250px" width="450px" /></p>
-<p><br />
-간단하게 말하자면 클라이언트는 리소스를 사용하는 곳, 서버는 리소스를 제공하는 곳이다.<br /></p>
-<ul>
-  <li>클라이언트는 서버에 데이터를 보내며 서비스를 요청하고 <span style="color:#B0ff66"><strong>(request)</strong></span>,<br /></li>
-  <li>서버는 DB영역에서 데이터를 저장 또는 조회 후 클라이언트에 응답한다 <span style="color:#B0ff66"><strong>(response)</strong></span><br /></li>
-</ul>
-
-<h2 id="3-html"><font color="#A0D7EF">3. HTML</font></h2>
-
-<p align="center"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/440px-HTML5_logo_and_wordmark.svg.png" height="120px" width="240x" /></p>
-<p><br />
-HTML은 웹 페이지의 내용의 뼈대와 규칙을 기술하는 언어이다.<br />
-웹 페이지의 가장 기초적인 부분이며, 여러가지 태그를 이용하여 구조를 나타낸다.<br /></p>
-<ul>
-  <li>&lt;div&gt;
-    <ul>
-      <li>콘텐츠의 길이와 상관없이 한 줄을 차지함</li>
-      <li>section 사용 권장</li>
-      <li>block 태그임으로 margin, padding 사용 가능</li>
-    </ul>
-  </li>
-  <li>&lt;span&gt;
-    <ul>
-      <li>콘텐츠의 길이만큼 차지함</li>
-      <li>줄바꿈 X</li>
-      <li>inline 태그임으로 margin, padding 사용 불가</li>
-    </ul>
-  </li>
-  <li>&lt;ul&gt;
-    <ul>
-      <li>Unordered Lists의 약자로, 순서가 없는 리스트이다</li>
-    </ul>
-  </li>
-  <li>&lt;ol&gt;
-    <ul>
-      <li>Ordered Lists의 약자로, 순서가 있는 리스트이다</li>
-    </ul>
-  </li>
-  <li>&lt;li&gt;
-    <ul>
-      <li>List의 약자로, ul 과 ol의 내부에 쓰이는 태그이다</li>
-    </ul>
-  </li>
-  <li>&lt;input&gt;
-    <ul>
-      <li>HTML에서 사용자에게 데이터를 입력 받기위해 다양한 입력 방법을 제공해준다</li>
-      <li>check box, radio box, text 등등 있다.</li>
-    </ul>
-  </li>
-</ul>
-
-<h2 id="4-css"><font color="#A0D7EF">4. CSS</font></h2>
-
-<p align="center"><img src="https://i.namu.wiki/i/RsrvedqA4qJ3ZI8OJq2pmQosU4DzAtNQ0v1gdYUrioj7y9pO0cZZ8FMR19iZwSRhf8aEq0wUltfTr2oZhSTobbHT6pBPVnzt3E-8d_ngFWIioFubbfrYHzoLVdQ6OVM-3kH1uM6Sla8sbKDfSIDPQg.svg" height="90px" width="180x" /></p>
-<p><br />
-CSS는 웹 페이지에서 디자인을 적용하는데 사용되는 언어아다.<br />
-CSS를 이용하여 더 나은 UI/UX를 제공한다.<br />
-CSS 추가하는 방법은 총 3가지이다.</p>
-<ol>
-  <li>인라인 스타일
-    <div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&lt;</span><span class="nt">span</span> <span class="nt">style</span><span class="o">=</span><span class="s1">"color:#FFFF80"</span><span class="o">&gt;**</span><span class="nt">한</span> <span class="nt">변의</span> <span class="nt">길이</span><span class="o">**&lt;/</span><span class="nt">span</span><span class="o">&gt;</span>
-</code></pre></div>    </div>
-  </li>
-  <li>내부 스타일 시트
-    <div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">\\</span><span class="o">&lt;</span><span class="nt">style</span><span class="o">&gt;</span>
-     <span class="nt">body</span> <span class="p">{</span> <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span> <span class="p">}</span>
-     <span class="nt">p</span> <span class="p">{</span> <span class="nl">background-color</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span> <span class="p">}</span>
-<span class="err">\\</span><span class="o">&lt;/</span><span class="nt">style</span><span class="o">&gt;</span>
-</code></pre></div>    </div>
-  </li>
-  <li>외부 스타일 시트<br />
-따로 .css파일을 생성해서 내부 스타일 시트처럼 작성한다.<br /><br /><br /></li>
-</ol>
-
-<h1 id="-느낀점"><font color="#A0D7EF"> 느낀점</font></h1>
-<hr />
-
-<p>대학교 때 배웠던 HTML, CSS, JS를 보니 반가운 기분이 들기도 했고<br />
-한편으론 나는 24살 이후로 발전이 없는건가 서글픈 생각도 들었다.<br /><br />
-하지만 수업을 들으면서 잊었던 지식들을 다시 배우기도 했고,<br />
-짧은 시간 안에 대학교 때 배웠던 내용을 공부하는 것을 봤을 때<br />
-뒤에 나올 Spring 프레임워크 부분이 기대됐다.<br /><br />
-자만하지 말고 차근차근 기초부터 다시 쌓아가도록 하자!!</p>]]></content><author><name>양재용</name><email>yjy850146@gmail.com</email></author><category term="Memoir" /><category term="Codestates" /><summary type="html"><![CDATA[]]></summary></entry></feed>
+이 부분을 보완할 수 있도록 많은 문제들을 풀어봐야겠다고 생각했다.</p>]]></content><author><name>양재용</name><email>yjy850146@gmail.com</email></author><category term="BaekJoon" /><category term="Coding" /><category term="Python" /><summary type="html"><![CDATA[]]></summary></entry></feed>

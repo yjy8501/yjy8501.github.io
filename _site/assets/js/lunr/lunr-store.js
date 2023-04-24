@@ -82,4 +82,10 @@ var store = [{
         "tags": ["Codestates"],
         "url": "/memoir/SEB_BE9/",
         "teaser": null
+      },{
+        "title": "코드스테이츠 백엔드 10일차 회고록",
+        "excerpt":"배운점 1. 생성자(Constructor) 인스턴스가 생성될 때 호출되는 인스턴스 초기화 메소드 new 키워드를 통해 객체를 생성할 때 호출되는 메소드 생성자 이름은 반드시 클래스의 이름과 같아야한다 생성자는 리턴 타입이 없다 메소드 오버로딩이 가능하다 생성자를 작성하지 않으면 컴파일러에서 기본 생성자를 생성해준다 this() 메소드를 통해 다른 오버로딩된 생성자를 불러올 수 있다 2. 내부 클래스(Inner...","categories": ["Memoir"],
+        "tags": ["Codestates"],
+        "url": "/memoir/SEB_BE10/",
+        "teaser": null
       }]
