@@ -88,4 +88,10 @@ var store = [{
         "tags": ["Codestates"],
         "url": "/memoir/SEB_BE10/",
         "teaser": null
+      },{
+        "title": "코드스테이츠 백엔드 11일차 회고록",
+        "excerpt":"배운점 1. 상속(Extends) 상위 클래스의 기능을 그대로 이어받아 재사용하는 것 코드의 재사용성을 높이고, 중복을 제거하여 생산성과 유지보수를 높힌다 보다 적은 양의 코드로 새로운 클래스를 작성할 수 있다 상속 구조가 복잡해지면 오히려 보수하기 힘들어 질 수 있다 클래스 간의 관계는 ‘~은 ~이다’(상속관계) ‘~은 ~을 가지고 있다’(포함관계)로 확인 할 수 있다. 매소드...","categories": ["Memoir"],
+        "tags": ["Codestates"],
+        "url": "/memoir/SEB_BE11/",
+        "teaser": null
       }]

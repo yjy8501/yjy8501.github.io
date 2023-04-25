@@ -9,7 +9,7 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>파이썬 백준 18870번 문제 풀이 | Rakugaki</title>
+<!-- begin _includes/seo.html --><title>코드스테이츠 백엔드 11일차 회고록 | Rakugaki</title>
 <meta name="description" content="">
 
 
@@ -22,8 +22,8 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ko_KR">
 <meta property="og:site_name" content="Rakugaki">
-<meta property="og:title" content="파이썬 백준 18870번 문제 풀이">
-<meta property="og:url" content="http://localhost:4000/baekjoon/baekJoon_18870/">
+<meta property="og:title" content="코드스테이츠 백엔드 11일차 회고록">
+<meta property="og:url" content="http://localhost:4000/memoir/SEB_BE11/">
 
 
   <meta property="og:description" content="">
@@ -34,7 +34,7 @@
 
 
 
-  <meta property="article:published_time" content="2023-04-15T00:00:00+09:00">
+  <meta property="article:published_time" content="2023-04-25T00:00:00+09:00">
 
 
 
@@ -45,7 +45,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/baekjoon/baekJoon_18870/">
+<link rel="canonical" href="http://localhost:4000/memoir/SEB_BE11/">
 
 
 
@@ -164,7 +164,7 @@
       
         
         <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-          <a href="/categories/#baekjoon" itemprop="item"><span itemprop="name">Baekjoon</span></a>
+          <a href="/categories/#memoir" itemprop="item"><span itemprop="name">Memoir</span></a>
           <meta itemprop="position" content="2" />
         </li>
         <span class="sep">/</span>
@@ -172,7 +172,7 @@
     
       
       
-        <li class="current">파이썬 백준 18870번 문제 풀이</li>
+        <li class="current">코드스테이츠 백엔드 11일차 회고록</li>
       
     
   </ol>
@@ -440,16 +440,16 @@
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="파이썬 백준 18870번 문제 풀이">
+    <meta itemprop="headline" content="코드스테이츠 백엔드 11일차 회고록">
     <meta itemprop="description" content="">
-    <meta itemprop="datePublished" content="2023-04-15T00:00:00+09:00">
+    <meta itemprop="datePublished" content="2023-04-25T00:00:00+09:00">
     
 
     <div class="page__inner-wrap">
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://localhost:4000/baekjoon/baekJoon_18870/" class="u-url" itemprop="url">파이썬 백준 18870번 문제 풀이
+            <a href="http://localhost:4000/memoir/SEB_BE11/" class="u-url" itemprop="url">코드스테이츠 백엔드 11일차 회고록
 </a>
           </h1>
           
@@ -460,7 +460,7 @@
       <span class="page__meta-date">
         <i class="far fa-calendar-alt" aria-hidden="true"></i>
         
-        <time datetime="2023-04-15T00:00:00+09:00">April 15, 2023</time>
+        <time datetime="2023-04-25T00:00:00+09:00">April 25, 2023</time>
       </span>
     
 
@@ -473,7 +473,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          최대 1 분 소요
+          1 분 소요
         
       </span>
     
@@ -488,92 +488,137 @@
           <aside class="sidebar__right sticky">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> 목차</h4></header>
-              <ul class="toc__menu"><li><a href="#1-문제-분석">1. 문제 분석</a></li><li><a href="#2-코드">2. 코드</a></li><li><a href="#3-총평">3. 총평</a></li></ul>
+              <ul class="toc__menu"><li><a href="#-배운점"> 배운점</a><ul><li><a href="#1-상속extends">1. 상속(Extends)</a><ul><li><a href="#-매소드-오버라이딩method-overriding"> 매소드 오버라이딩(Method Overriding)</a></li><li><a href="#-super와-super"> super와 super()</a></li><li><a href="#-object-클래스"> Object 클래스</a></li></ul></li><li><a href="#-2-캡슐화"> 2. 캡슐화</a><ul><li><a href="#-접근-제어자"> 접근 제어자</a></li><li><a href="#-getter와-setter-매소드"> getter와 setter 매소드</a></li></ul></li></ul></li><li><a href="#-느낀점"> 느낀점</a></li></ul>
 
             </nav>
           </aside>
         
         <style> 
     p { line-height : 1.75em; }
-    table { text-align : center; font-size : 1.5em; border: white;}
 </style>
 
-<h2 id="1-문제-분석"><font color="#A0D7EF">1. 문제 분석</font></h2>
+<h1 id="-배운점"><font color="#A0D7EF"> 배운점</font></h1>
 
-<ol>
-  <li><span style="color:#FFFF80">중복값 없이 좌표를 정렬한다.</span>
-    <blockquote>
-      <p>Set에 넣은 다음 Sorted 함수를 통해 정렬된 리스트를 받는다<br /></p>
-    </blockquote>
+<h2 id="1-상속extends"><font color="#A0D7EF">1. 상속(Extends)</font></h2>
 
-    <p>정렬 된 모습</p>
+<ul>
+  <li>상위 클래스의 기능을 그대로 이어받아 재사용하는 것</li>
+  <li>코드의 재사용성을 높이고, 중복을 제거하여 생산성과 유지보수를 높힌다</li>
+  <li>보다 적은 양의 코드로 새로운 클래스를 작성할 수 있다</li>
+  <li>상속 구조가 복잡해지면 오히려 보수하기 힘들어 질 수 있다</li>
+</ul>
 
-    <table>
-      <tbody>
-        <tr>
-          <td>sorted X</td>
-          <td>-10</td>
-          <td>-9</td>
-          <td>4</td>
-          <td>2</td>
-        </tr>
-        <tr>
-          <td>X’</td>
-          <td>0</td>
-          <td>1</td>
-          <td>2</td>
-          <td>3</td>
-        </tr>
-      </tbody>
-    </table>
-  </li>
-  <li><span style="color:#B0ff66">sorted X와 X’를 연결 해야한다.</span>
-    <blockquote>
-      <p>sorted X를 Key, X’를 Value로 넣은 딕셔너리를 만든다</p>
-    </blockquote>
-  </li>
-</ol>
+<p class="notice--danger">클래스 간의 관계는 <span style="color:#FFFF80"><strong>‘~은 ~이다’</strong></span>(상속관계)  <span style="color:#FFFF80"><strong>‘~은 ~을 가지고 있다’</strong></span>(포함관계)로 확인 할 수 있다.</p>
 
-<h2 id="2-코드"><font color="#A0D7EF">2. 코드</font></h2>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">copy</span>
-<span class="kn">import</span> <span class="n">sys</span>
-
-<span class="n">compressed_X</span> <span class="o">=</span> <span class="nf">dict</span><span class="p">()</span> <span class="c1"># 압축 좌표를 저장할 딕셔너리
-</span>
-<span class="n">N</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="nf">input</span><span class="p">())</span>
-
-<span class="n">X</span> <span class="o">=</span> <span class="nf">list</span><span class="p">(</span><span class="nf">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="n">sys</span><span class="p">.</span><span class="n">stdin</span><span class="p">.</span><span class="nf">readline</span><span class="p">().</span><span class="nf">split</span><span class="p">()))</span>
-<span class="n">copy_X</span> <span class="o">=</span> <span class="n">copy</span><span class="p">.</span><span class="nf">deepcopy</span><span class="p">(</span><span class="n">X</span><span class="p">)</span> <span class="c1"># 본래 좌표 순서가 저장된 배열
-</span>
-<span class="n">X</span> <span class="o">=</span> <span class="nf">sorted</span><span class="p">(</span><span class="nf">set</span><span class="p">(</span><span class="n">X</span><span class="p">))</span> <span class="c1"># 좌표를 집합에 넣어 중복값을 없애고, 정렬한다
-</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">X</span><span class="p">)):</span>
-    <span class="n">compressed_X</span><span class="p">[</span><span class="n">X</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span> <span class="o">=</span> <span class="n">i</span> <span class="c1"># 본래 좌표(key) 압축 좌표(value)로 딕셔너리에 저장한다
-</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">copy_X</span><span class="p">:</span>
-    <span class="nf">print</span><span class="p">(</span><span class="n">compressed_X</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">end</span><span class="o">=</span><span class="s">' '</span><span class="p">)</span>
-
-</code></pre></div></div>
+<h3 id="-매소드-오버라이딩method-overriding"><font color="#A0D7EF"> 매소드 오버라이딩(Method Overriding)</font></h3>
 <hr />
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">X</span> <span class="o">=</span> <span class="nf">sorted</span><span class="p">(</span><span class="nf">set</span><span class="p">(</span><span class="n">X</span><span class="p">))</span> <span class="c1"># 좌표를 집합에 넣어 중복값을 없애고, 정렬한다
-</span></code></pre></div></div>
-<p><span style="color:#FFFF80">중복값을 없앤 정렬된 X좌표를 구한다</span></p>
+<ul>
+  <li>상위 클래스로부터 상속받은 매소드와 동일한 이름의 매소드를 재정의하는 것</li>
+  <li>상위 클래스의 매소드를 하위 클래스에 맞게 변경하고자 할 때 사용된다</li>
+  <li>매소드의 선언부(메소드 이름, 매개 변수, 반환 타입)가 상위 클래스와 완전히 일치해야한다</li>
+  <li>접근 제어자의 범위가 상위 클래스의 매소드보다 같거나 넓어야 한다</li>
+  <li>예외는 상위 클래스의 매소드보다 많이 선언할 수 없다.</li>
+</ul>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># 중복값을 없앤 좌표(key), 압축 좌표(value)를 한 쌍으로 딕셔너리에 저장한다
-</span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">X</span><span class="p">)):</span>
-    <span class="n">compressed_X</span><span class="p">[</span><span class="n">X</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span> <span class="o">=</span> <span class="n">i</span> 
+<h3 id="-super와-super"><font color="#A0D7EF"> super와 super()</font></h3>
+<hr />
+
+<ul>
+  <li>super는 상위 클래스의 객체를 가르킨다</li>
+  <li>super()는 상위 클래스의 생성자를 호출한다(this()와 사용방법 동일)</li>
+</ul>
+
+<h3 id="-object-클래스"><font color="#A0D7EF"> Object 클래스</font></h3>
+<hr />
+
+<p align="center"><img src="https://velog.velcdn.com/images/ehgusrlaeh/post/218a70f9-55a0-4ed3-89cd-f374474714b4/image.png" height="250px" width="650px" /></p>
+
+<ul>
+  <li>Object 클래스는 자바 클래스 상속계층도에서 최상위에 위치한 클래스이다</li>
+  <li>extends를 하지 않으면 자동으로 Object 클래스를 상속한다</li>
+  <li>여러가지 유용한 매소드가 있다</li>
+</ul>
+
+<h2 id="-2-캡슐화"><font color="#A0D7EF"> 2. 캡슐화</font></h2>
+
+<ul>
+  <li>특정 객체 안에 속성과 기능을 캡슐로 만들어 데이터를 외부로부터 보호하는 것</li>
+  <li>데이터의 보호, 불필요한 노출을 방지하기 위해 캡슐화를 사용한다(정보은닉)</li>
+</ul>
+
+<h3 id="-접근-제어자"><font color="#A0D7EF"> 접근 제어자</font></h3>
+<hr />
+
+<table>
+  <thead>
+    <tr>
+      <th>접근 제어자</th>
+      <th>접근 제한 범위</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>private</td>
+      <td>동일 클래스에서만 접근 가능</td>
+    </tr>
+    <tr>
+      <td>default</td>
+      <td>동일 패키지 내에서만 접근 가능</td>
+    </tr>
+    <tr>
+      <td>protected</td>
+      <td>동일 패키지 + 다른 패키지의 하위 클래스에서 접근 가능</td>
+    </tr>
+    <tr>
+      <td>public</td>
+      <td>접근 제한 없음</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>접근 제어자는 단 하나만 선언 될 수 있다</li>
+  <li><strong>public &gt; protected &gt; default &gt; private</strong> 순으로 정리된다</li>
+  <li>접근 제어자를 작성하지 않았을 경우 default 접근 제어자가 할당된다</li>
+</ul>
+
+<h3 id="-getter와-setter-매소드"><font color="#A0D7EF"> getter와 setter 매소드</font></h3>
+<hr />
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kt">void</span> <span class="nf">setter</span><span class="o">(</span><span class="kt">int</span> <span class="n">a</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">this</span><span class="o">.</span><span class="na">a</span> <span class="o">=</span> <span class="n">a</span><span class="o">;</span>
+<span class="o">}</span>
+
+<span class="kd">public</span> <span class="kt">int</span> <span class="nf">getter</span><span class="o">()</span> <span class="o">{</span>
+    <span class="k">return</span> <span class="k">this</span><span class="o">.</span><span class="na">a</span><span class="o">;</span>
+<span class="o">}</span>
+
 </code></pre></div></div>
-<p><span style="color:#B0ff66">sorted X를 Key, X’를 Value로 넣은 딕셔너리를 만든다</span></p>
 
-<h2 id="3-총평"><font color="#A0D7EF">3. 총평</font></h2>
-<p>문제의 해결 방법은 매우 빨리 찾았지만<br />
-코드가 너무 길어지는 것 같아서<br />
-짧게 코딩을 하려다 시간이 좀 걸린 것 같다.<br /><br />
-파이썬은 깊은 복사를 하는게 매우 쉬운 것 같다.<br />
-조만간 자바로 다시 돌아가야하는데<br />
-잘 적응 할 수 있을지 걱정이다,,, ㅠㅜ</p>
+<blockquote>
+  <p>접근 지정자를 private로 설정해 놓으면 클래스 밖에서 변수나 매소드에 관여 할 수 없기 때문에
+  Getter와 Setter 매소드를 이용하여 접근 할 수 있도록 한다</p>
+</blockquote>
+
+<h1 id="-느낀점"><font color="#A0D7EF"> 느낀점</font></h1>
+<hr />
+
+<p>오늘은 상속과 캡슐화 방법에 대해 배웠다.</p>
+
+<p>상속은 프로젝트 할 때 자주 사용해 본 적이 없어서<br />
+사실 이론으로만 알고 실습에서 사용 한 적은 별로 없었던 것 같다<br />
+그래도 큰 프로젝트를 하게 되면 사용하게 되지 않을까 생각한다.<br /></p>
+
+<p>캡슐화는 자주 사용했던 것 같다.<br />
+그중에 getter와 setter는 영혼의 단짝이라고 볼 수 있다.</p>
+
+<p>getter와 setter를 자동으로 완성시켜 주는 기능도 있었던 걸로 기억한다.</p>
+
+<p>객체지향 프로그래밍을 공부하면서 알고리즘 분야도 중요하지만<br />
+이런 개념과 틀을 세분화 시킬 수 있는 능력도 중요하다는 생각이든다.</p>
+
+<p>빨리 프로젝트를 진행해보고 싶다,,,!!</p>
 
         
       </section>
@@ -590,11 +635,7 @@
     <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> 태그: </strong>
     <span itemprop="keywords">
     
-      <a href="/tags/#coding" class="page__taxonomy-item p-category" rel="tag">Coding</a><span class="sep">, </span>
-    
-      <a href="/tags/#python" class="page__taxonomy-item p-category" rel="tag">Python</a><span class="sep">, </span>
-    
-      <a href="/tags/#sort" class="page__taxonomy-item p-category" rel="tag">Sort</a>
+      <a href="/tags/#codestates" class="page__taxonomy-item p-category" rel="tag">Codestates</a>
     
     </span>
   </p>
@@ -611,7 +652,7 @@
     <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> 카테고리: </strong>
     <span itemprop="keywords">
     
-      <a href="/categories/#baekjoon" class="page__taxonomy-item p-category" rel="tag">BaekJoon</a>
+      <a href="/categories/#memoir" class="page__taxonomy-item p-category" rel="tag">Memoir</a>
     
     </span>
   </p>
@@ -619,7 +660,7 @@
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2023-04-15T00:00:00+09:00">April 15, 2023</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2023-04-25T00:00:00+09:00">April 25, 2023</time></p>
 
       </footer>
 
@@ -628,12 +669,11 @@
       
   <nav class="pagination">
     
-      <a href="/memoir/SEB_BE4/" class="pagination--pager" title="코드스테이츠 백엔드 4일차 회고록
+      <a href="/memoir/SEB_BE10/" class="pagination--pager" title="코드스테이츠 백엔드 10일차 회고록
 ">이전</a>
     
     
-      <a href="/memoir/SEB_BE5/" class="pagination--pager" title="코드스테이츠 백엔드 5일차 회고록
-">다음</a>
+      <a href="#" class="pagination--pager disabled">다음</a>
     
   </nav>
 
@@ -647,54 +687,6 @@
     <div class="page__related">
       <h2 class="page__related-title">참고</h2>
       <div class="grid__wrapper">
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/memoir/SEB_BE11/" rel="permalink">코드스테이츠 백엔드 11일차 회고록
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-      
-      <span class="page__meta-date">
-        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
-        
-        <time datetime="2023-04-25T00:00:00+09:00">April 25, 2023</time>
-      </span>
-    
-
-    <span class="page__meta-sep"></span>
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
-        
-          1 분 소요
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">
-
-</p>
-  </article>
-</div>
-
         
           
 
@@ -840,6 +832,54 @@
 </div>
 
         
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/memoir/SEB_BE7/" rel="permalink">코드스테이츠 백엔드 7일차 회고록
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2023-04-19T00:00:00+09:00">April 19, 2023</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          2 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+
+</p>
+  </article>
+</div>
+
+        
       </div>
     </div>
   
@@ -896,8 +936,8 @@
     
   <script>
     var disqus_config = function () {
-      this.page.url = "http://localhost:4000/baekjoon/baekJoon_18870/";  /* Replace PAGE_URL with your page's canonical URL variable */
-      this.page.identifier = "/baekjoon/baekJoon_18870"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+      this.page.url = "http://localhost:4000/memoir/SEB_BE11/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/memoir/SEB_BE11"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
     };
     (function() { /* DON'T EDIT BELOW THIS LINE */
       var d = document, s = d.createElement('script');
