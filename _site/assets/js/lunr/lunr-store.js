@@ -94,4 +94,10 @@ var store = [{
         "tags": ["Codestates"],
         "url": "/memoir/SEB_BE11/",
         "teaser": null
+      },{
+        "title": "코드스테이츠 백엔드 12일차 회고록",
+        "excerpt":"배운점 1. 다형성(Ploymorphism) 하나의 객체가 여러가지 형태를 가질 수 있는 성질 상위 클래스 타입의 참조변수를 통해 하위 클래스의 객체를 참조할 수 있다 참조변수.instanceof(타입) 을 통해 캐스팅이 가능한지 여부를 boolean 타입으로 확인 가능하다 다형성을 잘 활용하면 많은 중복되는 코드를 줄이고 보다 편하게 코드를 작성 할 수 있다 2. 추상화(Abstraction) 사물이나 표상의...","categories": ["Memoir"],
+        "tags": ["Codestates"],
+        "url": "/memoir/SEB_BE12/",
+        "teaser": null
       }]

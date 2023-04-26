@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>파이썬 백준 2903번 문제 풀이 | Rakugaki</title>
-<meta name="description" content="1. 문제 분석 한 변의 길이는 1, 2, 4, 8 이런식으로 2의 배수 만큼 길어진다. 한 변에 있는 원의 개수는 한 변의 길이 + 1 이다. 따라서 전체 원의 개수는  한 변에 있는 원의 개수 * 2">
+<!-- begin _includes/seo.html --><title>코드스테이츠 백엔드 12일차 회고록 | Rakugaki</title>
+<meta name="description" content="">
 
 
   <meta name="author" content="양재용">
@@ -22,30 +22,30 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ko_KR">
 <meta property="og:site_name" content="Rakugaki">
-<meta property="og:title" content="파이썬 백준 2903번 문제 풀이">
-<meta property="og:url" content="http://localhost:4000/baekjoon/baekJoon_2903/">
+<meta property="og:title" content="코드스테이츠 백엔드 12일차 회고록">
+<meta property="og:url" content="http://localhost:4000/memoir/SEB_BE12/">
 
 
-  <meta property="og:description" content="1. 문제 분석 한 변의 길이는 1, 2, 4, 8 이런식으로 2의 배수 만큼 길어진다. 한 변에 있는 원의 개수는 한 변의 길이 + 1 이다. 따라서 전체 원의 개수는  한 변에 있는 원의 개수 * 2">
-
-
-
-
-
-
-
-  <meta property="article:published_time" content="2023-04-06T00:00:00+09:00">
+  <meta property="og:description" content="">
 
 
 
 
 
-  
+
+
+  <meta property="article:published_time" content="2023-04-26T00:00:00+09:00">
+
+
+
+
 
   
 
+  
 
-<link rel="canonical" href="http://localhost:4000/baekjoon/baekJoon_2903/">
+
+<link rel="canonical" href="http://localhost:4000/memoir/SEB_BE12/">
 
 
 
@@ -164,7 +164,7 @@
       
         
         <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-          <a href="/categories/#baekjoon" itemprop="item"><span itemprop="name">Baekjoon</span></a>
+          <a href="/categories/#memoir" itemprop="item"><span itemprop="name">Memoir</span></a>
           <meta itemprop="position" content="2" />
         </li>
         <span class="sep">/</span>
@@ -172,7 +172,7 @@
     
       
       
-        <li class="current">파이썬 백준 2903번 문제 풀이</li>
+        <li class="current">코드스테이츠 백엔드 12일차 회고록</li>
       
     
   </ol>
@@ -448,16 +448,16 @@
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="파이썬 백준 2903번 문제 풀이">
-    <meta itemprop="description" content="1. 문제 분석한 변의 길이는 1, 2, 4, 8 이런식으로 2의 배수 만큼 길어진다.한 변에 있는 원의 개수는 한 변의 길이 + 1 이다.따라서 전체 원의 개수는  한 변에 있는 원의 개수 * 2">
-    <meta itemprop="datePublished" content="2023-04-06T00:00:00+09:00">
+    <meta itemprop="headline" content="코드스테이츠 백엔드 12일차 회고록">
+    <meta itemprop="description" content="">
+    <meta itemprop="datePublished" content="2023-04-26T00:00:00+09:00">
     
 
     <div class="page__inner-wrap">
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://localhost:4000/baekjoon/baekJoon_2903/" class="u-url" itemprop="url">파이썬 백준 2903번 문제 풀이
+            <a href="http://localhost:4000/memoir/SEB_BE12/" class="u-url" itemprop="url">코드스테이츠 백엔드 12일차 회고록
 </a>
           </h1>
           
@@ -468,7 +468,7 @@
       <span class="page__meta-date">
         <i class="far fa-calendar-alt" aria-hidden="true"></i>
         
-        <time datetime="2023-04-06T00:00:00+09:00">April 6, 2023</time>
+        <time datetime="2023-04-26T00:00:00+09:00">April 26, 2023</time>
       </span>
     
 
@@ -481,7 +481,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          최대 1 분 소요
+          1 분 소요
         
       </span>
     
@@ -496,47 +496,67 @@
           <aside class="sidebar__right sticky">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> 목차</h4></header>
-              <ul class="toc__menu"><li><a href="#1-문제-분석">1. 문제 분석</a></li><li><a href="#2-코드">2. 코드</a><ul><li><a href="#21-코드분석">2.1 코드분석</a></li></ul></li><li><a href="#3-총평">3. 총평</a></li></ul>
+              <ul class="toc__menu"><li><a href="#-배운점"> 배운점</a><ul><li><a href="#1-다형성ploymorphism">1. 다형성(Ploymorphism)</a></li><li><a href="#-2-추상화abstraction"> 2. 추상화(Abstraction)</a></li><li><a href="#-2-인터페이스interface"> 2. 인터페이스(Interface)</a></li></ul></li><li><a href="#-느낀점"> 느낀점</a></li></ul>
 
             </nav>
           </aside>
         
-        <h2 id="1-문제-분석">1. 문제 분석</h2>
-<p><span style="color:#FFFF80"><strong>한 변의 길이</strong></span>는 1, 2, 4, 8 이런식으로 2의 배수 만큼 길어진다.<br /><br />
-<span style="color:#B0ff66"><strong>한 변에 있는 원의 개수</strong></span>는 <span style="color:#FFFF80"><strong>한 변의 길이</strong></span> + 1 이다.<br /><br />
-따라서 <span style="color:red"><strong>전체 원의 개수</strong></span>는  <span style="color:#B0ff66"><strong>한 변에 있는 원의 개수</strong></span> * 2<br /><br /></p>
+        <style> 
+    p { line-height : 1.75em; }
+</style>
 
-<h2 id="2-코드">2. 코드</h2>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">math</span>
+<h1 id="-배운점"><font color="#A0D7EF"> 배운점</font></h1>
 
-<span class="n">N</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="nf">input</span><span class="p">())</span> <span class="c1"># N을 입력받는다
-</span>
-<span class="n">side</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="n">math</span><span class="p">.</span><span class="nf">pow</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">N</span><span class="p">))</span> <span class="c1"># N번 이후의 변의 길이
-</span>
-<span class="n">side_point</span> <span class="o">=</span> <span class="n">side</span> <span class="o">+</span> <span class="mi">1</span> <span class="c1"># 한 변의 원의 개수
-</span>
-<span class="nf">print</span><span class="p">(</span><span class="n">side_point</span> <span class="o">*</span> <span class="n">side_point</span><span class="p">)</span>
-</code></pre></div></div>
+<h2 id="1-다형성ploymorphism"><font color="#A0D7EF">1. 다형성(Ploymorphism)</font></h2>
+
+<ul>
+  <li>하나의 객체가 여러가지 형태를 가질 수 있는 성질</li>
+  <li>상위 클래스 타입의 참조변수를 통해 하위 클래스의 객체를 참조할 수 있다</li>
+  <li><code class="language-plaintext highlighter-rouge">참조변수.instanceof(타입)</code> 을 통해 캐스팅이 가능한지 여부를<br /> boolean 타입으로 확인 가능하다</li>
+  <li>다형성을 잘 활용하면 많은 중복되는 코드를 줄이고 보다 편하게 코드를 작성 할 수 있다</li>
+</ul>
+
 <p><br /></p>
+
+<h2 id="-2-추상화abstraction"><font color="#A0D7EF"> 2. 추상화(Abstraction)</font></h2>
+
+<ul>
+  <li>사물이나 표상의 어떤 성질, 공통성, 본질을 추출하여 파악하는 것</li>
+  <li>기존 클래스들의 공톡적인 요소들을 뽑아서 상위 클래스를 만들어 내는 것</li>
+  <li><code class="language-plaintext highlighter-rouge">abstract</code> 키워드를 통해 추상 클래스, 메소드를 정의할 수 있다</li>
+  <li>추상 클래스를 상속받을 때 추상 클래스의 추상 메소드를 모두 오버라이딩 해야한다<br />(하지 않을 시 상속 받는 클래스도 추상 클래스가 된다)</li>
+  <li>추상 클래스는 인스턴스를 생성 할 수 없다</li>
+  <li>상속 계층도 상층부에 위치할수록 추상화의 정도가 높다</li>
+  <li>다중 상속 불가능</li>
+</ul>
+
+<p><br /></p>
+
+<h2 id="-2-인터페이스interface"><font color="#A0D7EF"> 2. 인터페이스(Interface)</font></h2>
+
+<ul>
+  <li>추상 메소드보다 더 높은 추상성을 가진다</li>
+  <li>추상 메소드와 상수만을 멤버로 가질 수 있다(default/static 메소드도 생성 가능)</li>
+  <li>내부 모든 필드가 <code class="language-plaintext highlighter-rouge">public static final</code>, 메소드가 <code class="language-plaintext highlighter-rouge">public abstract</code> 로 정의된다</li>
+  <li><code class="language-plaintext highlighter-rouge">implements</code> 키워드를 통해 인터페이스를 구현 할 수 있다</li>
+  <li>인터페이스는 다중 구현을 지원한다</li>
+</ul>
+
+<p><br /></p>
+
+<h1 id="-느낀점"><font color="#A0D7EF"> 느낀점</font></h1>
 <hr />
 
-<h3 id="21-코드분석">2.1 코드분석</h3>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">side</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="n">math</span><span class="p">.</span><span class="nf">pow</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">N</span><span class="p">))</span> <span class="c1"># N번 이후의 변의 길이
-</span></code></pre></div></div>
-<p>side 변수에 <span style="color:#FFFF80"><strong>한 변의 길이</strong></span>를 저장한다.</p>
+<p>오늘은 다형성과 추상화에 대해 배웠다.</p>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">side_point</span> <span class="o">=</span> <span class="n">side</span> <span class="o">+</span> <span class="mi">1</span> <span class="c1"># 한 변의 원의 개수
-</span></code></pre></div></div>
-<p>side_point 변수에 <span style="color:#B0ff66"><strong>한 변에 있는 원의 개수</strong></span>를 저장한다.<br /></p>
+<p>다형성과 추상화 모두 코드의 재사용성과 유지보수에 좋은 역할을 한다</p>
 
-<h2 id="3-총평">3. 총평</h2>
-<p>문제 설명을 보면 되게 어렵게 보이지만, Solve.ac 브론즈 3 문제로<br />
-규칙만 찾으면 간단하게 풀 수 있는 문제이다.<br /></p>
+<p>공부하면서 다형성과 추상화를 한번에 생각하여 코드를 짜는 것은 아직 나에게
+어렵다고 생각이 들었고, 유지보수, 효율성을 높히기 위해 코드를 고칠 때
+클래스들 간에 관계를 정리해가면서는 가능 할 것 같다는 생각이 들었다</p>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">int</span><span class="p">(</span><span class="n">math</span><span class="p">.</span><span class="nf">pow</span><span class="p">(</span><span class="n">side_point</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
-</code></pre></div></div>
-<p>정답을 출력할 때, 이런 식으로 작성하게 되면<br />
-double -&gt; int로 형 변환이 되면서 누락되는 부분이 있는지 정답처리가 되지 않는다.</p>
+<p>빨리 배운 것들을 사용하여 내 것으로 만들고 싶다!!</p>
+
 
         
       </section>
@@ -553,9 +573,7 @@ double -&gt; int로 형 변환이 되면서 누락되는 부분이 있는지 정
     <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> 태그: </strong>
     <span itemprop="keywords">
     
-      <a href="/tags/#coding" class="page__taxonomy-item p-category" rel="tag">Coding</a><span class="sep">, </span>
-    
-      <a href="/tags/#python" class="page__taxonomy-item p-category" rel="tag">Python</a>
+      <a href="/tags/#codestates" class="page__taxonomy-item p-category" rel="tag">Codestates</a>
     
     </span>
   </p>
@@ -572,7 +590,7 @@ double -&gt; int로 형 변환이 되면서 누락되는 부분이 있는지 정
     <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> 카테고리: </strong>
     <span itemprop="keywords">
     
-      <a href="/categories/#baekjoon" class="page__taxonomy-item p-category" rel="tag">BaekJoon</a>
+      <a href="/categories/#memoir" class="page__taxonomy-item p-category" rel="tag">Memoir</a>
     
     </span>
   </p>
@@ -580,7 +598,7 @@ double -&gt; int로 형 변환이 되면서 누락되는 부분이 있는지 정
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2023-04-06T00:00:00+09:00">April 6, 2023</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2023-04-26T00:00:00+09:00">April 26, 2023</time></p>
 
       </footer>
 
@@ -589,12 +607,11 @@ double -&gt; int로 형 변환이 되면서 누락되는 부분이 있는지 정
       
   <nav class="pagination">
     
-      <a href="/baekjoon/second/" class="pagination--pager" title="파이썬 백준 10812번 문제 풀이
+      <a href="/memoir/SEB_BE11/" class="pagination--pager" title="코드스테이츠 백엔드 11일차 회고록
 ">이전</a>
     
     
-      <a href="/memoir/SEB_BE1/" class="pagination--pager" title="코드스테이츠 백엔드 1일차 회고록
-">다음</a>
+      <a href="#" class="pagination--pager disabled">다음</a>
     
   </nav>
 
@@ -608,54 +625,6 @@ double -&gt; int로 형 변환이 되면서 누락되는 부분이 있는지 정
     <div class="page__related">
       <h2 class="page__related-title">참고</h2>
       <div class="grid__wrapper">
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/memoir/SEB_BE12/" rel="permalink">코드스테이츠 백엔드 12일차 회고록
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-      
-      <span class="page__meta-date">
-        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
-        
-        <time datetime="2023-04-26T00:00:00+09:00">April 26, 2023</time>
-      </span>
-    
-
-    <span class="page__meta-sep"></span>
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
-        
-          1 분 소요
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">
-
-</p>
-  </article>
-</div>
-
         
           
 
@@ -801,6 +770,54 @@ double -&gt; int로 형 변환이 되면서 누락되는 부분이 있는지 정
 </div>
 
         
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/memoir/SEB_BE8/" rel="permalink">코드스테이츠 백엔드 8일차 회고록
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2023-04-20T00:00:00+09:00">April 20, 2023</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          1 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+
+</p>
+  </article>
+</div>
+
+        
       </div>
     </div>
   
@@ -857,8 +874,8 @@ double -&gt; int로 형 변환이 되면서 누락되는 부분이 있는지 정
     
   <script>
     var disqus_config = function () {
-      this.page.url = "http://localhost:4000/baekjoon/baekJoon_2903/";  /* Replace PAGE_URL with your page's canonical URL variable */
-      this.page.identifier = "/baekjoon/baekJoon_2903"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+      this.page.url = "http://localhost:4000/memoir/SEB_BE12/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/memoir/SEB_BE12"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
     };
     (function() { /* DON'T EDIT BELOW THIS LINE */
       var d = document, s = d.createElement('script');
