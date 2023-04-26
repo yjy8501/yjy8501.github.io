@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-26T17:00:38+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Rakugaki</title><subtitle>개발 낙서장 &amp; 일상</subtitle><author><name>양재용</name><email>yjy850146@gmail.com</email></author><entry><title type="html">코드스테이츠 백엔드 12일차 회고록</title><link href="http://localhost:4000/memoir/SEB_BE12/" rel="alternate" type="text/html" title="코드스테이츠 백엔드 12일차 회고록" /><published>2023-04-26T00:00:00+09:00</published><updated>2023-04-26T00:00:00+09:00</updated><id>http://localhost:4000/memoir/SEB_BE12</id><content type="html" xml:base="http://localhost:4000/memoir/SEB_BE12/"><![CDATA[<style> 
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-26T17:01:39+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Rakugaki</title><subtitle>개발 낙서장 &amp; 일상</subtitle><author><name>양재용</name><email>yjy850146@gmail.com</email></author><entry><title type="html">코드스테이츠 백엔드 12일차 회고록</title><link href="http://localhost:4000/memoir/SEB_BE12/" rel="alternate" type="text/html" title="코드스테이츠 백엔드 12일차 회고록" /><published>2023-04-26T00:00:00+09:00</published><updated>2023-04-26T00:00:00+09:00</updated><id>http://localhost:4000/memoir/SEB_BE12</id><content type="html" xml:base="http://localhost:4000/memoir/SEB_BE12/"><![CDATA[<style> 
     p { line-height : 1.75em; }
 </style>
 
@@ -48,9 +48,9 @@
 
 <p>다형성과 추상화 모두 코드의 재사용성과 유지보수에 좋은 역할을 한다</p>
 
-<p>공부하면서 다형성과 추상화를 한번에 생각하여 코드를 짜는 것은 아직 나에게
-어렵다고 생각이 들었고, 유지보수, 효율성을 높히기 위해 코드를 고칠 때
-클래스들 간에 관계를 정리해가면서는 가능 할 것 같다는 생각이 들었다</p>
+<p>공부하면서 다형성과 추상화를 한번에 생각하여 코드를 짜는 것은 아직 나에게<br />
+어렵다는 생각이 들었고, 유지보수, 효율성을 높히기 위해 코드를 고칠 때<br />
+클래스들 간에 관계를 정리해가면서는 가능 할 것 같다는 생각이 들었다<br /></p>
 
 <p>빨리 배운 것들을 사용하여 내 것으로 만들고 싶다!!</p>]]></content><author><name>양재용</name><email>yjy850146@gmail.com</email></author><category term="Memoir" /><category term="Codestates" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">코드스테이츠 백엔드 11일차 회고록</title><link href="http://localhost:4000/memoir/SEB_BE11/" rel="alternate" type="text/html" title="코드스테이츠 백엔드 11일차 회고록" /><published>2023-04-25T00:00:00+09:00</published><updated>2023-04-25T00:00:00+09:00</updated><id>http://localhost:4000/memoir/SEB_BE11</id><content type="html" xml:base="http://localhost:4000/memoir/SEB_BE11/"><![CDATA[<style> 
     p { line-height : 1.75em; }
