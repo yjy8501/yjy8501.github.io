@@ -100,4 +100,10 @@ var store = [{
         "tags": ["Codestates"],
         "url": "/memoir/SEB_BE12/",
         "teaser": null
+      },{
+        "title": "객체 지향 심화",
+        "excerpt":"배운점 객체지향 4원칙 추상화 사물의 성질, 공통성을 추출하여 파악하는 것 클래스의 공통적인 요소들을 봅아서 상위 클래스를 만들어 내는 것 인터페이스, 추상 클래스가 있다. 인터페이스는 추상 메소드를 묶어 놓은 것, 추상 클래스는 필드, 메소드를 모두 가지면서 추상 클래스를 가진다 추상 클래스는 하위 클래스에서 인스턴스화 할 수 있다 Animal animal = new...","categories": ["Memoir"],
+        "tags": ["Codestates"],
+        "url": "/memoir/SEB_BE13/",
+        "teaser": null
       }]

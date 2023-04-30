@@ -9,7 +9,7 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>파이썬 백준 18870번 문제 풀이 | Rakugaki</title>
+<!-- begin _includes/seo.html --><title>객체 지향 심화 | Rakugaki</title>
 <meta name="description" content="">
 
 
@@ -22,8 +22,8 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ko_KR">
 <meta property="og:site_name" content="Rakugaki">
-<meta property="og:title" content="파이썬 백준 18870번 문제 풀이">
-<meta property="og:url" content="http://localhost:4000/baekjoon/baekJoon_18870/">
+<meta property="og:title" content="객체 지향 심화">
+<meta property="og:url" content="http://localhost:4000/memoir/SEB_BE13/">
 
 
   <meta property="og:description" content="">
@@ -34,7 +34,7 @@
 
 
 
-  <meta property="article:published_time" content="2023-04-15T00:00:00+09:00">
+  <meta property="article:published_time" content="2023-04-30T00:00:00+09:00">
 
 
 
@@ -45,7 +45,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/baekjoon/baekJoon_18870/">
+<link rel="canonical" href="http://localhost:4000/memoir/SEB_BE13/">
 
 
 
@@ -164,7 +164,7 @@
       
         
         <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-          <a href="/categories/#baekjoon" itemprop="item"><span itemprop="name">Baekjoon</span></a>
+          <a href="/categories/#memoir" itemprop="item"><span itemprop="name">Memoir</span></a>
           <meta itemprop="position" content="2" />
         </li>
         <span class="sep">/</span>
@@ -172,7 +172,7 @@
     
       
       
-        <li class="current">파이썬 백준 18870번 문제 풀이</li>
+        <li class="current">객체 지향 심화</li>
       
     
   </ol>
@@ -456,16 +456,16 @@
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="파이썬 백준 18870번 문제 풀이">
+    <meta itemprop="headline" content="객체 지향 심화">
     <meta itemprop="description" content="">
-    <meta itemprop="datePublished" content="2023-04-15T00:00:00+09:00">
+    <meta itemprop="datePublished" content="2023-04-30T00:00:00+09:00">
     
 
     <div class="page__inner-wrap">
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://localhost:4000/baekjoon/baekJoon_18870/" class="u-url" itemprop="url">파이썬 백준 18870번 문제 풀이
+            <a href="http://localhost:4000/memoir/SEB_BE13/" class="u-url" itemprop="url">객체 지향 심화
 </a>
           </h1>
           
@@ -476,7 +476,7 @@
       <span class="page__meta-date">
         <i class="far fa-calendar-alt" aria-hidden="true"></i>
         
-        <time datetime="2023-04-15T00:00:00+09:00">April 15, 2023</time>
+        <time datetime="2023-04-30T00:00:00+09:00">April 30, 2023</time>
       </span>
     
 
@@ -489,7 +489,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          최대 1 분 소요
+          2 분 소요
         
       </span>
     
@@ -504,92 +504,139 @@
           <aside class="sidebar__right sticky">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> 목차</h4></header>
-              <ul class="toc__menu"><li><a href="#1-문제-분석">1. 문제 분석</a></li><li><a href="#2-코드">2. 코드</a></li><li><a href="#3-총평">3. 총평</a></li></ul>
+              <ul class="toc__menu"><li><a href="#-배운점"> 배운점</a><ul><li><a href="#-객체지향-4원칙"> 객체지향 4원칙</a></li><li><a href="#-solid-원칙"> SOLID 원칙</a><ul><li><a href="#-단일-책임-원칙srp-single-responsibility-principle"> 단일 책임 원칙(SRP, Single Responsibility Principle)</a></li><li><a href="#-개방-폐쇄-원칙ocp-openclosed-principle"> 개방-폐쇄 원칙(OCP, Open/Closed Principle)</a></li><li><a href="#-리스코프-치환-원칙lsp-liskov-subsitution-principle"> 리스코프 치환 원칙(LSP, Liskov Subsitution Principle)</a></li><li><a href="#-인터페이스-분리-원칙isp-interface-segregation-principle"> 인터페이스 분리 원칙(ISP, Interface Segregation Principle)</a></li><li><a href="#-의존관계-역전-원칙dip-dependency-inversion-principle"> 의존관계 역전 원칙(DIP, Dependency Inversion Principle)</a></li></ul></li></ul></li><li><a href="#-느낀점"> 느낀점</a></li></ul>
 
             </nav>
           </aside>
         
         <style> 
     p { line-height : 1.75em; }
-    table { text-align : center; font-size : 1.5em; border: white;}
 </style>
 
-<h2 id="1-문제-분석"><font color="#A0D7EF">1. 문제 분석</font></h2>
+<h1 id="-배운점"><font color="#A0D7EF"> 배운점</font></h1>
 
-<ol>
-  <li><span style="color:#FFFF80">중복값 없이 좌표를 정렬한다.</span>
-    <blockquote>
-      <p>Set에 넣은 다음 Sorted 함수를 통해 정렬된 리스트를 받는다<br /></p>
-    </blockquote>
+<h2 id="-객체지향-4원칙"><font color="#A0D7EF"> 객체지향 4원칙</font></h2>
 
-    <p>정렬 된 모습</p>
-
-    <table>
-      <tbody>
-        <tr>
-          <td>sorted X</td>
-          <td>-10</td>
-          <td>-9</td>
-          <td>4</td>
-          <td>2</td>
-        </tr>
-        <tr>
-          <td>X’</td>
-          <td>0</td>
-          <td>1</td>
-          <td>2</td>
-          <td>3</td>
-        </tr>
-      </tbody>
-    </table>
+<ul>
+  <li>추상화
+    <ul>
+      <li>사물의 성질, 공통성을 추출하여 파악하는 것</li>
+      <li>클래스의 공통적인 요소들을 봅아서 상위 클래스를 만들어 내는 것</li>
+      <li>인터페이스, 추상 클래스가 있다.</li>
+      <li>인터페이스는 추상 메소드를 묶어 놓은 것, 추상 클래스는 필드, 메소드를 모두 가지면서 추상 클래스를 가진다</li>
+      <li>추상 클래스는 하위 클래스에서 인스턴스화 할 수 있다</li>
+      <li><code class="language-plaintext highlighter-rouge">Animal animal = new Cat();</code> <br />추상클래스 Animal 참조변수는 하위 클래스인 Cat의 인스턴스를 가리킨다</li>
+      <li><code class="language-plaintext highlighter-rouge">Shopping shopping = new OnLineShopping();</code><br /> 인터페이스 Shpping 참조변수는 인터페이스를 구현한 OnLineShopping 인스턴스를 가리킨다</li>
+    </ul>
   </li>
-  <li><span style="color:#B0ff66">sorted X와 X’를 연결 해야한다.</span>
-    <blockquote>
-      <p>sorted X를 Key, X’를 Value로 넣은 딕셔너리를 만든다</p>
-    </blockquote>
+  <li>상속
+    <ul>
+      <li>기존에 있는 클래스를 재활용하여 새로운 클래스를 작성하는 방법</li>
+      <li>~은 ~이다 관계가 성립해야 한다</li>
+    </ul>
   </li>
-</ol>
+  <li>다형성
+    <ul>
+      <li>하나의 객체가 여러 가지 형태를 가질 수 있는 성질</li>
+      <li>인터페이스나 추상 클래스를 이용하여 한 타입의 참조 변수에 여러 타입의 객체를 넣을 수 있도록 한다</li>
+    </ul>
+  </li>
+  <li>캡슐화
+    <ul>
+      <li>특정 객체의 정보를 외부(다른 객체)로 부터 은닉한다</li>
+      <li>접근 지정자를 이용해 캡슐화를 할 수 있다</li>
+      <li>객체는 다른 객체가 무엇을 실행하는지 알지만 어떻게 수행하는지에 대해 알 수 없어야 한다</li>
+    </ul>
+  </li>
+</ul>
 
-<h2 id="2-코드"><font color="#A0D7EF">2. 코드</font></h2>
+<h2 id="-solid-원칙"><font color="#A0D7EF"> SOLID 원칙</font></h2>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">copy</span>
-<span class="kn">import</span> <span class="n">sys</span>
+<h3 id="-단일-책임-원칙srp-single-responsibility-principle"><font color="#A0D7EF"> 단일 책임 원칙(SRP, Single Responsibility Principle)</font></h3>
+<ul>
+  <li>하나의 클래스는 하나의 책임만 가져야 한다.</li>
+  <li>주문 클래스는 주문만, 메뉴 클래스는 메뉴에 관련된 책임만 가져야한다.</li>
+  <li>개발자라는 클래스에 백엔드, 프론트에 관한 행위를 구현한다 -&gt; 백엔드 클래스, 프론트 클래스로 분리한다</li>
+</ul>
 
-<span class="n">compressed_X</span> <span class="o">=</span> <span class="nf">dict</span><span class="p">()</span> <span class="c1"># 압축 좌표를 저장할 딕셔너리
-</span>
-<span class="n">N</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="nf">input</span><span class="p">())</span>
+<h3 id="-개방-폐쇄-원칙ocp-openclosed-principle"><font color="#A0D7EF"> 개방-폐쇄 원칙(OCP, Open/Closed Principle)</font></h3>
+<ul>
+  <li>소프트웨어 요소(클래스, 모듈, 함수 등)는 확장에 대해서는 개방되어 있어야 하지만 변경에 대해서는 폐쇄적이어야 한다는 원칙</li>
+  <li>추상화, 상속, 인터페이스를 사용하여 확장, 새로운 요소에 유연하게 대응할 수 있다</li>
+</ul>
 
-<span class="n">X</span> <span class="o">=</span> <span class="nf">list</span><span class="p">(</span><span class="nf">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="n">sys</span><span class="p">.</span><span class="n">stdin</span><span class="p">.</span><span class="nf">readline</span><span class="p">().</span><span class="nf">split</span><span class="p">()))</span>
-<span class="n">copy_X</span> <span class="o">=</span> <span class="n">copy</span><span class="p">.</span><span class="nf">deepcopy</span><span class="p">(</span><span class="n">X</span><span class="p">)</span> <span class="c1"># 본래 좌표 순서가 저장된 배열
-</span>
-<span class="n">X</span> <span class="o">=</span> <span class="nf">sorted</span><span class="p">(</span><span class="nf">set</span><span class="p">(</span><span class="n">X</span><span class="p">))</span> <span class="c1"># 좌표를 집합에 넣어 중복값을 없애고, 정렬한다
-</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">X</span><span class="p">)):</span>
-    <span class="n">compressed_X</span><span class="p">[</span><span class="n">X</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span> <span class="o">=</span> <span class="n">i</span> <span class="c1"># 본래 좌표(key) 압축 좌표(value)로 딕셔너리에 저장한다
-</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">copy_X</span><span class="p">:</span>
-    <span class="nf">print</span><span class="p">(</span><span class="n">compressed_X</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">end</span><span class="o">=</span><span class="s">' '</span><span class="p">)</span>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">Animal</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">abstract</span> <span class="kt">void</span> <span class="nf">makeSound</span><span class="o">();</span>
+<span class="o">}</span>
 
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Dog</span> <span class="kd">extends</span> <span class="nc">Animal</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">makeSound</span><span class="o">()</span> <span class="o">{</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"멍멍"</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Cat</span> <span class="kd">extends</span> <span class="nc">Animal</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">makeSound</span><span class="o">()</span> <span class="o">{</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"야옹"</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">AnimalSoundPlayer</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">playSound</span><span class="o">(</span><span class="nc">Animal</span> <span class="n">animal</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">animal</span><span class="o">.</span><span class="na">makeSound</span><span class="o">();</span>
+    <span class="o">}</span>
+<span class="o">}</span>
 </code></pre></div></div>
+<blockquote>
+  <p>makeSound()를 추상 메소드로 선언함으로 AnimalSoundPlayer는 새로운 animal 클래스가 추가되더라도 수정 할 필요가 없다</p>
+</blockquote>
+
+<h3 id="-리스코프-치환-원칙lsp-liskov-subsitution-principle"><font color="#A0D7EF"> 리스코프 치환 원칙(LSP, Liskov Subsitution Principle)</font></h3>
+<ul>
+  <li>프로그램 객체는 프로그램의 정확성을 깨뜨리지 않으면서 하위 타입의 인스턴스로 바꿀 수 있어야 한다는 원칙</li>
+  <li>상위 클래스의 참조변수에 하위 클래스를 할당하더라도 상위 클래스의 인스턴스 역할을 하는데 문제가 없다</li>
+  <li><code class="language-plaintext highlighter-rouge">Daughter daughter = new Father()</code> -&gt; 딸의 클래스는 아버지 클래스를 상속 할 수 없다</li>
+  <li><code class="language-plaintext highlighter-rouge">Daughter daughter = new Mother()</code> -&gt; 딸의 클래스는 어머니 클래스를 상속 할 수 있다</li>
+</ul>
+
+<h3 id="-인터페이스-분리-원칙isp-interface-segregation-principle"><font color="#A0D7EF"> 인터페이스 분리 원칙(ISP, Interface Segregation Principle)</font></h3>
+<ul>
+  <li>특정 클라이언트를 위한 인터페이스 여러개가 범용 인터페이스 하나보다 낫다는 원칙</li>
+  <li>인터페이스를 분리하면 결합도를 낮출 수 있다</li>
+  <li>인터페이스의 기능이 명확해지고, 대체 가능성이 높아진다</li>
+</ul>
+
+<h3 id="-의존관계-역전-원칙dip-dependency-inversion-principle"><font color="#A0D7EF"> 의존관계 역전 원칙(DIP, Dependency Inversion Principle)</font></h3>
+<ul>
+  <li>추상화에 의존해야지 구체화에 의존하면 안된다는 원칙</li>
+  <li>특정 객체가 어떤 객체를 사용할지 결정하면 안된다</li>
+  <li>자동차와 타이어의 관계에서 자동차에 특정 타이어를 구현 하는 것 보다 타이어 인터페이스에 의존하고<br />
+타이어 인터페이스를 구현한 여러 타이어 클래스를 생성하는 것이 좋다</li>
+  <li>구현체에 의존하지 않고, 추상클래스, 인터페이스에 의존해야한다</li>
+  <li>DI(Dependency Injection)를 이용해 객체간의 의존관계를 설정한다(생성자를 통해 주입받는다)</li>
+</ul>
+
+<p><br /></p>
+
+<h1 id="-느낀점"><font color="#A0D7EF"> 느낀점</font></h1>
 <hr />
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">X</span> <span class="o">=</span> <span class="nf">sorted</span><span class="p">(</span><span class="nf">set</span><span class="p">(</span><span class="n">X</span><span class="p">))</span> <span class="c1"># 좌표를 집합에 넣어 중복값을 없애고, 정렬한다
-</span></code></pre></div></div>
-<p><span style="color:#FFFF80">중복값을 없앤 정렬된 X좌표를 구한다</span></p>
+<p>정처기 준비하면서 이론으로만 알던 내용들을 실습으로 학습하니까<br />
+객체 지향 원칙을 지키면서 코딩하는 것이 쉽지 않다는 것을 느꼈다.</p>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># 중복값을 없앤 좌표(key), 압축 좌표(value)를 한 쌍으로 딕셔너리에 저장한다
-</span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">X</span><span class="p">)):</span>
-    <span class="n">compressed_X</span><span class="p">[</span><span class="n">X</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span> <span class="o">=</span> <span class="n">i</span> 
-</code></pre></div></div>
-<p><span style="color:#B0ff66">sorted X를 Key, X’를 Value로 넣은 딕셔너리를 만든다</span></p>
+<p>그동안 자바를 사용하면서 이런 것도 지키지 않고 사용했다는 것이 부끄러워졌다.</p>
 
-<h2 id="3-총평"><font color="#A0D7EF">3. 총평</font></h2>
-<p>문제의 해결 방법은 매우 빨리 찾았지만<br />
-코드가 너무 길어지는 것 같아서<br />
-짧게 코딩을 하려다 시간이 좀 걸린 것 같다.<br /><br />
-파이썬은 깊은 복사를 하는게 매우 쉬운 것 같다.<br />
-조만간 자바로 다시 돌아가야하는데<br />
-잘 적응 할 수 있을지 걱정이다,,, ㅠㅜ</p>
+<p>그동안 내가 생각하고 있던 규칙이 흔들렸고, 3일동안 계속 객체 지향에 대해 고민했다.</p>
+
+<p>아직 완전히 객체 지향을 받아드린 것은 아니지만, 매우 효율적이고 재밌다는 생각이 들었다.</p>
+
+<p>기능을 구현하는 것도 중요하지만 객체 지향에 맞게 리팩토링하는 작업도 중요하다는 생각도 들었다.</p>
+
+<p>객체 지향을 본격적으로 이해하기 시작했으니까 앞으로는 더 좋은 개발자가 될 수 있겠다는 생각이 들었고<br />
+내가 이 분야를 어느 정도 정복 했을 때 내가 어떻게 변화되어 있을까 궁금해졌다!</p>
+
+<p>앞으로 더 열심히 해서 좋은 개발자가 되도록 노력하자!! 꾸준히 한다면 시간은 나의 편이다.</p>
+
 
         
       </section>
@@ -606,11 +653,7 @@
     <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> 태그: </strong>
     <span itemprop="keywords">
     
-      <a href="/tags/#coding" class="page__taxonomy-item p-category" rel="tag">Coding</a><span class="sep">, </span>
-    
-      <a href="/tags/#python" class="page__taxonomy-item p-category" rel="tag">Python</a><span class="sep">, </span>
-    
-      <a href="/tags/#sort" class="page__taxonomy-item p-category" rel="tag">Sort</a>
+      <a href="/tags/#codestates" class="page__taxonomy-item p-category" rel="tag">Codestates</a>
     
     </span>
   </p>
@@ -627,7 +670,7 @@
     <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> 카테고리: </strong>
     <span itemprop="keywords">
     
-      <a href="/categories/#baekjoon" class="page__taxonomy-item p-category" rel="tag">BaekJoon</a>
+      <a href="/categories/#memoir" class="page__taxonomy-item p-category" rel="tag">Memoir</a>
     
     </span>
   </p>
@@ -635,7 +678,7 @@
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2023-04-15T00:00:00+09:00">April 15, 2023</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2023-04-30T00:00:00+09:00">April 30, 2023</time></p>
 
       </footer>
 
@@ -644,12 +687,11 @@
       
   <nav class="pagination">
     
-      <a href="/memoir/SEB_BE4/" class="pagination--pager" title="코드스테이츠 백엔드 4일차 회고록
+      <a href="/memoir/SEB_BE12/" class="pagination--pager" title="코드스테이츠 백엔드 12일차 회고록
 ">이전</a>
     
     
-      <a href="/memoir/SEB_BE5/" class="pagination--pager" title="코드스테이츠 백엔드 5일차 회고록
-">다음</a>
+      <a href="#" class="pagination--pager disabled">다음</a>
     
   </nav>
 
@@ -663,54 +705,6 @@
     <div class="page__related">
       <h2 class="page__related-title">참고</h2>
       <div class="grid__wrapper">
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/memoir/SEB_BE13/" rel="permalink">객체 지향 심화
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-      
-      <span class="page__meta-date">
-        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
-        
-        <time datetime="2023-04-30T00:00:00+09:00">April 30, 2023</time>
-      </span>
-    
-
-    <span class="page__meta-sep"></span>
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
-        
-          2 분 소요
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">
-
-</p>
-  </article>
-</div>
-
         
           
 
@@ -856,6 +850,54 @@
 </div>
 
         
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/memoir/SEB_BE9/" rel="permalink">코드스테이츠 백엔드 9일차 회고록
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2023-04-21T00:00:00+09:00">April 21, 2023</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          1 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+
+</p>
+  </article>
+</div>
+
+        
       </div>
     </div>
   
@@ -912,8 +954,8 @@
     
   <script>
     var disqus_config = function () {
-      this.page.url = "http://localhost:4000/baekjoon/baekJoon_18870/";  /* Replace PAGE_URL with your page's canonical URL variable */
-      this.page.identifier = "/baekjoon/baekJoon_18870"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+      this.page.url = "http://localhost:4000/memoir/SEB_BE13/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/memoir/SEB_BE13"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
     };
     (function() { /* DON'T EDIT BELOW THIS LINE */
       var d = document, s = d.createElement('script');
