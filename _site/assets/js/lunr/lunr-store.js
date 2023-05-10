@@ -106,4 +106,10 @@ var store = [{
         "tags": ["Codestates"],
         "url": "/memoir/SEB_BE13/",
         "teaser": null
+      },{
+        "title": "재귀",
+        "excerpt":"배운점 재귀(Recursion) 원래의 자리로 되돌아가거나 되돌아옴. 함수 내부에 자기 자신을 호출하는 메소드 재귀 함수의 장점 불필요하게 여러 개의 반복문을 사용하지 않아 코드가 간결하다 변수를 여러개 사용 할 필요가 없다 재귀 함수의 단점 반복문과 달리 코드의 흐름을 직관적으로 파악하기 어렵다. 반복하여 메소드를 호출하면 변수, 반환값이 스텍 영역에 저장되어 과도하게 호출하게 되면...","categories": ["Memoir"],
+        "tags": ["Codestates","Algorithm"],
+        "url": "/memoir/SEB_BE14/",
+        "teaser": null
       }]
