@@ -112,4 +112,10 @@ var store = [{
         "tags": ["Codestates","Algorithm"],
         "url": "/memoir/SEB_BE14/",
         "teaser": null
+      },{
+        "title": "그래프 탐색 알고리즘",
+        "excerpt":"배운점 너비 우선 탐색(BFS, Breadth First Search) 인접한 정점부터 방문하는 탐색 방식 너비 우선 탐색의 특징 최단 경로 탐색에 유리하다(같은 거리에 있는 정점들을 먼저 방문한다) 방문한 정점들을 저장해야 하는 경우 메모리 사용이 크다 그래프의 크기와 밀도가 크면 BFS의 성능이 저하된다 시작 정점에서 도착할 수 없는 정점에 대해서는 탐색하지 않는다 방문...","categories": ["Memoir"],
+        "tags": ["Codestates","Algorithm"],
+        "url": "/memoir/SEB_BE15/",
+        "teaser": null
       }]
