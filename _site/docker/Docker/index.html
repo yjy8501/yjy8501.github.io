@@ -9,7 +9,7 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>코드스테이츠 백엔드 1일차 회고록 | Rakugaki</title>
+<!-- begin _includes/seo.html --><title>Docker 빠른 실전편 | Rakugaki</title>
 <meta name="description" content="">
 
 
@@ -22,8 +22,8 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ko_KR">
 <meta property="og:site_name" content="Rakugaki">
-<meta property="og:title" content="코드스테이츠 백엔드 1일차 회고록">
-<meta property="og:url" content="http://localhost:4000/memoir/SEB_BE1/">
+<meta property="og:title" content="Docker 빠른 실전편">
+<meta property="og:url" content="http://localhost:4000/docker/Docker/">
 
 
   <meta property="og:description" content="">
@@ -34,7 +34,7 @@
 
 
 
-  <meta property="article:published_time" content="2023-04-11T00:00:00+09:00">
+  <meta property="article:published_time" content="2023-09-30T00:00:00+09:00">
 
 
 
@@ -45,7 +45,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/memoir/SEB_BE1/">
+<link rel="canonical" href="http://localhost:4000/docker/Docker/">
 
 
 
@@ -164,7 +164,7 @@
       
         
         <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-          <a href="/categories/#memoir" itemprop="item"><span itemprop="name">Memoir</span></a>
+          <a href="/categories/#docker" itemprop="item"><span itemprop="name">Docker</span></a>
           <meta itemprop="position" content="2" />
         </li>
         <span class="sep">/</span>
@@ -172,7 +172,7 @@
     
       
       
-        <li class="current">코드스테이츠 백엔드 1일차 회고록</li>
+        <li class="current">Docker 빠른 실전편</li>
       
     
   </ol>
@@ -508,16 +508,16 @@
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="코드스테이츠 백엔드 1일차 회고록">
+    <meta itemprop="headline" content="Docker 빠른 실전편">
     <meta itemprop="description" content="">
-    <meta itemprop="datePublished" content="2023-04-11T00:00:00+09:00">
+    <meta itemprop="datePublished" content="2023-09-30T00:00:00+09:00">
     
 
     <div class="page__inner-wrap">
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://localhost:4000/memoir/SEB_BE1/" class="u-url" itemprop="url">코드스테이츠 백엔드 1일차 회고록
+            <a href="http://localhost:4000/docker/Docker/" class="u-url" itemprop="url">Docker 빠른 실전편
 </a>
           </h1>
           
@@ -528,7 +528,7 @@
       <span class="page__meta-date">
         <i class="far fa-calendar-alt" aria-hidden="true"></i>
         
-        <time datetime="2023-04-11T00:00:00+09:00">April 11, 2023</time>
+        <time datetime="2023-09-30T00:00:00+09:00">September 30, 2023</time>
       </span>
     
 
@@ -556,56 +556,173 @@
           <aside class="sidebar__right sticky">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> 목차</h4></header>
-              <ul class="toc__menu"><li><a href="#-배운점"> 배운점</a><ul><li><a href="#1-메타인지란-무엇인가">1. 메타인지란 무엇인가?</a></li><li><a href="#2-페어-프로그래밍이-무엇인가">2. 페어 프로그래밍이 무엇인가?</a></li><li><a href="#3-나만의-학습-전략을-세우자">3. 나만의 학습 전략을 세우자!</a></li></ul></li><li><a href="#-느낀점"> 느낀점</a></li></ul>
+              <ul class="toc__menu"><li><a href="#docker실압편">Docker(실압편)</a><ul><li><a href="#docker란">Docker란?</a></li><li><a href="#docker-설치-방법">Docker 설치 방법</a></li><li><a href="#docker-용어">Docker 용어</a></li><li><a href="#docker-사용법">Docker 사용법</a><ul><li><a href="#docker-저장소-가입">Docker 저장소 가입</a></li><li><a href="#docker-빌드">Docker 빌드</a></li><li><a href="#docker-컨테이너">Docker 컨테이너</a></li><li><a href="#유용한-docker-명령어">유용한 Docker 명령어</a></li><li><a href="#advanced">Advanced</a></li></ul></li></ul></li></ul>
 
             </nav>
           </aside>
         
-        <style> 
-    p { line-height: 1.75em; }
-</style>
+        <p><br /></p>
 
-<h1 id="-배운점"><font color="#A0D7EF"> 배운점</font></h1>
+<h1 id="docker실압편">Docker(실압편)</h1>
 
-<h2 id="1-메타인지란-무엇인가"><font color="#A0D7EF">1. 메타인지란 무엇인가?</font></h2>
+<h2 id="docker란">Docker란?</h2>
 
-<p>메타인지란 현재 나의 인지 상태를 모니터링하는 능력이다.<br /><br />
-내 방식대로 이해하자면 내가 무엇을 알고, 무엇을 모르는지<br />
-정확히 판단 할 수 있는 것이 메타인지 능력인 것 같다.<br /><br />
-어중간하게 아는 것이 제일 무서운 것이다. 라고 스스로 생각하기도 하고,<br />
-전공생인 입장으로써 이미 배운 영역이 많이 나올테지만<br />
-자만하지 않고 처음부터 다시 쌓는다는 마인드로 공부를 해야겠다고 생각했다.<br /><br /></p>
+<ul>
+  <li>도커는 애플리케이션과 그 실행 환경을 격리된 컨테이너로 패키징하고,
+이러한 컨테이너를 사용하여 실행 환경을 가상화하는 기술이다.</li>
+</ul>
 
-<h2 id="2-페어-프로그래밍이-무엇인가"><font color="#A0D7EF">2. 페어 프로그래밍이 무엇인가?</font></h2>
+<hr />
 
-<p>페어 프로그래밍이란 말 그대로 동기와 함께 코딩을 하는 것으로,<br />
-실무는 모두 협업으로 이루어지기 때문에<br />
-페어 프로그래밍을 통해 미리 협업을 경험하는 것 같다.<br /><br />
-대학교에서 프로젝트를 진행 해본 나는 코딩에서 협업 능력,<br />
-커뮤니케이션 능력이 얼마나 중요한지 잘 알고 있다.<br /><br />
-본인의 실력이 아무리 뛰어나도, 혼자서 할 수 있는 양에는<br />
-한계가 있기 때문에 실무에서는 무조건 다른 사람과 함께 일을 하게 된다.<br /><br />
-그렇기 때문에 페어 프로그래밍을 통해 나보다 실력이 낮은 사람,<br />
-나보다 실력이 높은 사람들을 겪어보면서<br /> 
-개발자의 역량을 발전시킬 수 있도록 노력해야겠다.<br /><br /></p>
+<h2 id="docker-설치-방법">Docker 설치 방법</h2>
 
-<h2 id="3-나만의-학습-전략을-세우자"><font color="#A0D7EF">3. 나만의 학습 전략을 세우자!</font></h2>
+<ul>
+  <li><a href="https://docs.docker.com/desktop/install/windows-install/"><strong>윈도우용 docker 설치</strong></a></li>
+  <li><a href="https://docs.docker.com/desktop/install/mac-install/"><strong>맥북용 docker 설치</strong></a></li>
+  <li>[<strong>Ubuntu용 docker 설치](https://docs.docker.com/engine/install/ubuntu/)  →</strong> 서버에도 docker를 설치해야함으로 필수적으로 알아야한다.</li>
+</ul>
 
-<p>캘린더에 있는 일정 표를 보고, 오늘 확실히 알아가야 할 것들의 키워드를 작성하고,<br />
-학습 목표를 참고하면서, 챕터별로 얼마나 이해했는지 확인하면서 공부 해야겠다고<br />
-생각했다. 앞서 말했던 메타인지와 같은 맥락이다.<br /><br /></p>
+<hr />
 
-<h1 id="-느낀점"><font color="#A0D7EF"> 느낀점</font></h1>
-<p>오늘은 학습 관련 툴을 설치하거나, 앞으로의 교육 일정, 교육 방법에 관한<br />
-OT느낌이 강했다.<br /><br />
-전공자인 입장에서 오늘 크게 배운 점은 많이 없었다.<br />
-그래도 혼자 공부하고, 고심하면서 배웠던 경험들이<br />
-오늘 수업에서 강사님들이 주시는 팁과 유사하다는 것을 느끼고<br />
-내가 그동안 해온 공부가 헛되지 않았다는 것을 느꼈다.<br /><br />
-앞으로 전공자라고 자만하고, 방심하지 않고<br />
-혼자 공부하느라 지쳤다고, 구글링으로 할 수 없는 단계라고,<br />
-나보다 더 잘하는 사람들에게 배우고 싶다고 투정 부린 만큼<br />
-다른분들 보다 더 질문하고, 공부해서 많은 것을 얻어 가야겠다고 생각했다.<br /></p>
+<h2 id="docker-용어">Docker 용어</h2>
+
+<ul>
+  <li>이미지
+    <ul>
+      <li>도커 이미지(Docker Image)는 도커 컨테이너를 생성하기 위한 템플릿.</li>
+      <li>컨테이너를 생성하기에 필요한 설계도라고 생각하면 된다.</li>
+    </ul>
+  </li>
+  <li>컨테이너
+    <ul>
+      <li>우리가 생각하는 그 컨테이너가 맞다(항구에서 짐이 적재되어 있는)
+  → <strong>소프트웨어 수송, 즉 배포</strong></li>
+      <li>도커 컨테이너(Docker Container)는 도커 이미지를 바탕으로 생성된
+  가볍고 독립적인 실행 단위</li>
+    </ul>
+  </li>
+  <li>빌드
+    <ul>
+      <li>도커 이미지를 생성하는 과정</li>
+    </ul>
+  </li>
+  <li>도커 허브
+    <ul>
+      <li>도커 이미지를 저장하는 저장소(Github와 유사)</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h2 id="docker-사용법">Docker 사용법</h2>
+
+<h3 id="docker-저장소-가입">Docker 저장소 가입</h3>
+
+<ol>
+  <li><a href="https://hub.docker.com/">https://hub.docker.com/</a> 에 접속 후 회원가입</li>
+  <li>도커 허브에 로그인 하기</li>
+</ol>
+
+<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ docker login
+</code></pre></div></div>
+
+<ol>
+  <li>도커 허브 메뉴의 Repositories로 이동한 후 우측 상단의 “Create Repository” 버튼을 클릭한다.</li>
+  <li>“Repository Name”에 저장소 이름을 입력한다.(다른 사용자가 사용중인 이름X)</li>
+  <li>“Visibility”에서 “Public”을 선택.</li>
+  <li>“Create” 버튼을 클릭.</li>
+</ol>
+
+<h3 id="docker-빌드">Docker 빌드</h3>
+
+<ul>
+  <li>원하는 Spring 프로젝트에 들어가서, Gradle창 → bootJar를 실행해준다
+    <ul>
+      <li>build도 가능하나, 불필요한 파일이 생성된다</li>
+      <li>build/libs 하단에 jar 파일이 생성된 것을 확인할 수 있다.</li>
+    </ul>
+  </li>
+  <li>
+    <p>프로젝트 최상단 디렉토리에 Dockerfile 작성하기</p>
+
+    <div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="c"># openjdk11를 베이스로 이미지를 생성한다.</span>
+  FROM openjdk:11
+  <span class="c"># JAR_FILE에 jar 빌드 파일이 있는 경로를 저장한다</span>
+  ARG JAR_FILE=build/libs/*.jar
+  <span class="c"># jar 빌드 파일을 도커 컨테이너 안 app.jar 이름으로 복사</span>
+  COPY ${JAR_FILE} app.jar
+  <span class="c"># 컨테이너가 실행 될 때 실행되는 명령어</span>
+  <span class="c"># 컨테이너가 실행되면 jar 파일을 실행한다.</span>
+  ENTRYPOINT ["java","-jar","/app.jar"]
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>docker 빌드하기</p>
+
+    <div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  docker build -t {username}/{repository}:tag . 
+</code></pre></div>    </div>
+
+    <ul>
+      <li>username은 도커 허브 사용자 ID</li>
+      <li>repository는 도커 허브 레포지토리 이름</li>
+      <li>tag는 버전 적어주면 된다.(ex 0.1)</li>
+      <li>tag 뒤에  <strong>.</strong>  는 현재 디렉토리를 나타낸다(빼먹지 말고, 경로 설정에 활용하도록 하자).</li>
+    </ul>
+  </li>
+  <li>
+    <p>docker 푸쉬하기(이미지를 도커 허브 레포지토리로 푸쉬)</p>
+
+    <div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  docker push {username}/{repository}:tag
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h3 id="docker-컨테이너">Docker 컨테이너</h3>
+
+<ul>
+  <li>
+    <p>저장소에서 이미지 받아오기</p>
+
+    <div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  docker pull {username}/{repository}:tag
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>이미지를 컨테이너로 실행</p>
+
+    <div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  docker run -p 8080:8080 --name {컨테이너 이름} {username}/{repository}:tag
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h3 id="유용한-docker-명령어">유용한 Docker 명령어</h3>
+
+<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// 만들어진 컨테이너 실행
+docker start [컨테이너 이름 또는 ID]
+
+// 실행중인 컨테이너 중지
+docker stop [컨테이너 이름 또는 ID]
+
+// 실행중인 컨테이너 확인
+docker ps -a -&gt;(-a 제거시 모든 컨테이너 목록 확인 가능)
+
+// 컨테이너 제거
+docker rm [컨테이너 이름 또는 ID]
+
+// 이미지 목록 조회
+docker images 
+
+// 이미지 제거
+docker rmi [이미지 이름 또는 ID]
+</code></pre></div></div>
+
+<h3 id="advanced">Advanced</h3>
+
+<ul>
+  <li>Docker-compose</li>
+  <li>Docker-buildx</li>
+  <li>쿠버네티스</li>
+</ul>
 
         
       </section>
@@ -622,7 +739,7 @@ OT느낌이 강했다.<br /><br />
     <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> 태그: </strong>
     <span itemprop="keywords">
     
-      <a href="/tags/#codestates" class="page__taxonomy-item p-category" rel="tag">Codestates</a>
+      <a href="/tags/#docker" class="page__taxonomy-item p-category" rel="tag">Docker</a>
     
     </span>
   </p>
@@ -639,7 +756,7 @@ OT느낌이 강했다.<br /><br />
     <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> 카테고리: </strong>
     <span itemprop="keywords">
     
-      <a href="/categories/#memoir" class="page__taxonomy-item p-category" rel="tag">Memoir</a>
+      <a href="/categories/#docker" class="page__taxonomy-item p-category" rel="tag">Docker</a>
     
     </span>
   </p>
@@ -647,7 +764,7 @@ OT느낌이 강했다.<br /><br />
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2023-04-11T00:00:00+09:00">April 11, 2023</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2023-09-30T00:00:00+09:00">September 30, 2023</time></p>
 
       </footer>
 
@@ -656,12 +773,11 @@ OT느낌이 강했다.<br /><br />
       
   <nav class="pagination">
     
-      <a href="/baekjoon/baekJoon_2903/" class="pagination--pager" title="파이썬 백준 2903번 문제 풀이
+      <a href="/memoir/SEB_BE15/" class="pagination--pager" title="그래프 탐색 알고리즘
 ">이전</a>
     
     
-      <a href="/memoir/SEB_BE2/" class="pagination--pager" title="코드스테이츠 백엔드 2일차 회고록
-">다음</a>
+      <a href="#" class="pagination--pager disabled">다음</a>
     
   </nav>
 
@@ -675,53 +791,6 @@ OT느낌이 강했다.<br /><br />
     <div class="page__related">
       <h2 class="page__related-title">참고</h2>
       <div class="grid__wrapper">
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/docker/Docker/" rel="permalink">Docker 빠른 실전편
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-      
-      <span class="page__meta-date">
-        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
-        
-        <time datetime="2023-09-30T00:00:00+09:00">September 30, 2023</time>
-      </span>
-    
-
-    <span class="page__meta-sep"></span>
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
-        
-          1 분 소요
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">
-</p>
-  </article>
-</div>
-
         
           
 
@@ -805,7 +874,7 @@ OT느낌이 강했다.<br /><br />
       <span class="page__meta-readtime">
         <i class="far fa-fw fa-clock" aria-hidden="true"></i>
         
-          1 분 소요
+          2 분 소요
         
       </span>
     
@@ -854,6 +923,54 @@ OT느낌이 강했다.<br /><br />
         <i class="far fa-fw fa-clock" aria-hidden="true"></i>
         
           2 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/memoir/SEB_BE12/" rel="permalink">코드스테이츠 백엔드 12일차 회고록
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2023-04-26T00:00:00+09:00">April 26, 2023</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          1 분 소요
         
       </span>
     
@@ -923,8 +1040,8 @@ OT느낌이 강했다.<br /><br />
     
   <script>
     var disqus_config = function () {
-      this.page.url = "http://localhost:4000/memoir/SEB_BE1/";  /* Replace PAGE_URL with your page's canonical URL variable */
-      this.page.identifier = "/memoir/SEB_BE1"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+      this.page.url = "http://localhost:4000/docker/Docker/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/docker/Docker"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
     };
     (function() { /* DON'T EDIT BELOW THIS LINE */
       var d = document, s = d.createElement('script');

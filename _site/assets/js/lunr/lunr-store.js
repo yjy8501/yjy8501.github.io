@@ -118,4 +118,10 @@ var store = [{
         "tags": ["Codestates","Algorithm"],
         "url": "/memoir/SEB_BE15/",
         "teaser": null
+      },{
+        "title": "Docker 빠른 실전편",
+        "excerpt":"Docker(실압편) Docker란? 도커는 애플리케이션과 그 실행 환경을 격리된 컨테이너로 패키징하고, 이러한 컨테이너를 사용하여 실행 환경을 가상화하는 기술이다. Docker 설치 방법 윈도우용 docker 설치 맥북용 docker 설치 [Ubuntu용 docker 설치](https://docs.docker.com/engine/install/ubuntu/) → 서버에도 docker를 설치해야함으로 필수적으로 알아야한다. Docker 용어 이미지 도커 이미지(Docker Image)는 도커 컨테이너를 생성하기 위한 템플릿. 컨테이너를 생성하기에 필요한 설계도라고...","categories": ["Docker"],
+        "tags": ["Docker"],
+        "url": "/docker/Docker/",
+        "teaser": null
       }]
