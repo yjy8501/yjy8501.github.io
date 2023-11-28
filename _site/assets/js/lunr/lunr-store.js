@@ -120,8 +120,14 @@ var store = [{
         "teaser": null
       },{
         "title": "Docker 빠른 실전편",
-        "excerpt":"Docker(실압편) Docker란? 도커는 애플리케이션과 그 실행 환경을 격리된 컨테이너로 패키징하고, 이러한 컨테이너를 사용하여 실행 환경을 가상화하는 기술이다. Docker 설치 방법 윈도우용 docker 설치 맥북용 docker 설치 [Ubuntu용 docker 설치](https://docs.docker.com/engine/install/ubuntu/) → 서버에도 docker를 설치해야함으로 필수적으로 알아야한다. Docker 용어 이미지 도커 이미지(Docker Image)는 도커 컨테이너를 생성하기 위한 템플릿. 컨테이너를 생성하기에 필요한 설계도라고...","categories": [],
-        "tags": [],
-        "url": "/Docker/",
+        "excerpt":"Docker(실압편) Docker란? 도커는 애플리케이션과 그 실행 환경을 격리된 컨테이너로 패키징하고, 이러한 컨테이너를 사용하여 실행 환경을 가상화하는 기술이다. Docker 설치 방법 윈도우용 docker 설치 맥북용 docker 설치 Ubuntu용 docker 설치 → 서버에도 docker를 설치해야함으로 필수적으로 알아야한다. Docker 용어 이미지 도커 이미지(Docker Image)는 도커 컨테이너를 생성하기 위한 템플릿. 컨테이너를 생성하기에 필요한 설계도라고...","categories": ["Docker"],
+        "tags": ["Docker"],
+        "url": "/docker/Docker/",
+        "teaser": null
+      },{
+        "title": "Spring Security 웹 요청 처리 흐름",
+        "excerpt":"웹 보안의 일반적인 흐름 안녕하세요!! 마음만은 따듯했던, 하지만 지금은 옆구리가 시려워 마음도 차가워진 남자 양재용입니다. 오늘 무엇을 만들어 와야할까 정말 많은 고민을 했습니다,, 다들 아는 것들이 많아서 제가 무엇을 알려줄 수 있을까 and 뭔가 땡기는 게 없어서,,,, ㅎㅠㅎ 그러다가 요즘 제가 OAuth2 연동하면서 필터체인을 조금 만지면서 이 부분을 좀 만들어보면...","categories": ["Spring","Security"],
+        "tags": ["Spring Security"],
+        "url": "/spring/security/Spring_Security_Flow/",
         "teaser": null
       }]

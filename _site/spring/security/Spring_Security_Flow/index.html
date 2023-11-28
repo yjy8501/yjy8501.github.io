@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>파이썬 백준 2903번 문제 풀이 | Rakugaki</title>
-<meta name="description" content="1. 문제 분석 한 변의 길이는 1, 2, 4, 8 이런식으로 2의 배수 만큼 길어진다. 한 변에 있는 원의 개수는 한 변의 길이 + 1 이다. 따라서 전체 원의 개수는  한 변에 있는 원의 개수 * 2">
+<!-- begin _includes/seo.html --><title>Spring Security 웹 요청 처리 흐름 | Rakugaki</title>
+<meta name="description" content="웹 보안의 일반적인 흐름">
 
 
   <meta name="author" content="양재용">
@@ -22,30 +22,30 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ko_KR">
 <meta property="og:site_name" content="Rakugaki">
-<meta property="og:title" content="파이썬 백준 2903번 문제 풀이">
-<meta property="og:url" content="http://localhost:4000/baekjoon/baekJoon_2903/">
+<meta property="og:title" content="Spring Security 웹 요청 처리 흐름">
+<meta property="og:url" content="http://localhost:4000/spring/security/Spring_Security_Flow/">
 
 
-  <meta property="og:description" content="1. 문제 분석 한 변의 길이는 1, 2, 4, 8 이런식으로 2의 배수 만큼 길어진다. 한 변에 있는 원의 개수는 한 변의 길이 + 1 이다. 따라서 전체 원의 개수는  한 변에 있는 원의 개수 * 2">
-
-
-
-
-
-
-
-  <meta property="article:published_time" content="2023-04-06T00:00:00+09:00">
+  <meta property="og:description" content="웹 보안의 일반적인 흐름">
 
 
 
 
 
-  
+
+
+  <meta property="article:published_time" content="2023-11-28T00:00:00+09:00">
+
+
+
+
 
   
 
+  
 
-<link rel="canonical" href="http://localhost:4000/baekjoon/baekJoon_2903/">
+
+<link rel="canonical" href="http://localhost:4000/spring/security/Spring_Security_Flow/">
 
 
 
@@ -164,7 +164,7 @@
       
         
         <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-          <a href="/categories/#baekjoon" itemprop="item"><span itemprop="name">Baekjoon</span></a>
+          <a href="/categories/#spring" itemprop="item"><span itemprop="name">Spring</span></a>
           <meta itemprop="position" content="2" />
         </li>
         <span class="sep">/</span>
@@ -172,7 +172,17 @@
     
       
       
-        <li class="current">파이썬 백준 2903번 문제 풀이</li>
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/categories/#security" itemprop="item"><span itemprop="name">Security</span></a>
+          <meta itemprop="position" content="3" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        <li class="current">Spring Security 웹 요청 처리 흐름</li>
       
     
   </ol>
@@ -580,16 +590,16 @@
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="파이썬 백준 2903번 문제 풀이">
-    <meta itemprop="description" content="1. 문제 분석한 변의 길이는 1, 2, 4, 8 이런식으로 2의 배수 만큼 길어진다.한 변에 있는 원의 개수는 한 변의 길이 + 1 이다.따라서 전체 원의 개수는  한 변에 있는 원의 개수 * 2">
-    <meta itemprop="datePublished" content="2023-04-06T00:00:00+09:00">
+    <meta itemprop="headline" content="Spring Security 웹 요청 처리 흐름">
+    <meta itemprop="description" content="웹 보안의 일반적인 흐름">
+    <meta itemprop="datePublished" content="2023-11-28T00:00:00+09:00">
     
 
     <div class="page__inner-wrap">
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://localhost:4000/baekjoon/baekJoon_2903/" class="u-url" itemprop="url">파이썬 백준 2903번 문제 풀이
+            <a href="http://localhost:4000/spring/security/Spring_Security_Flow/" class="u-url" itemprop="url">Spring Security 웹 요청 처리 흐름
 </a>
           </h1>
           
@@ -600,7 +610,7 @@
       <span class="page__meta-date">
         <i class="far fa-calendar-alt" aria-hidden="true"></i>
         
-        <time datetime="2023-04-06T00:00:00+09:00">April 6, 2023</time>
+        <time datetime="2023-11-28T00:00:00+09:00">November 28, 2023</time>
       </span>
     
 
@@ -613,7 +623,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          최대 1 분 소요
+          2 분 소요
         
       </span>
     
@@ -628,47 +638,121 @@
           <aside class="sidebar__right sticky">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> 목차</h4></header>
-              <ul class="toc__menu"><li><a href="#1-문제-분석">1. 문제 분석</a></li><li><a href="#2-코드">2. 코드</a><ul><li><a href="#21-코드분석">2.1 코드분석</a></li></ul></li><li><a href="#3-총평">3. 총평</a></li></ul>
+              <ul class="toc__menu"><li><a href="#웹-보안의-일반적인-흐름">웹 보안의 일반적인 흐름</a></li><li><a href="#servletfilter와-filterchain">ServletFilter와 FilterChain</a></li><li><a href="#spring-security-filter">Spring Security Filter</a></li></ul>
 
             </nav>
           </aside>
         
-        <h2 id="1-문제-분석">1. 문제 분석</h2>
-<p><span style="color:#FFFF80"><strong>한 변의 길이</strong></span>는 1, 2, 4, 8 이런식으로 2의 배수 만큼 길어진다.<br /><br />
-<span style="color:#B0ff66"><strong>한 변에 있는 원의 개수</strong></span>는 <span style="color:#FFFF80"><strong>한 변의 길이</strong></span> + 1 이다.<br /><br />
-따라서 <span style="color:red"><strong>전체 원의 개수</strong></span>는  <span style="color:#B0ff66"><strong>한 변에 있는 원의 개수</strong></span> * 2<br /><br /></p>
+        <h2 id="웹-보안의-일반적인-흐름">웹 보안의 일반적인 흐름</h2>
 
-<h2 id="2-코드">2. 코드</h2>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">math</span>
+<p>안녕하세요!! 마음만은 따듯했던, 하지만 지금은 옆구리가 시려워 마음도 차가워진 남자 양재용입니다.</p>
 
-<span class="n">N</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="nf">input</span><span class="p">())</span> <span class="c1"># N을 입력받는다
-</span>
-<span class="n">side</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="n">math</span><span class="p">.</span><span class="nf">pow</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">N</span><span class="p">))</span> <span class="c1"># N번 이후의 변의 길이
-</span>
-<span class="n">side_point</span> <span class="o">=</span> <span class="n">side</span> <span class="o">+</span> <span class="mi">1</span> <span class="c1"># 한 변의 원의 개수
-</span>
-<span class="nf">print</span><span class="p">(</span><span class="n">side_point</span> <span class="o">*</span> <span class="n">side_point</span><span class="p">)</span>
+<p>오늘 무엇을 만들어 와야할까 정말 많은 고민을 했습니다,, 다들 아는 것들이 많아서</p>
+
+<p>제가 무엇을 알려줄 수 있을까 and 뭔가 땡기는 게 없어서,,,, ㅎㅠㅎ</p>
+
+<p>그러다가 요즘 제가 OAuth2 연동하면서 필터체인을 조금 만지면서</p>
+
+<p>이 부분을 좀 만들어보면 괜찮지 않을까 생각해서 만들게 되었습니다!!</p>
+
+<p>들어가기에 앞서 보안이 적용된 웹 요청의 일반적인 흐름에 대해 알아보고 갑시다!!</p>
+
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/urclass-images/7YWbJIzjmV8X9N2O_Z1VX-1662791689566.png" /></p>
+
+<p>그림은 사용자가 보호된 리소스를 요청했을 때 실행되는 흐름입니다.</p>
+
+<p>자세히 보시면 Controller와 같은 엔드포인트에 도달하기 전에 인증관리자, 접근 결정 관리자 같은 컴포넌트가</p>
+
+<p>요청을 가로채 사용자의 크리덴셜과 접근 권한을 확인하는 것을 알 수 있습니다.</p>
+
+<p>이 과정은 어디서 일어나는 것 일까요??</p>
+
+<h2 id="servletfilter와-filterchain">ServletFilter와 FilterChain</h2>
+
+<p>빠밤~ 그것은 바로 서블릿 필터랍니다~~!! 🎉</p>
+
+<p>스프링은 서블릿 기반 어플리케이션이기에 요청이 도달하기 전, 후로 서블릿 필터를 이용하여</p>
+
+<p>응답과 요청에 관여할 수 있답니다!!</p>
+
+<p>서블릿은 여러개의 서블릿을 이어붙여 필터 체인이라는 것을 만들 수 있는데</p>
+
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/urclass-images/dHbwtXC2SHXBKFpQLw5f5-1674611186514.png" /></p>
+
+<p>이런 식으로 여러개의 필터들을 묶어서 필터체인을 구성 할 수 있으며</p>
+
+<p>각각의 필터들은 doFilter()를 통해 다음 필터가 실행되도록 합니다.</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">@Override</span>
+    <span class="kd">protected</span> <span class="kt">void</span> <span class="nf">doFilterInternal</span><span class="o">(</span><span class="nc">HttpServletRequest</span> <span class="n">request</span><span class="o">,</span> <span class="nc">HttpServletResponse</span> <span class="n">response</span><span class="o">,</span> <span class="nc">FilterChain</span> <span class="n">filterChain</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">ServletException</span><span class="o">,</span> <span class="nc">IOException</span> <span class="o">{</span>
+        <span class="k">try</span> <span class="o">{</span>
+            <span class="nc">Claims</span> <span class="n">claims</span> <span class="o">=</span> <span class="n">verifyJws</span><span class="o">(</span><span class="n">request</span><span class="o">);</span>
+            <span class="n">setAuthenticationToContext</span><span class="o">(</span><span class="n">claims</span><span class="o">);</span>
+        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">ExpiredJwtException</span> <span class="n">ee</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">request</span><span class="o">.</span><span class="na">setAttribute</span><span class="o">(</span><span class="s">"exception"</span><span class="o">,</span> <span class="n">ee</span><span class="o">);</span>
+        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">MalformedJwtException</span> <span class="n">me</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">request</span><span class="o">.</span><span class="na">setAttribute</span><span class="o">(</span><span class="s">"exception"</span><span class="o">,</span> <span class="n">me</span><span class="o">);</span>
+        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">SignatureException</span> <span class="n">se</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">request</span><span class="o">.</span><span class="na">setAttribute</span><span class="o">(</span><span class="s">"exception"</span><span class="o">,</span> <span class="n">se</span><span class="o">);</span>
+        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">Exception</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">request</span><span class="o">.</span><span class="na">setAttribute</span><span class="o">(</span><span class="s">"exception"</span><span class="o">,</span> <span class="n">e</span><span class="o">);</span>
+        <span class="o">}</span>
+
+        <span class="n">filterChain</span><span class="o">.</span><span class="na">doFilter</span><span class="o">(</span><span class="n">request</span><span class="o">,</span> <span class="n">response</span><span class="o">);</span> <span class="c1">// 다음 필터를 실행</span>
+    <span class="o">}</span>
 </code></pre></div></div>
-<p><br /></p>
-<hr />
 
-<h3 id="21-코드분석">2.1 코드분석</h3>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">side</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="n">math</span><span class="p">.</span><span class="nf">pow</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">N</span><span class="p">))</span> <span class="c1"># N번 이후의 변의 길이
-</span></code></pre></div></div>
-<p>side 변수에 <span style="color:#FFFF80"><strong>한 변의 길이</strong></span>를 저장한다.</p>
+<p>위에 코드는 JWT 토큰 검증을 하는 필터에서 doFilterInternal 부분을 추출한 부분입니다!!</p>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">side_point</span> <span class="o">=</span> <span class="n">side</span> <span class="o">+</span> <span class="mi">1</span> <span class="c1"># 한 변의 원의 개수
-</span></code></pre></div></div>
-<p>side_point 변수에 <span style="color:#B0ff66"><strong>한 변에 있는 원의 개수</strong></span>를 저장한다.<br /></p>
+<p>(doFilterInternal은 Spring MVC에서 제공하는 메소드로 <strong>HttpServletRequest, HttpServletResponse</strong>를 사용한다)</p>
 
-<h2 id="3-총평">3. 총평</h2>
-<p>문제 설명을 보면 되게 어렵게 보이지만, Solve.ac 브론즈 3 문제로<br />
-규칙만 찾으면 간단하게 풀 수 있는 문제이다.<br /></p>
+<p>보시면 filterChain.doFilter()를 통해 다음 필터를 실행하는 것을 볼 수 있습니다.</p>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">int</span><span class="p">(</span><span class="n">math</span><span class="p">.</span><span class="nf">pow</span><span class="p">(</span><span class="n">side_point</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
-</code></pre></div></div>
-<p>정답을 출력할 때, 이런 식으로 작성하게 되면<br />
-double -&gt; int로 형 변환이 되면서 누락되는 부분이 있는지 정답처리가 되지 않는다.</p>
+<p>지금까지 저희가 서블릿 필터를 공부한 이유는 Spring Security에서 이 필터 부분을 통하여</p>
+
+<p>인증, 검증 보안과 관련된 다양한 추가 작업을 실행하기 때문입니다!!</p>
+
+<p>한번 자세히 알아볼까요~?~?</p>
+
+<h2 id="spring-security-filter">Spring Security Filter</h2>
+
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/urclass-images/qkev4vmV5-DMXpcv4MdBk-1674611246060.png" /></p>
+
+<p>자 Spring Security의 필터는 이와 같이 구성되어 있는데요(DelegatingFilterProxy, FilterChainProxy)</p>
+
+<p>DelegatingFilterProxy는 서블릿 필터체인과 ApplicationContext에 Bean으로 등록된 필터들을</p>
+
+<p>연결해 주는 브리지 역할을 합니다!!</p>
+
+<p>으잉?? 갑자기 무슨 소리야!! 라는 말이 나오실텐데요</p>
+
+<p>Spring Security에서는 자기만의 필터를 ApplicationContext에 빈으로 등록한 후에 작업을 처리하기에</p>
+
+<p>DelegatingFilterProxy의 역할이 필요하게 됩니다.</p>
+
+<p>본격적인 작업은 FilterChainProxy에서 실행하게 되는데요, 이미지 자료를 보면서 이해 해보도록 합시다.</p>
+
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/urclass-images/UpSQNpe1juvLRg1ohv7kY-1674611275989.png" /></p>
+
+<p>FilterChainProxy를 보면 여러개의 Spring Security의 보안을 처리하기 위한 여러개의 필터가 모여있습니다.</p>
+
+<p>Spring Security는 보안을 위한 특정 작업을 수행하기 위한 다양한 Filter를 지원하는데 그 수가 굉장히 많이 있는데</p>
+
+<p>Spring Security의 Filter가 각각 어떤 역할을 수행하는지는 전부 다 알 필요는 없으며,</p>
+
+<p>필요한 상황이 되었을 때 그때그때 적용해도 상관은 없습니다!!</p>
+
+<p>그리고 Spring Security의 Filter 항상 모든 Filter가 수행되는 것이 아니라 프로젝트 구성 및 설정에 따라 일부의 Filter만 활성화되어 있기 때문에 직접적으로 개발자가 핸들링할 필요가 없는 Filter들이 대부분입니다.</p>
+
+<p>따라서 개발자가 Custom Filter를 작성하고 등록할 경우 기존 필터들 사이에서 우선순위를 적용해 수행되어야 할 필요가 있는 경우에 참고해서 적용하면 됩니다.</p>
+
+<p>아 그리고 Filter에서 발생하는 예외는 Spring 밖에서 실행되기 때문에 저희가 흔히 사용하는 GlobalExceptionHandler(<code class="language-plaintext highlighter-rouge">@RestControllerAdvice</code>)에  잡히지 않기 때문에</p>
+
+<p>따로 성공 핸들러, 실패 핸들러를 작성해서 추가해주셔야합니다!!</p>
+
+<p>혹시 이 부분에 대해 잘 아시는 분이 있다면 자신은 어떻게 작성했는지 알려주세요!!</p>
+
+<p>다들 따듯한 연말 보내봐요 ㅎㅡㅎ</p>
 
         
       </section>
@@ -685,9 +769,7 @@ double -&gt; int로 형 변환이 되면서 누락되는 부분이 있는지 정
     <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> 태그: </strong>
     <span itemprop="keywords">
     
-      <a href="/tags/#coding" class="page__taxonomy-item p-category" rel="tag">Coding</a><span class="sep">, </span>
-    
-      <a href="/tags/#python" class="page__taxonomy-item p-category" rel="tag">Python</a>
+      <a href="/tags/#spring-security" class="page__taxonomy-item p-category" rel="tag">Spring Security</a>
     
     </span>
   </p>
@@ -704,7 +786,9 @@ double -&gt; int로 형 변환이 되면서 누락되는 부분이 있는지 정
     <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> 카테고리: </strong>
     <span itemprop="keywords">
     
-      <a href="/categories/#baekjoon" class="page__taxonomy-item p-category" rel="tag">BaekJoon</a>
+      <a href="/categories/#security" class="page__taxonomy-item p-category" rel="tag">Security</a><span class="sep">, </span>
+    
+      <a href="/categories/#spring" class="page__taxonomy-item p-category" rel="tag">Spring</a>
     
     </span>
   </p>
@@ -712,7 +796,7 @@ double -&gt; int로 형 변환이 되면서 누락되는 부분이 있는지 정
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2023-04-06T00:00:00+09:00">April 6, 2023</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2023-11-28T00:00:00+09:00">November 28, 2023</time></p>
 
       </footer>
 
@@ -721,12 +805,11 @@ double -&gt; int로 형 변환이 되면서 누락되는 부분이 있는지 정
       
   <nav class="pagination">
     
-      <a href="/baekjoon/second/" class="pagination--pager" title="파이썬 백준 10812번 문제 풀이
+      <a href="/docker/Docker/" class="pagination--pager" title="Docker 빠른 실전편
 ">이전</a>
     
     
-      <a href="/memoir/SEB_BE1/" class="pagination--pager" title="코드스테이츠 백엔드 1일차 회고록
-">다음</a>
+      <a href="#" class="pagination--pager disabled">다음</a>
     
   </nav>
 
@@ -740,53 +823,6 @@ double -&gt; int로 형 변환이 되면서 누락되는 부분이 있는지 정
     <div class="page__related">
       <h2 class="page__related-title">참고</h2>
       <div class="grid__wrapper">
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/spring/security/Spring_Security_Flow/" rel="permalink">Spring Security 웹 요청 처리 흐름
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-      
-      <span class="page__meta-date">
-        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
-        
-        <time datetime="2023-11-28T00:00:00+09:00">November 28, 2023</time>
-      </span>
-    
-
-    <span class="page__meta-sep"></span>
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
-        
-          2 분 소요
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">웹 보안의 일반적인 흐름
-</p>
-  </article>
-</div>
-
         
           
 
@@ -917,7 +953,55 @@ double -&gt; int로 형 변환이 되면서 누락되는 부분이 있는지 정
       <span class="page__meta-readtime">
         <i class="far fa-fw fa-clock" aria-hidden="true"></i>
         
-          1 분 소요
+          2 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/memoir/SEB_BE13/" rel="permalink">객체 지향 심화
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2023-04-30T00:00:00+09:00">April 30, 2023</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          2 분 소요
         
       </span>
     
@@ -987,8 +1071,8 @@ double -&gt; int로 형 변환이 되면서 누락되는 부분이 있는지 정
     
   <script>
     var disqus_config = function () {
-      this.page.url = "http://localhost:4000/baekjoon/baekJoon_2903/";  /* Replace PAGE_URL with your page's canonical URL variable */
-      this.page.identifier = "/baekjoon/baekJoon_2903"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+      this.page.url = "http://localhost:4000/spring/security/Spring_Security_Flow/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/spring/security/Spring_Security_Flow"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
     };
     (function() { /* DON'T EDIT BELOW THIS LINE */
       var d = document, s = d.createElement('script');
